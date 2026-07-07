@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CEP 검수 모니터링 대시보드</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1a1d21; --muted:#6b7280; --line:#e5e7eb;
+    --pass:#16a34a; --warn:#d97706; --fail:#dc2626; --none:#9ca3af; --accent:#2563eb;
+    --pass-bg:#dcfce7; --warn-bg:#fef3c7; --fail-bg:#fee2e2; --none-bg:#f3f4f6;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0f1115; --card:#171a21; --ink:#e6e8eb; --muted:#9aa1ab; --line:#262b34;
+      --pass-bg:#0f2e1c; --warn-bg:#33260a; --fail-bg:#371616; --none-bg:#1e222a; }
+  }
+  :root[data-theme="light"]{ --bg:#f6f7f9; --card:#fff; --ink:#1a1d21; --muted:#6b7280; --line:#e5e7eb;
+    --pass-bg:#dcfce7; --warn-bg:#fef3c7; --fail-bg:#fee2e2; --none-bg:#f3f4f6; }
+  :root[data-theme="dark"]{ --bg:#0f1115; --card:#171a21; --ink:#e6e8eb; --muted:#9aa1ab; --line:#262b34;
+    --pass-bg:#0f2e1c; --warn-bg:#33260a; --fail-bg:#371616; --none-bg:#1e222a; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:14px;line-height:1.5;padding:24px;}
+  .wrap{max-width:1160px;margin:0 auto;}
+  header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;}
+  h1{font-size:20px;margin:0;font-weight:700;}
+  .sub{color:var(--muted);font-size:13px;margin:2px 0 20px;}
+  .tools{display:flex;gap:8px;align-items:center;}
+  .btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;
+    border-radius:8px;cursor:pointer;font-size:13px;}
+  .btn:hover{border-color:var(--accent);}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px;}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .kpi .label{color:var(--muted);font-size:12px;}
+  .kpi .val{font-size:26px;font-weight:700;margin-top:4px;}
+  .kpi .val small{font-size:13px;font-weight:500;color:var(--muted);}
+  .kpi .ci{font-size:11px;color:var(--muted);margin-top:2px;}
+  .gate{display:flex;flex-wrap:wrap;gap:10px;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:14px 16px;margin-bottom:20px;align-items:center;}
+  .gate .title{font-weight:600;margin-right:6px;}
+  .chip{padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;}
+  .ok{background:var(--pass-bg);color:var(--pass);}
+  .bad{background:var(--fail-bg);color:var(--fail);}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center;}
+  input[type=search]{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);
+    color:var(--ink);font-size:13px;min-width:180px;}
+  #baseUrl{padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);
+    color:var(--ink);font-size:12px;width:230px;}
+  a.btn{text-decoration:none;display:inline-block;}
+  .seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .seg button{border:0;background:var(--card);color:var(--muted);padding:7px 12px;cursor:pointer;font-size:13px;}
+  .seg button.active{background:var(--accent);color:#fff;}
+  .tablewrap{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:820px;}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
+  th{color:var(--muted);font-weight:600;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--card);}
+  th.num,td.num{text-align:right;}
+  tbody tr{cursor:pointer;}
+  tbody tr:hover{background:var(--none-bg);}
+  tr:last-child td{border-bottom:0;}
+  .badge{padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;}
+  .b-insp{background:var(--pass-bg);color:var(--pass);}
+  .b-none{background:var(--none-bg);color:var(--none);}
+  .num.p{color:var(--pass);font-weight:600;} .num.w{color:var(--warn);font-weight:600;}
+  .num.f{color:var(--fail);font-weight:600;} .num.n0{color:var(--muted);font-weight:400;}
+  .bar{display:inline-block;width:90px;height:8px;border-radius:4px;background:var(--none-bg);overflow:hidden;vertical-align:middle;margin-right:6px;}
+  .bar>span{display:block;height:100%;background:var(--pass);}
+  .foot{color:var(--muted);font-size:12px;margin-top:14px;}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;}
+  .caret{color:var(--muted);}
+  /* modal */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;
+    padding:40px 16px;overflow-y:auto;z-index:50;}
+  .overlay.show{display:flex;}
+  .modal{background:var(--bg);border:1px solid var(--line);border-radius:14px;max-width:820px;width:100%;
+    box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  .modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);border-radius:14px 14px 0 0;}
+  .modal-head h2{font-size:16px;margin:0;}
+  .modal-head .meta{color:var(--muted);font-size:12px;margin-top:2px;}
+  .modal-body{padding:12px 20px 20px;}
+  .close{border:0;background:transparent;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;}
+  .grp-title{font-size:12px;font-weight:700;color:var(--muted);margin:16px 0 8px;text-transform:uppercase;letter-spacing:.4px;}
+  .ccard{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:12px 14px;margin-bottom:10px;background:var(--card);}
+  .ccard.v-pass{border-left-color:var(--pass);} .ccard.v-warning{border-left-color:var(--warn);}
+  .ccard.v-fail{border-left-color:var(--fail);} .ccard.v-none{border-left-color:var(--none);}
+  .ccard .cep{font-weight:600;margin-bottom:6px;}
+  .ccard .reason{font-size:12.5px;margin:4px 0;}
+  .ccard .reason.v-pass{color:var(--pass);} .ccard .reason.v-warning{color:var(--warn);} .ccard .reason.v-fail{color:var(--fail);}
+  .checks{margin-top:8px;display:flex;flex-direction:column;gap:5px;}
+  .chk{font-size:12px;display:flex;gap:6px;align-items:flex-start;}
+  .chk .st{flex:0 0 auto;padding:1px 7px;border-radius:999px;font-size:10.5px;font-weight:700;}
+  .st.ok{background:var(--pass-bg);color:var(--pass);} .st.fail{background:var(--fail-bg);color:var(--fail);}
+  .st.warn{background:var(--warn-bg);color:var(--warn);}
+  .chk .ev{color:var(--muted);}
+  .flags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;}
+  .flag{font-size:11px;padding:2px 8px;border-radius:6px;background:var(--fail-bg);color:var(--fail);font-weight:600;}
+  .flag.ov{background:var(--none-bg);color:var(--muted);font-weight:500;}
+  .sub-h{font-size:11px;font-weight:700;color:var(--muted);margin:10px 0 4px;text-transform:uppercase;letter-spacing:.3px;}
+  .quote{font-size:12px;background:var(--none-bg);border-radius:8px;padding:8px 10px;margin-bottom:6px;}
+  .quote .vf{font-size:10px;font-weight:700;padding:1px 6px;border-radius:6px;margin-right:6px;white-space:nowrap;}
+  .vf.ok{background:var(--pass-bg);color:var(--pass);} .vf.no{background:var(--fail-bg);color:var(--fail);}
+  .src{font-size:12px;margin-bottom:4px;}
+  .secn{color:var(--muted);font-size:11px;margin-left:4px;}
+  .ccard a{color:var(--accent);text-decoration:none;word-break:break-all;}
+  .ccard a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>CEP 검수 모니터링 대시보드</h1></div>
+    <div class="tools">
+      <input id="baseUrl" type="text" placeholder="기준 URL (예: https://release.listeningmind.com)" title="원본 CEP 링크의 기준 도메인 — 링크는 {기준}/ko/cep/{id}" />
+      <button class="btn" id="themeBtn">🌓 테마</button>
+      <label class="btn" for="fileInput">📂 번들 불러오기</label>
+      <input id="fileInput" type="file" accept="application/json,.json" hidden />
+    </div>
+  </header>
+  <div class="sub" id="snapshot"></div>
+
+  <div class="kpis" id="kpis"></div>
+  <div class="gate" id="gate"></div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="제품명 / ID 검색" />
+    <div class="seg" id="filter">
+      <button data-f="all" class="active">전체</button>
+      <button data-f="insp">검사됨</button>
+      <button data-f="none">미검사</button>
+    </div>
+    <span class="foot" id="count" style="margin:0;"></span>
+    <span class="foot" style="margin:0 0 0 auto;">행 클릭 → 카드별 사유</span>
+  </div>
+
+  <div class="tablewrap">
+    <table id="tbl">
+      <thead><tr>
+        <th data-k="id" class="num">ID</th>
+        <th data-k="name">제품명</th>
+        <th data-k="locale">Locale</th>
+        <th data-k="n" class="num">카드수</th>
+        <th data-k="insp">검수여부</th>
+        <th data-k="p" class="num">Pass</th>
+        <th data-k="w" class="num">Warn</th>
+        <th data-k="f" class="num">Fail</th>
+        <th data-k="none" class="num">미검사</th>
+        <th data-k="rate" class="num">Pass율</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="foot">
+    <span class="dot" style="background:var(--pass)"></span>Pass
+    <span class="dot" style="background:var(--warn);margin-left:12px"></span>Warning(의심)
+    <span class="dot" style="background:var(--fail);margin-left:12px"></span>Fail
+    <span class="dot" style="background:var(--none);margin-left:12px"></span>미검사
+    &nbsp;·&nbsp; 목표 게이트: Pass CI하한 ≥ 90% · Fail CI상한 ≤ 3%
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="modal-head">
+      <div><h2 id="mTitle"></h2><div class="meta" id="mMeta"></div></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <a class="btn" id="mOpen" target="_blank" rel="noopener">원본 CEP ↗</a>
+        <button class="close" id="mClose">×</button>
+      </div>
+    </div>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+
+<script src="dashboard-data.js"></script>
+<script>
+const SNAP = window.CEP_SNAPSHOT || {snapshot:"⚠ dashboard-data.js 를 찾지 못했습니다 (같은 폴더에 있어야 함)", rows:[], detail:{}};
+let rows = (SNAP.rows||[]).slice();
+let DETAIL = SNAP.detail || {};
+let SNAPSHOT = SNAP.snapshot || "";
+let state = {filter:"all", sort:"id", dir:-1, q:""};
+
+// 원본 CEP 링크 기준 URL (localStorage 유지). 링크 규칙: {base}/ko/cep/{id} — ID만 달라짐
+const DEFAULT_BASE="https://release.listeningmind.com";
+const baseInput=document.getElementById("baseUrl");
+baseInput.value = localStorage.getItem("cepBaseUrl") || DEFAULT_BASE;
+baseInput.addEventListener("change",()=>localStorage.setItem("cepBaseUrl",baseInput.value.trim()));
+const getBase=()=>(baseInput.value.trim()||DEFAULT_BASE).replace(/\/+$/,"");
+const cepUrl=r=>`${getBase()}/ko/cep/${r.id}`;
+
+const pct = x => (x*100).toFixed(1)+"%";
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function wilson(k,n,z=1.96){ if(!n) return [0,0]; const p=k/n,d=1+z*z/n,c=(p+z*z/(2*n))/d,
+  h=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d; return [Math.max(0,c-h),Math.min(1,c+h)]; }
+function totals(rs){ const t={proj:rs.length,insp:0,cards:0,ic:0,p:0,w:0,f:0,none:0};
+  rs.forEach(r=>{ t.cards+=r.n; t.p+=r.p; t.w+=r.w; t.f+=r.f; t.none+=r.none; if(r.insp){t.insp++; t.ic+=r.p+r.w+r.f;} }); return t; }
+
+function renderKpis(){
+  const t=totals(rows), cov=t.cards?t.ic/t.cards:0;
+  const pr=t.ic?t.p/t.ic:0, fr=t.ic?t.f/t.ic:0, wr=t.ic?t.w/t.ic:0;
+  const [pl,pu]=wilson(t.p,t.ic), [fl,fu]=wilson(t.f,t.ic);
+  document.getElementById("kpis").innerHTML = `
+    <div class="kpi"><div class="label">전체 프로젝트</div><div class="val">${t.proj}<small> / ${t.cards} 카드</small></div></div>
+    <div class="kpi"><div class="label">검수 커버리지</div><div class="val">${pct(cov)}</div><div class="ci">검사 ${t.insp}개 · 미검사 ${t.proj-t.insp}개 (${t.none}카드)</div></div>
+    <div class="kpi"><div class="label">Pass율 <small>(검사분)</small></div><div class="val" style="color:var(--pass)">${pct(pr)}</div><div class="ci">95% CI [${pct(pl)}, ${pct(pu)}]</div></div>
+    <div class="kpi"><div class="label">Fail율 <small>(검사분)</small></div><div class="val" style="color:var(--fail)">${pct(fr)}</div><div class="ci">95% CI [${pct(fl)}, ${pct(fu)}]</div></div>
+    <div class="kpi"><div class="label">Warning율 <small>(검사분)</small></div><div class="val" style="color:var(--warn)">${pct(wr)}</div><div class="ci">의심 ${t.w}카드</div></div>`;
+  const passOK=pl>=0.90, failOK=fu<=0.03;
+  document.getElementById("gate").innerHTML = `
+    <span class="title">게이트 판정</span>
+    <span class="chip ${passOK?'ok':'bad'}">Pass CI하한 ${pct(pl)} ${passOK?'≥ 90% ✓':'< 90% ✗'}</span>
+    <span class="chip ${failOK?'ok':'bad'}">Fail CI상한 ${pct(fu)} ${failOK?'≤ 3% ✓':'> 3% ✗'}</span>
+    <span class="chip ${(passOK&&failOK)?'ok':'bad'}">${(passOK&&failOK)?'게이트 통과 — 개선 중단 가능':'게이트 미달 — 개선 계속'}</span>`;
+}
+
+function renderTable(){
+  const q=state.q.toLowerCase();
+  let rs=rows.filter(r=>{
+    if(state.filter==="insp"&&!r.insp) return false;
+    if(state.filter==="none"&&r.insp) return false;
+    if(q && !(String(r.id).includes(q)||r.name.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  const key=state.sort;
+  rs.sort((a,b)=>{
+    if(key==="rate"){ const av=a.insp?a.p/(a.p+a.w+a.f):-1, bv=b.insp?b.p/(b.p+b.w+b.f):-1; return state.dir*(av-bv);}
+    if(key==="insp") return state.dir*((a.insp?1:0)-(b.insp?1:0));
+    if(key==="name"||key==="locale") return state.dir*String(a[key]).localeCompare(String(b[key]));
+    return state.dir*(a[key]-b[key]);
+  });
+  document.getElementById("tbody").innerHTML = rs.map(r=>{
+    const ic=r.p+r.w+r.f, rate=r.insp&&ic?r.p/ic:0;
+    const bar=r.insp?`<span class="bar"><span style="width:${(rate*100).toFixed(0)}%"></span></span>${pct(rate)}`:'<span class="n0">—</span>';
+    const cell=(v,cls)=>v?`<td class="num ${cls}">${v}</td>`:`<td class="num n0">0</td>`;
+    return `<tr data-id="${r.id}">
+      <td class="num">${r.id}</td>
+      <td>${esc(r.name)} <span class="caret">›</span></td>
+      <td>${r.locale}</td>
+      <td class="num">${r.n}</td>
+      <td><span class="badge ${r.insp?'b-insp':'b-none'}">${r.insp?'검사됨':'미검사'}</span></td>
+      ${cell(r.p,'p')}${cell(r.w,'w')}${cell(r.f,'f')}
+      <td class="num ${r.none?'':'n0'}">${r.none}</td>
+      <td class="num">${bar}</td>
+    </tr>`;
+  }).join("");
+  document.getElementById("count").textContent = `${rs.length}개 표시`;
+  document.getElementById("snapshot").textContent = SNAPSHOT;
+  document.querySelectorAll("#tbody tr").forEach(tr=>tr.addEventListener("click",()=>openDetail(+tr.dataset.id)));
+}
+
+const VLABEL={pass:"검수통과",warning:"의심",fail:"검수통과실패",none:"미검사"};
+function stCls(s){ return s==="ok"?"ok":(s==="fail"?"fail":"warn"); }
+function openDetail(pid){
+  const r=rows.find(x=>x.id===pid); const cards=(DETAIL[pid]||[]);
+  const ic=r.p+r.w+r.f, rate=ic?(r.p/ic*100).toFixed(0):0;
+  document.getElementById("mTitle").textContent = `${r.id} · ${r.name}`;
+  document.getElementById("mMeta").textContent = r.insp
+    ? `${r.locale} · ${r.n}카드 · Pass ${r.p} / Warn ${r.w} / Fail ${r.f} (${rate}% pass)`
+    : `${r.locale} · ${r.n}카드 · 미검사(verdict 없음)`;
+  document.getElementById("mOpen").href = cepUrl(r);
+  const order={fail:0,warning:1,pass:2,none:3};
+  const sorted=cards.slice().sort((a,b)=>order[a.v]-order[b.v]);
+  const groups={fail:[],warning:[],pass:[],none:[]};
+  sorted.forEach(c=>groups[c.v].push(c));
+  const gLabel={fail:"❌ Fail — 실패 사유",warning:"⚠️ Warning(의심) — 의심 사유",pass:"✅ Pass — 통과 근거",none:"⬜ 미검사"};
+  let html="";
+  ["fail","warning","pass","none"].forEach(v=>{
+    if(!groups[v].length) return;
+    html+=`<div class="grp-title">${gLabel[v]} · ${groups[v].length}건</div>`;
+    groups[v].forEach(c=>{
+      const checks=(c.checks||[]).map(ch=>`<div class="chk"><span class="st ${stCls(ch.status)}">${esc(ch.name)} ${esc(ch.status)}</span><span class="ev">${esc(ch.evidence)}</span></div>`).join("");
+      const flags=[];
+      if(c.halluc) flags.push('<span class="flag">할루시네이션 플래그</span>');
+      (c.overrides||[]).forEach(o=>flags.push(`<span class="flag ov">${esc(o)}</span>`));
+      const quotes=(c.quotes||[]).map(q=>`<div class="quote"><span class="vf ${q.verified?'ok':'no'}">${q.verified?'✓ 원문확인':'✗ 미확인'}</span>“${esc(q.quote)}”${q.url?` <a href="${esc(q.url)}" target="_blank" rel="noopener">🔗 원문${q.sec!=null?' §'+q.sec:''}</a>`:""}</div>`).join("");
+      const srcs=(c.sources||[]).map(s=>`<div class="src">🔗 <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title||s.url)}</a>${s.sec!=null?`<span class="secn">§${s.sec}</span>`:""}</div>`).join("");
+      html+=`<div class="ccard v-${c.v}">
+        <div class="cep">${esc(c.cep)}</div>
+        ${c.reason?`<div class="reason v-${c.v}">${esc(c.reason)}</div>`:""}
+        ${checks?`<div class="checks">${checks}</div>`:""}
+        ${flags.length?`<div class="flags">${flags.join("")}</div>`:""}
+        ${quotes?`<div class="qs"><div class="sub-h">인용 원문 (검수기가 대조한 문장)</div>${quotes}</div>`:""}
+        ${srcs?`<div class="srcs"><div class="sub-h">출처 링크 (원문 대조용)</div>${srcs}</div>`:""}
+      </div>`;
+    });
+  });
+  document.getElementById("mBody").innerHTML = html || "<p class='foot'>카드 데이터 없음</p>";
+  document.getElementById("overlay").classList.add("show");
+}
+function closeDetail(){ document.getElementById("overlay").classList.remove("show"); }
+
+// 번들 불러오기 → rows + detail 재계산
+function extractFromBundle(d){
+  const projs=d.projects||d; const R=[], DET={};
+  const trim=(s,n=300)=>{s=String(s==null?"":s).trim();return s.length>n?s.slice(0,n)+"…":s;};
+  const hallucOf=hf=>Array.isArray(hf)?hf.length>0:(hf&&typeof hf==="object"?!!hf.occurred:false);
+  const NM={category_fit:"카테고리 적합",source_grounding:"출처 근거"};
+  projs.forEach(p=>{
+    const c={pass:0,fail:0,warning:0,none:0};
+    const insp=p.inspection, items={};
+    if(insp&&Array.isArray(insp.items)) insp.items.forEach(it=>items[it.card_id]=it);
+    const cards=(p.cep_cards||[]).map(card=>{
+      const ev=card.evidence||{}, v=ev.inspection_verdict;
+      const key=(v==="pass"||v==="fail"||v==="warning")?v:"none"; c[key]++;
+      const it=items[card.id]||{}, ck=it.checks||{}, checks=[];
+      ["category_fit","source_grounding","structural"].forEach(name=>{
+        const chk=ck[name]; if(chk&&typeof chk==="object"){
+          if(name==="structural"){ const iss=chk.issues||[]; if(iss.length) checks.push({name:"구조",status:"fail",evidence:trim(iss.join("; "))}); }
+          else if(chk.status) checks.push({name:NM[name],status:chk.status,evidence:trim(chk.evidence)});
+        }
+      });
+      const ov=it.override_reason, overrides=[];
+      if(Array.isArray(ov)) ov.forEach(rr=>{ if(rr&&typeof rr==="object") overrides.push(`${rr.rule}: ${trim(rr.evidence,120)}`); });
+      const sources=(ev.sources||[]).filter(s=>s&&s.url).map(s=>({title:trim(s.url_title||s.title,120),url:s.url,sec:s.section_number}));
+      const quotes=(ev.quotes||[]).filter(q=>q&&typeof q==="object").map(q=>({quote:trim(q.quote,240),url:q.url,sec:q.section_id,verified:!!q.verified}));
+      return {id:card.id,cep:trim(card.cep,110),v:key,reason:trim(ev.verdict_reason,200),checks,halluc:hallucOf(ck.hallucination_flags),overrides,sources,quotes};
+    });
+    DET[p.project_id]=cards;
+    const n=c.pass+c.fail+c.warning+c.none;
+    R.push({id:p.project_id,name:p.product_name,locale:p.locale,n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
+  });
+  return {rows:R,detail:DET};
+}
+document.getElementById("fileInput").addEventListener("change",e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const rd=new FileReader();
+  rd.onload=()=>{ try{
+    const ex=extractFromBundle(JSON.parse(rd.result));
+    rows=ex.rows; DETAIL=ex.detail; SNAPSHOT=`불러온 번들: ${f.name} · ${rows.length} 프로젝트`;
+    renderKpis(); renderTable();
+  }catch(err){ alert("JSON 파싱 실패: "+err.message); } };
+  rd.readAsText(f);
+});
+
+document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value;renderTable();});
+document.querySelectorAll("#filter button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#filter button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active"); state.filter=b.dataset.f; renderTable(); }));
+document.querySelectorAll("#tbl th").forEach(th=>th.addEventListener("click",()=>{
+  const k=th.dataset.k; if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==='name'||k==='locale')?1:-1;}
+  renderTable(); }));
+document.getElementById("themeBtn").addEventListener("click",()=>{
+  const r=document.documentElement;
+  const cur=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
+  r.setAttribute("data-theme",cur==="dark"?"light":"dark"); });
+document.getElementById("mClose").addEventListener("click",closeDetail);
+document.getElementById("overlay").addEventListener("click",e=>{ if(e.target.id==="overlay") closeDetail(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
+
+renderKpis(); renderTable();
+</script>
+</body>
+</html>
