@@ -104,6 +104,23 @@
   .secn{color:var(--muted);font-size:11px;margin-left:4px;}
   .ccard a{color:var(--accent);text-decoration:none;word-break:break-all;}
   .ccard a:hover{text-decoration:underline;}
+  /* 진단 리포트 */
+  .diag-btn{white-space:nowrap;padding:3px 9px;font-size:12px;}
+  .sevchip{padding:2px 9px;border-radius:999px;font-size:11px;font-weight:700;margin-right:4px;display:inline-block;}
+  .sev-c{background:var(--fail-bg);color:var(--fail);}
+  .sev-m{background:var(--warn-bg);color:var(--warn);}
+  .sev-n{background:var(--none-bg);color:var(--muted);}
+  .dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px;}
+  .dbox{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;}
+  .dlab{color:var(--muted);font-size:11px;} .dval{font-size:15px;font-weight:700;margin-top:3px;}
+  .overall{font-size:12.5px;background:var(--none-bg);border-radius:8px;padding:10px 12px;margin-bottom:12px;line-height:1.55;}
+  .overall.warn{background:var(--warn-bg);}
+  table.dtbl{min-width:520px;} table.dtbl th,table.dtbl td{white-space:normal;vertical-align:top;}
+  table.dtbl td:first-child,table.dtbl th:first-child{white-space:nowrap;}
+  .w7{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px;}
+  .w7i{font-size:10.5px;padding:1px 7px;border-radius:6px;}
+  .w7i.exp{background:var(--pass-bg);color:var(--pass);} .w7i.imp{background:var(--none-bg);color:var(--muted);}
+  tr.pcard{cursor:pointer;} tr.pcard:hover{background:var(--none-bg);}
 </style>
 </head>
 <body>
@@ -112,6 +129,7 @@
     <div><h1>CEP 검수 모니터링 대시보드</h1></div>
     <div class="tools">
       <input id="baseUrl" type="text" placeholder="기준 URL (예: https://release.listeningmind.com)" title="원본 CEP 링크의 기준 도메인 — 링크는 {기준}/ko/cep/{id}" />
+      <button class="btn" id="diagAllBtn">🩺 전체 진단</button>
       <button class="btn" id="themeBtn">🌓 테마</button>
       <label class="btn" for="fileInput">📂 번들 불러오기</label>
       <input id="fileInput" type="file" accept="application/json,.json" hidden />
@@ -146,6 +164,7 @@
         <th data-k="f" class="num">Fail</th>
         <th data-k="none" class="num">미검사</th>
         <th data-k="rate" class="num">Pass율</th>
+        <th>진단</th>
       </tr></thead>
       <tbody id="tbody"></tbody>
     </table>
@@ -173,11 +192,25 @@
   </div>
 </div>
 
+<div class="overlay" id="diagOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <div><h2 id="dTitle"></h2><div class="meta" id="dMeta"></div></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <a class="btn" id="dOpen" target="_blank" rel="noopener" style="display:none;">원본 CEP ↗</a>
+        <button class="close" id="dClose">×</button>
+      </div>
+    </div>
+    <div class="modal-body" id="dBody"></div>
+  </div>
+</div>
+
 <script src="dashboard-data.js"></script>
 <script>
 const SNAP = window.CEP_SNAPSHOT || {snapshot:"⚠ dashboard-data.js 를 찾지 못했습니다 (같은 폴더에 있어야 함)", rows:[], detail:{}};
 let rows = (SNAP.rows||[]).slice();
 let DETAIL = SNAP.detail || {};
+let DIAG = SNAP.diag || {};
 let SNAPSHOT = SNAP.snapshot || "";
 let state = {filter:"all", sort:"id", dir:-1, q:""};
 
@@ -242,11 +275,15 @@ function renderTable(){
       ${cell(r.p,'p')}${cell(r.w,'w')}${cell(r.f,'f')}
       <td class="num ${r.none?'':'n0'}">${r.none}</td>
       <td class="num">${bar}</td>
+      <td>${DIAG[r.id]?`<button class="btn diag-btn" data-diag="${r.id}">🩺 진단</button>`:'<span class="n0">—</span>'}</td>
     </tr>`;
   }).join("");
   document.getElementById("count").textContent = `${rs.length}개 표시`;
   document.getElementById("snapshot").textContent = SNAPSHOT;
   document.querySelectorAll("#tbody tr").forEach(tr=>tr.addEventListener("click",()=>openDetail(+tr.dataset.id)));
+  document.querySelectorAll("#tbody .diag-btn").forEach(b=>b.addEventListener("click",e=>{
+    e.stopPropagation(); openDiag(+b.dataset.diag);
+  }));
 }
 
 const VLABEL={pass:"검수통과",warning:"의심",fail:"검수통과실패",none:"미검사"};
@@ -290,13 +327,143 @@ function openDetail(pid){
 }
 function closeDetail(){ document.getElementById("overlay").classList.remove("show"); }
 
-// 번들 불러오기 → rows + detail 재계산
+// ── 진단 리포트 렌더 ─────────────────────────────────────────
+const SEV={critical:{l:"🔴 Critical",c:"sev-c"},major:{l:"🟠 Major",c:"sev-m"},minor:{l:"🟡 Minor",c:"sev-n"}};
+const sevChip=(k,n)=>`<span class="sevchip ${SEV[k].c}">${SEV[k].l} ${n}</span>`;
+const vClass=v=>v==="pass"?"pass":v==="fail"?"fail":v==="warning"?"warning":"none";
+const stClsOf=s=>s==="ok"?"ok":s==="fail"?"fail":"warn";
+const W7KEYS=["why","when","where","while_","with_what","with_whom","how_feeling"];
+
+function projectDiagBody(d){
+  const s=d.summary;
+  const findings=[];
+  d.cards.forEach(c=>c.findings.forEach(f=>findings.push(Object.assign({idx:c.idx},f))));
+  const so={critical:0,major:1,minor:2};
+  findings.sort((a,b)=>so[a.sev]-so[b.sev]);
+  const merged=(s.overall||"").includes(" / ");
+  let h="";
+  h+=`<div class="grp-title">1. 요약</div>`;
+  h+=`<div class="dgrid">
+    <div class="dbox"><div class="dlab">검수 판정</div><div class="dval"><span class="num p">P ${s.pass}</span> · <span class="num w">W ${s.warn}</span> · <span class="num f">F ${s.fail}</span> <small>/ ${s.total}</small></div></div>
+    <div class="dbox"><div class="dlab">자동 진단 심각도</div><div class="dval">${sevChip("critical",d.sev.critical)}${sevChip("major",d.sev.major)}${sevChip("minor",d.sev.minor)}</div></div>
+    <div class="dbox"><div class="dlab">판정 오버라이드</div><div class="dval">${d.overridden}건 <small>(llm pass→강등)</small></div></div>
+    <div class="dbox"><div class="dlab">검사 카테고리 / 모델</div><div class="dval" style="font-size:12.5px;font-weight:600;">${esc(d.category)||"—"}<br><small>${esc(d.model)||"—"}</small></div></div>
+  </div>`;
+  if(s.overall) h+=`<div class="overall${merged?" warn":""}">${merged?"⚠️ 요약 코멘트에 복수 실행 병합 흔적(&quot; / &quot;) — 번호 체계 혼용 주의(G1). ":""}${esc(s.overall)}</div>`;
+  h+=`<div class="grp-title">2. 문제 목록 · ${findings.length}건</div>`;
+  if(findings.length){
+    h+=`<div class="tablewrap" style="margin-bottom:8px;"><table class="dtbl"><thead><tr><th>카드</th><th>항목</th><th>증상</th><th>심각도</th></tr></thead><tbody>`;
+    findings.forEach(f=>{ h+=`<tr><td>#${f.idx}</td><td>${esc(f.code)}</td><td>${esc(f.detail)||"—"}</td><td>${SEV[f.sev].l}</td></tr>`; });
+    h+=`</tbody></table></div>`;
+  } else h+=`<p class="foot">자동 진단으로 발견된 문제 없음 (전 카드 근거 충분).</p>`;
+  const flagCnt={};
+  d.cards.forEach(c=>c.flags.forEach(f=>flagCnt[f.label]=(flagCnt[f.label]||0)+1));
+  const pats=Object.entries(flagCnt).sort((a,b)=>b[1]-a[1]);
+  h+=`<div class="grp-title">3. 반복 패턴</div>`;
+  h+=pats.length?`<div class="flags">${pats.map(([k,v])=>`<span class="flag ov">${esc(k)} × ${v}</span>`).join("")}</div>`
+              :`<p class="foot">반복 할루시네이션 패턴 없음.</p>`;
+  h+=`<div class="grp-title">4. 부록 — 카드별 상세</div>`;
+  d.cards.forEach(c=>{
+    h+=`<div class="ccard v-${vClass(c.verdict)}">
+      <div class="cep">#${c.idx} · ${esc(c.cep)} <span class="badge ${c.verdict==="pass"?"b-insp":"b-none"}">${esc(c.verdict)}</span>${c.overridden?` <span class="flag ov">override · llm=${esc(c.llm)}</span>`:""}</div>
+      <div class="checks">
+        <div class="chk"><span class="st ${stClsOf(c.cf.status)}">카테고리 ${esc(c.cf.status)||"-"}</span><span class="ev">${esc(c.cf.ev)||"—"}</span></div>
+        <div class="chk"><span class="st ${stClsOf(c.sg.status)}">출처근거 ${esc(c.sg.status)||"-"}</span><span class="ev">${esc(c.sg.ev)||"—"}</span></div>
+      </div>
+      ${c.flags.length?`<div class="flags">${c.flags.map(f=>`<span class="flag${f.sev==="minor"?" ov":""}">${esc(f.label)}</span>`).join("")}</div>`:""}
+      <div class="w7">${W7KEYS.map(k=>`<span class="w7i ${c.w7[k]==="explicit"?"exp":"imp"}">${k.replace("_","")}:${esc(c.w7[k]||"-")}</span>`).join("")}</div>
+    </div>`;
+  });
+  return h;
+}
+
+function openDiag(pid){
+  const d=DIAG[pid]; if(!d){ alert("이 프로젝트의 진단 데이터가 없습니다."); return; }
+  document.getElementById("dTitle").textContent=`🩺 진단 · ${d.id} ${d.name}`;
+  document.getElementById("dMeta").textContent=`${d.locale} · ${d.summary.total}카드 · Critical ${d.sev.critical}/Major ${d.sev.major}/Minor ${d.sev.minor}`;
+  const op=document.getElementById("dOpen"); op.style.display="inline-block"; op.href=`${getBase()}/ko/cep/${d.id}`;
+  document.getElementById("dBody").innerHTML=projectDiagBody(d);
+  document.getElementById("diagOverlay").classList.add("show");
+}
+
+function openDiagAll(){
+  const ds=Object.keys(DIAG).map(k=>DIAG[k]);
+  if(!ds.length){ alert("진단 데이터가 없습니다. 번들을 먼저 불러오세요."); return; }
+  const T={proj:ds.length,cards:0,pass:0,warn:0,fail:0,critical:0,major:0,minor:0,overridden:0,merged:0};
+  const flagCnt={};
+  ds.forEach(d=>{ T.cards+=d.summary.total; T.pass+=d.summary.pass; T.warn+=d.summary.warn; T.fail+=d.summary.fail;
+    T.critical+=d.sev.critical; T.major+=d.sev.major; T.minor+=d.sev.minor; T.overridden+=d.overridden;
+    if((d.summary.overall||"").includes(" / ")) T.merged++;
+    d.cards.forEach(c=>c.flags.forEach(f=>flagCnt[f.label]=(flagCnt[f.label]||0)+1)); });
+  const rate=T.cards?((T.pass/T.cards)*100).toFixed(1):0;
+  const pats=Object.entries(flagCnt).sort((a,b)=>b[1]-a[1]);
+  const so={critical:0,major:1,minor:2};
+  const proj=ds.slice().sort((a,b)=>(b.sev.critical-a.sev.critical)||(b.sev.major-a.sev.major)||(b.summary.fail-a.summary.fail));
+  let h="";
+  h+=`<div class="grp-title">1. 전체 요약</div>`;
+  h+=`<div class="dgrid">
+    <div class="dbox"><div class="dlab">프로젝트 / 카드</div><div class="dval">${T.proj} <small>/ ${T.cards}</small></div></div>
+    <div class="dbox"><div class="dlab">검수 판정</div><div class="dval"><span class="num p">P ${T.pass}</span> · <span class="num w">W ${T.warn}</span> · <span class="num f">F ${T.fail}</span></div><div class="ci">Pass ${rate}%</div></div>
+    <div class="dbox"><div class="dlab">자동 진단 심각도</div><div class="dval">${sevChip("critical",T.critical)}${sevChip("major",T.major)}${sevChip("minor",T.minor)}</div></div>
+    <div class="dbox"><div class="dlab">오버라이드 / 병합의심</div><div class="dval">${T.overridden}건 · ${T.merged}개</div></div>
+  </div>`;
+  h+=`<div class="grp-title">2. 반복 패턴 (할루시네이션 플래그 · 전체)</div>`;
+  h+=pats.length?`<div class="flags">${pats.map(([k,v])=>`<span class="flag ov">${esc(k)} × ${v}</span>`).join("")}</div>`:`<p class="foot">패턴 없음.</p>`;
+  h+=`<div class="grp-title">3. 프로젝트별 진단 (심각도순 · 행 클릭 → 상세)</div>`;
+  h+=`<div class="tablewrap"><table class="dtbl"><thead><tr><th>ID</th><th>제품</th><th class="num">카드</th><th class="num">Pass율</th><th>Crit</th><th>Major</th><th>Minor</th></tr></thead><tbody>`;
+  proj.forEach(d=>{ const r=d.summary.total?((d.summary.pass/d.summary.total)*100).toFixed(0):0;
+    h+=`<tr class="pcard" data-diag="${d.id}"><td>${d.id}</td><td>${esc(d.name)} ›</td><td class="num">${d.summary.total}</td><td class="num">${r}%</td><td>${d.sev.critical||"—"}</td><td>${d.sev.major||"—"}</td><td>${d.sev.minor||"—"}</td></tr>`; });
+  h+=`</tbody></table></div>`;
+  document.getElementById("dTitle").textContent="🩺 전체 진단 리포트";
+  document.getElementById("dMeta").textContent=`${T.proj}개 프로젝트 · ${T.cards}카드 · Critical ${T.critical} / Major ${T.major} / Minor ${T.minor}`;
+  document.getElementById("dOpen").style.display="none";
+  document.getElementById("dBody").innerHTML=h;
+  document.getElementById("diagOverlay").classList.add("show");
+  document.querySelectorAll("#dBody .pcard").forEach(tr=>tr.addEventListener("click",()=>openDiag(+tr.dataset.diag)));
+}
+function closeDiag(){ document.getElementById("diagOverlay").classList.remove("show"); }
+
+// ── 진단(QA) 빌더 — inspection 데이터에서 카드별/프로젝트별 자동 진단 생성 ──
+// 정적 로드(dashboard-data.js)와 업로드 경로가 동일 결과를 내도록 gen-dashboard-data.js 와 동일 유지.
+const FLAG_LABEL={vague_expression:"모호한 표현",category_mismatch:"카테고리 불일치",no_source_quote:"출처 인용 없음",fabricated_detail:"세부사항 날조",unfounded_superlative:"근거없는 최상급",redundant:"중복 표현"};
+const FLAG_SEV={fabricated_detail:"critical",no_source_quote:"major",category_mismatch:"major",unfounded_superlative:"minor",vague_expression:"minor",redundant:"minor"};
+function buildDiag(p){
+  const trim=(s,n=300)=>{s=String(s==null?"":s).trim();return s.length>n?s.slice(0,n)+"…":s;};
+  const insp=p.inspection||{}, items={};
+  (insp.items||[]).forEach(it=>{ if(it&&it.card_id!=null) items[it.card_id]=it; });
+  const summary=insp.summary||{};
+  const model=insp.model_info?`${insp.model_info.provider||""}/${insp.model_info.model||""}`.replace(/^\/|\/$/g,""):"";
+  const cards=(p.cep_cards||[]).map((card,i)=>{
+    const it=items[card.id]||{}, ck=it.checks||{};
+    const cf=ck.category_fit||{}, sg=ck.source_grounding||{}, st=ck.structural||{}, w7=ck.sevenW_structure||{};
+    const ev=card.evidence||{};
+    const verdict=it.verdict||ev.inspection_verdict||"none";
+    const flags=(ck.hallucination_flags||[]).filter(f=>f&&f.occurred).map(f=>({type:f.type,label:FLAG_LABEL[f.type]||f.type,sev:FLAG_SEV[f.type]||"minor",note:trim(f.note,140)}));
+    const findings=[];
+    flags.forEach(f=>findings.push({code:"할루시네이션: "+f.label,sev:f.sev,detail:f.note||"inspection 플래그 occurred=true"}));
+    if(sg.status==="fail") findings.push({code:"출처 근거 실패",sev:"major",detail:trim(sg.evidence,180)});
+    else if(sg.status==="partial") findings.push({code:"출처 근거 부분적",sev:"minor",detail:trim(sg.evidence,180)});
+    if(cf.status==="fail") findings.push({code:"카테고리 부적합",sev:"major",detail:trim(cf.evidence,180)});
+    else if(cf.status==="partial") findings.push({code:"카테고리 부분적합",sev:"minor",detail:trim(cf.evidence,180)});
+    (st.issues||[]).forEach(iss=>findings.push({code:"구조 문제",sev:"major",detail:trim(iss,180)}));
+    return {idx:i+1,cardId:card.id,cep:trim(card.cep,110),verdict,llm:it.llm_verdict||"",overridden:!!it.verdict_overridden,
+      cf:{status:cf.status||"",ev:trim(cf.evidence,220)},sg:{status:sg.status||"",ev:trim(sg.evidence,220)},w7,flags,findings};
+  });
+  const sev={critical:0,major:0,minor:0};
+  cards.forEach(c=>c.findings.forEach(f=>{ if(sev[f.sev]!=null) sev[f.sev]++; }));
+  return {id:p.project_id,name:p.product_name,locale:p.locale,category:insp.category||"",model,
+    summary:{pass:summary.pass||0,warn:summary.warning||0,fail:summary.fail||0,total:summary.total||cards.length,overall:trim(summary.overall_comment,1400)},
+    overridden:cards.filter(c=>c.overridden).length,sev,cards};
+}
+
+// 번들 불러오기 → rows + detail + diag 재계산
 function extractFromBundle(d){
-  const projs=d.projects||d; const R=[], DET={};
+  const projs=d.projects||d; const R=[], DET={}, DG={};
   const trim=(s,n=300)=>{s=String(s==null?"":s).trim();return s.length>n?s.slice(0,n)+"…":s;};
   const hallucOf=hf=>Array.isArray(hf)?hf.length>0:(hf&&typeof hf==="object"?!!hf.occurred:false);
   const NM={category_fit:"카테고리 적합",source_grounding:"출처 근거"};
   projs.forEach(p=>{
+    DG[p.project_id]=buildDiag(p);
     const c={pass:0,fail:0,warning:0,none:0};
     const insp=p.inspection, items={};
     if(insp&&Array.isArray(insp.items)) insp.items.forEach(it=>items[it.card_id]=it);
@@ -320,14 +487,14 @@ function extractFromBundle(d){
     const n=c.pass+c.fail+c.warning+c.none;
     R.push({id:p.project_id,name:p.product_name,locale:p.locale,n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
   });
-  return {rows:R,detail:DET};
+  return {rows:R,detail:DET,diag:DG};
 }
 document.getElementById("fileInput").addEventListener("change",e=>{
   const f=e.target.files[0]; if(!f) return;
   const rd=new FileReader();
   rd.onload=()=>{ try{
     const ex=extractFromBundle(JSON.parse(rd.result));
-    rows=ex.rows; DETAIL=ex.detail; SNAPSHOT=`불러온 번들: ${f.name} · ${rows.length} 프로젝트`;
+    rows=ex.rows; DETAIL=ex.detail; DIAG=ex.diag||{}; SNAPSHOT=`불러온 번들: ${f.name} · ${rows.length} 프로젝트`;
     renderKpis(); renderTable();
   }catch(err){ alert("JSON 파싱 실패: "+err.message); } };
   rd.readAsText(f);
@@ -338,7 +505,8 @@ document.querySelectorAll("#filter button").forEach(b=>b.addEventListener("click
   document.querySelectorAll("#filter button").forEach(x=>x.classList.remove("active"));
   b.classList.add("active"); state.filter=b.dataset.f; renderTable(); }));
 document.querySelectorAll("#tbl th").forEach(th=>th.addEventListener("click",()=>{
-  const k=th.dataset.k; if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==='name'||k==='locale')?1:-1;}
+  const k=th.dataset.k; if(!k) return;
+  if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==='name'||k==='locale')?1:-1;}
   renderTable(); }));
 document.getElementById("themeBtn").addEventListener("click",()=>{
   const r=document.documentElement;
@@ -346,7 +514,10 @@ document.getElementById("themeBtn").addEventListener("click",()=>{
   r.setAttribute("data-theme",cur==="dark"?"light":"dark"); });
 document.getElementById("mClose").addEventListener("click",closeDetail);
 document.getElementById("overlay").addEventListener("click",e=>{ if(e.target.id==="overlay") closeDetail(); });
-document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeDetail(); });
+document.getElementById("diagAllBtn").addEventListener("click",openDiagAll);
+document.getElementById("dClose").addEventListener("click",closeDiag);
+document.getElementById("diagOverlay").addEventListener("click",e=>{ if(e.target.id==="diagOverlay") closeDiag(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ closeDetail(); closeDiag(); } });
 
 renderKpis(); renderTable();
 </script>
