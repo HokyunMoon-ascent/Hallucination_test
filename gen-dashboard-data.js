@@ -78,15 +78,33 @@ function extractFromBundle(d){
   return {rows:R,detail:DET,diag:DG};
 }
 
+// ── repropose 로드 ──────────────────────────────────────────
+// repropose/{project_id}.json 을 읽어 { [project_id]: <obj> } 맵으로 주입.
+// (본문 기반 CEP 재제안 콘텐츠 — 번들에 없는 오프라인 사전생성 데이터)
+function loadRepropose(dir="repropose"){
+  const map={};
+  if(!fs.existsSync(dir)) return map;
+  fs.readdirSync(dir).filter(f=>f.endsWith(".json")).forEach(f=>{
+    try{
+      const obj=JSON.parse(fs.readFileSync(path.join(dir,f),"utf8"));
+      const pid=obj.project_id!=null?obj.project_id:path.basename(f,".json");
+      map[pid]=obj;
+    }catch(e){ console.warn(`⚠ repropose 파싱 실패: ${f} — ${e.message}`); }
+  });
+  return map;
+}
+
 // ── 실행 ────────────────────────────────────────────────────
 const bundle = JSON.parse(fs.readFileSync(IN, "utf8"));
 const { rows, detail, diag } = extractFromBundle(bundle);
+const repropose = loadRepropose();
 
 const totalCards = rows.reduce((s,r)=>s+r.n,0);
 const inspProj = rows.filter(r=>r.insp).length;
+const reproCnt = Object.keys(repropose).length;
 const snapshot = `번들: ${path.basename(IN)} · 프로젝트 ${rows.length}개 / 카드 ${totalCards}개 · 검수 ${inspProj}개`;
 
-const payload = { snapshot, rows, detail, diag };
+const payload = { snapshot, rows, detail, diag, repropose };
 const js = `// 자동 생성됨 — gen-dashboard-data.js (입력: ${path.basename(IN)})\n`
          + `// 수정하지 말 것. 갱신: node gen-dashboard-data.js <번들.json>\n`
          + `window.CEP_SNAPSHOT = ${JSON.stringify(payload)};\n`;
@@ -94,4 +112,5 @@ fs.writeFileSync(OUT, js);
 
 console.log(`✅ ${OUT} 생성`);
 console.log(`   ${snapshot}`);
+console.log(`   본문 기반 재제안: ${reproCnt}개 프로젝트${reproCnt?` (${Object.keys(repropose).join(", ")})`:""}`);
 console.log(`   파일 크기: ${(js.length/1024).toFixed(0)} KB`);
