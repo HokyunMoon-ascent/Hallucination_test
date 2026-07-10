@@ -9,6 +9,7 @@
 // ============================================================
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const IN = process.argv[2] || "cep_bundle_20proj_200cards.json";
 const OUT = "dashboard-data.js";
@@ -110,7 +111,24 @@ const js = `// 자동 생성됨 — gen-dashboard-data.js (입력: ${path.basena
          + `window.CEP_SNAPSHOT = ${JSON.stringify(payload)};\n`;
 fs.writeFileSync(OUT, js);
 
+// ── 캐시 버스팅 ─────────────────────────────────────────────
+// 콘텐츠 해시(8자리)를 dashboard.html 의 <script src> 쿼리에 주입한다.
+// 데이터가 바뀔 때만 URL 이 달라져 브라우저/CDN 캐시가 정확히 무효화됨.
+const ver = crypto.createHash("sha1").update(js).digest("hex").slice(0, 8);
+const HTML = "dashboard.html";
+let htmlUpdated = false;
+if (fs.existsSync(HTML)) {
+  const html = fs.readFileSync(HTML, "utf8");
+  const re = /(<script\s+src=")dashboard-data\.js(?:\?v=[^"]*)?(")/;
+  if (re.test(html)) {
+    const next = html.replace(re, `$1dashboard-data.js?v=${ver}$2`);
+    if (next !== html) { fs.writeFileSync(HTML, next); }
+    htmlUpdated = true;
+  }
+}
+
 console.log(`✅ ${OUT} 생성`);
 console.log(`   ${snapshot}`);
 console.log(`   본문 기반 재제안: ${reproCnt}개 프로젝트${reproCnt?` (${Object.keys(repropose).join(", ")})`:""}`);
-console.log(`   파일 크기: ${(js.length/1024).toFixed(0)} KB`);
+console.log(`   파일 크기: ${(Buffer.byteLength(js)/1024).toFixed(0)} KB`);
+console.log(`   캐시 버전(v): ${ver}${htmlUpdated?` → ${HTML} 스크립트 태그 갱신됨`:` (⚠ ${HTML} 스크립트 태그를 찾지 못함 — 수동 확인 필요)`}`);
