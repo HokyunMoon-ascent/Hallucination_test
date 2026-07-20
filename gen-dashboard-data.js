@@ -1,8 +1,12 @@
 // ============================================================
 // dashboard-data.js 생성기
-// 사용법: node gen-dashboard-data.js [번들파일.json]
-// 기본 입력: cep_bundle_20proj_200cards.json
-// 출력: dashboard-data.js  (window.CEP_SNAPSHOT = {snapshot, rows, detail})
+// 사용법: node gen-dashboard-data.js [번들1.json] [번들2.json] ...
+// 기본 입력: description/cep_bundle_21proj_210cards.json
+//            description/cep_bundle_14proj_140cards_since2026-07-14.json
+// 출력: dashboard-data.js  (window.CEP_SNAPSHOT = {snapshot, rows, detail, diag, repropose})
+//        여러 번들을 주면 project_id 기준으로 하나의 통합 목록으로 병합한다.
+//        (같은 키워드라도 출처가 다르면 서로 다른 프로젝트이므로 이름으로 붕괴시키지 않고
+//         모두 남기고, 대시보드에서 생성일(created_time) 컬럼으로 구분한다)
 //
 // 추출 로직은 dashboard.html 의 extractFromBundle() 과 동일하게 유지한다.
 // (파일 업로드 경로와 정적 스냅샷 경로가 완전히 같은 결과를 내도록)
@@ -11,7 +15,11 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-const IN = process.argv[2] || "cep_bundle_20proj_200cards.json";
+const INS = process.argv.slice(2);
+if (!INS.length) {
+  INS.push("description/cep_bundle_21proj_210cards.json");
+  INS.push("description/cep_bundle_14proj_140cards_since2026-07-14.json");
+}
 const OUT = "dashboard-data.js";
 
 // ── dashboard.html 과 동일한 추출/진단 로직 ─────────────────
@@ -41,7 +49,7 @@ function buildDiag(p){
   });
   const sev={critical:0,major:0,minor:0};
   cards.forEach(c=>c.findings.forEach(f=>{ if(sev[f.sev]!=null) sev[f.sev]++; }));
-  return {id:p.project_id,name:p.product_name,locale:p.locale,category:insp.category||"",model,
+  return {id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),category:insp.category||"",model,
     summary:{pass:summary.pass||0,warn:summary.warning||0,fail:summary.fail||0,total:summary.total||cards.length,overall:trim(summary.overall_comment,1400)},
     overridden:cards.filter(c=>c.overridden).length,sev,cards};
 }
@@ -74,7 +82,7 @@ function extractFromBundle(d){
     });
     DET[p.project_id]=cards;
     const n=c.pass+c.fail+c.warning+c.none;
-    R.push({id:p.project_id,name:p.product_name,locale:p.locale,n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
+    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
   });
   return {rows:R,detail:DET,diag:DG};
 }
@@ -95,19 +103,39 @@ function loadRepropose(dir="repropose"){
   return map;
 }
 
+// ── 여러 번들 병합 (project_id 유일 기준) ───────────────────
+// 여러 하베스트 번들을 하나의 통합 목록으로 합친다.
+// 완전히 같은 project_id 만 중복으로 보고 최신 created_time 1건만 남긴다.
+// (같은 제품명이라도 project_id 가 다르면 출처가 다른 별개 프로젝트 → 모두 유지,
+//  대시보드는 생성일 컬럼으로 구분한다)
+function mergeBundles(paths){
+  const byId = {};
+  paths.forEach(p => {
+    const b = JSON.parse(fs.readFileSync(p, "utf8"));
+    (b.projects || b || []).forEach(proj => {
+      const id = proj.project_id;
+      const cur = byId[id];
+      if (!cur || String(proj.created_time||"") > String(cur.created_time||"")) byId[id] = proj;
+    });
+  });
+  return { projects: Object.values(byId) };
+}
+
 // ── 실행 ────────────────────────────────────────────────────
-const bundle = JSON.parse(fs.readFileSync(IN, "utf8"));
+const bundle = mergeBundles(INS);
 const { rows, detail, diag } = extractFromBundle(bundle);
 const repropose = loadRepropose();
 
 const totalCards = rows.reduce((s,r)=>s+r.n,0);
 const inspProj = rows.filter(r=>r.insp).length;
 const reproCnt = Object.keys(repropose).length;
-const snapshot = `번들: ${path.basename(IN)} · 프로젝트 ${rows.length}개 / 카드 ${totalCards}개 · 검수 ${inspProj}개`;
+const srcLabel = INS.map(p=>path.basename(p)).join(" + ");
+const snapshot = `번들: ${srcLabel} · 프로젝트 ${rows.length}개 / 카드 ${totalCards}개 · 검수 ${inspProj}개`;
 
 const payload = { snapshot, rows, detail, diag, repropose };
-const js = `// 자동 생성됨 — gen-dashboard-data.js (입력: ${path.basename(IN)})\n`
-         + `// 수정하지 말 것. 갱신: node gen-dashboard-data.js <번들.json>\n`
+
+const js = `// 자동 생성됨 — gen-dashboard-data.js (입력: ${srcLabel})\n`
+         + `// 수정하지 말 것. 갱신: node gen-dashboard-data.js <번들1.json> [번들2.json ...]\n`
          + `window.CEP_SNAPSHOT = ${JSON.stringify(payload)};\n`;
 fs.writeFileSync(OUT, js);
 

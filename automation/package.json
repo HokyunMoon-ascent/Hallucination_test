@@ -1,0 +1,16 @@
+{
+  "name": "cep-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CEP 자가개선 루프 자동화 — release/admin 로그인, JSON 하베스트, 회귀 비교 (Phase A: 읽기+비교). Phase B/C(어드민 반영·재생성)는 --confirm 게이트.",
+  "type": "commonjs",
+  "scripts": {
+    "harvest": "node harvest.js",
+    "compare": "node compare.js",
+    "apply-prompt": "node apply-prompt.js",
+    "regenerate": "node regenerate.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

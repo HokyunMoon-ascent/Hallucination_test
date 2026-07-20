@@ -142,6 +142,24 @@
   .fixnote{font-size:12px;color:var(--muted);background:var(--none-bg);border-left:3px solid var(--fail);border-radius:0 8px 8px 0;padding:6px 10px;margin:6px 0;line-height:1.5;}
   .mm-fixhint{font-size:11.5px;color:var(--accent);font-weight:600;margin-top:4px;}
   .repro-summary{font-size:12.5px;background:var(--warn-bg);border-radius:8px;padding:10px 12px;margin:8px 0 4px;line-height:1.6;}
+  /* 개선 전/후 비교 */
+  .delta{font-weight:700;}
+  .delta.up{color:var(--pass);} .delta.down{color:var(--fail);} .delta.flat{color:var(--muted);}
+  .arrow{color:var(--muted);margin:0 4px;}
+  .b-up{background:var(--pass-bg);color:var(--pass);}
+  .b-down{background:var(--fail-bg);color:var(--fail);}
+  .b-flat{background:var(--none-bg);color:var(--muted);}
+  .b-new{background:var(--warn-bg);color:var(--warn);}
+  .b-gone{background:var(--none-bg);color:var(--none);}
+  .cmp-hint{font-size:12.5px;color:var(--muted);background:var(--none-bg);border-radius:8px;padding:8px 12px;margin-bottom:12px;line-height:1.55;}
+  .cmp-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media (max-width:640px){ .cmp-cols{grid-template-columns:1fr;} }
+  .cmp-col h3{font-size:13px;margin:0 0 8px;font-weight:700;}
+  .cmp-col.before h3{color:var(--muted);} .cmp-col.after h3{color:var(--accent);}
+  .cmp-row{display:flex;align-items:center;gap:6px;font-size:12px;padding:5px 8px;border-radius:6px;margin-bottom:4px;background:var(--card);border:1px solid var(--line);}
+  .cmp-row .vdot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;}
+  .vdot.v-pass{background:var(--pass);} .vdot.v-warning{background:var(--warn);} .vdot.v-fail{background:var(--fail);} .vdot.v-none{background:var(--none);}
+  .cmp-tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:6px;margin-bottom:8px;}
 </style>
 </head>
 <body>
@@ -177,6 +195,7 @@
       <thead><tr>
         <th data-k="id" class="num">ID</th>
         <th data-k="name">제품명</th>
+        <th data-k="date">생성일</th>
         <th data-k="locale">Locale</th>
         <th data-k="n" class="num">카드수</th>
         <th data-k="insp">검수여부</th>
@@ -226,7 +245,7 @@
   </div>
 </div>
 
-<script src="dashboard-data.js?v=fa58d0a5"></script>
+<script src="dashboard-data.js?v=17f6a95b"></script>
 <script>
 const SNAP = window.CEP_SNAPSHOT || {snapshot:"⚠ dashboard-data.js 를 찾지 못했습니다 (같은 폴더에 있어야 함)", rows:[], detail:{}};
 let rows = (SNAP.rows||[]).slice();
@@ -235,6 +254,8 @@ let DIAG = SNAP.diag || {};
 let REPROPOSE = SNAP.repropose || {};
 let SNAPSHOT = SNAP.snapshot || "";
 let state = {filter:"all", sort:"id", dir:-1, q:""};
+
+function render(){ renderKpis(); renderTable(); }
 
 // 원본 CEP 링크 기준 URL (localStorage 유지). 링크 규칙: {base}/ko/cep/{id} — ID만 달라짐
 const DEFAULT_BASE="https://release.listeningmind.com";
@@ -281,7 +302,7 @@ function renderTable(){
   rs.sort((a,b)=>{
     if(key==="rate"){ const av=a.insp?a.p/(a.p+a.w+a.f):-1, bv=b.insp?b.p/(b.p+b.w+b.f):-1; return state.dir*(av-bv);}
     if(key==="insp") return state.dir*((a.insp?1:0)-(b.insp?1:0));
-    if(key==="name"||key==="locale") return state.dir*String(a[key]).localeCompare(String(b[key]));
+    if(key==="name"||key==="locale"||key==="date") return state.dir*String(a[key]||"").localeCompare(String(b[key]||""));
     return state.dir*(a[key]-b[key]);
   });
   document.getElementById("tbody").innerHTML = rs.map(r=>{
@@ -291,6 +312,7 @@ function renderTable(){
     return `<tr data-id="${r.id}">
       <td class="num">${r.id}</td>
       <td>${esc(r.name)} <span class="caret">›</span></td>
+      <td>${esc(r.date||'—')}</td>
       <td>${r.locale}</td>
       <td class="num">${r.n}</td>
       <td><span class="badge ${r.insp?'b-insp':'b-none'}">${r.insp?'검사됨':'미검사'}</span></td>
@@ -315,8 +337,8 @@ function openDetail(pid){
   const ic=r.p+r.w+r.f, rate=ic?(r.p/ic*100).toFixed(0):0;
   document.getElementById("mTitle").textContent = `${r.id} · ${r.name}`;
   document.getElementById("mMeta").textContent = r.insp
-    ? `${r.locale} · ${r.n}카드 · Pass ${r.p} / Warn ${r.w} / Fail ${r.f} (${rate}% pass)`
-    : `${r.locale} · ${r.n}카드 · 미검사(verdict 없음)`;
+    ? `${r.locale}${r.date?` · ${r.date}`:''} · ${r.n}카드 · Pass ${r.p} / Warn ${r.w} / Fail ${r.f} (${rate}% pass)`
+    : `${r.locale}${r.date?` · ${r.date}`:''} · ${r.n}카드 · 미검사(verdict 없음)`;
   document.getElementById("mOpen").href = cepUrl(r);
   const order={fail:0,warning:1,pass:2,none:3};
   const sorted=cards.slice().sort((a,b)=>order[a.v]-order[b.v]);
@@ -561,28 +583,29 @@ function extractFromBundle(d){
     });
     DET[p.project_id]=cards;
     const n=c.pass+c.fail+c.warning+c.none;
-    R.push({id:p.project_id,name:p.product_name,locale:p.locale,n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
+    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
   });
   return {rows:R,detail:DET,diag:DG};
 }
+
 document.getElementById("fileInput").addEventListener("change",e=>{
   const f=e.target.files[0]; if(!f) return;
   const rd=new FileReader();
   rd.onload=()=>{ try{
     const ex=extractFromBundle(JSON.parse(rd.result));
     rows=ex.rows; DETAIL=ex.detail; DIAG=ex.diag||{}; SNAPSHOT=`불러온 번들: ${f.name} · ${rows.length} 프로젝트`;
-    renderKpis(); renderTable();
+    render();
   }catch(err){ alert("JSON 파싱 실패: "+err.message); } };
   rd.readAsText(f);
 });
 
-document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value;renderTable();});
+document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value;render();});
 document.querySelectorAll("#filter button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#filter button").forEach(x=>x.classList.remove("active"));
-  b.classList.add("active"); state.filter=b.dataset.f; renderTable(); }));
+  b.classList.add("active"); state.filter=b.dataset.f; render(); }));
 document.querySelectorAll("#tbl th").forEach(th=>th.addEventListener("click",()=>{
   const k=th.dataset.k; if(!k) return;
-  if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==='name'||k==='locale')?1:-1;}
+  if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==='name'||k==='locale'||k==='date')?1:-1;}
   renderTable(); }));
 document.getElementById("themeBtn").addEventListener("click",()=>{
   const r=document.documentElement;
@@ -595,7 +618,7 @@ document.getElementById("dClose").addEventListener("click",closeDiag);
 document.getElementById("diagOverlay").addEventListener("click",e=>{ if(e.target.id==="diagOverlay") closeDiag(); });
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ closeDetail(); closeDiag(); } });
 
-renderKpis(); renderTable();
+render();
 </script>
 </body>
 </html>

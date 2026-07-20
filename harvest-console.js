@@ -15,6 +15,10 @@
   if (!tok) { console.error('❌ auth._token.local 쿠키를 못 찾음. hubble 로그인 상태에서 실행하세요.'); return; }
   const authz = tok.startsWith('Bearer ') ? tok : 'Bearer ' + tok;
   const H = { 'Authorization': authz, 'Content-Type': 'application/json', 'Accept-Language': 'ko-KR' };
+
+  // (옵션) 이 날짜(YYYY-MM-DD) 이후 생성된 프로젝트만 수집. 빈 문자열이면 전체 수집.
+  // 예: 재생성분만 걷을 때 const SINCE = '2026-07-14';
+  const SINCE = '';
   const api = (p) => fetch(p, { headers: H, credentials: 'include' })
     .then(r => r.ok ? r.json() : Promise.reject(`${r.status} ${p}`));
 
@@ -37,8 +41,13 @@
       const d = await api(`/api/labs/cep_finder/project/${r.id}`);
       const detail = d.result;
       if (!detail?.cep_cards?.length) { skipped.push(`${r.id} ${r.product_name} (미완료/카드없음)`); continue; }
+      // (옵션) created_time 기준 날짜 필터 — SINCE 이후 생성분만 수집
+      if (SINCE) {
+        const ct = (detail.created_time || '').slice(0, 10);   // 'YYYY-MM-DD'
+        if (ct && ct < SINCE) { skipped.push(`${r.id} ${r.product_name} (${ct} < ${SINCE} 이전)`); continue; }
+      }
       out.push(detail);
-      console.log(`✓ ${r.id} ${r.product_name} — ${detail.cep_cards.length} cards`);
+      console.log(`✓ ${r.id} ${r.product_name} — ${detail.cep_cards.length} cards${detail.created_time?` (${detail.created_time.slice(0,10)})`:''}`);
     } catch (e) {
       skipped.push(`${r.id} ${r.product_name} (에러: ${e})`);
       console.warn(`✗ ${r.id} ${r.product_name}: ${e}`);
@@ -54,7 +63,7 @@
   const blob = new Blob([JSON.stringify({ harvested_projects: out.length, total_cards: totalCards, projects: out }, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `cep_bundle_${out.length}proj_${totalCards}cards.json`;
+  a.download = `cep_bundle_${out.length}proj_${totalCards}cards${SINCE?`_since${SINCE}`:''}.json`;
   document.body.appendChild(a); a.click(); a.remove();
   console.log('⬇️  번들 다운로드 시작. 이 파일을 QA 단계에 투입하세요.');
 })();
