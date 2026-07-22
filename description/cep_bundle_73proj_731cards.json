@@ -1,0 +1,2945 @@
+{
+  "harvested_projects": 1,
+  "total_cards": 10,
+  "projects": [
+    {
+      "project_id": 1394,
+      "product_name": "로봇청소기",
+      "locale": "KR",
+      "status": "completed",
+      "basic_info": {
+        "phase": "basic_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기\n\n## 1. 카테고리 개요 및 핵심 선택 기준\n1. **역할 구분**: 로봇청소기는 “틈새/상시 관리(일상 청소)”에 강하고, **강력 흡입력으로 수동 진공을 완전히 대체하긴 어렵다**는 평가가 많습니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n2. **내비게이션 방식**: 최신 제품은 보통 **LiDAR(레이저) + 카메라 보조** 구조로 장애물 인식/경로 최적화 성능을 끌어올립니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n3. **흡입력(청소 성능의 1축)**: 상위 스펙은 **18,000Pa 이상(일부는 더 높음)**이 언급되며, 중급은 대체로 **6,000–9,000Pa** 범위를 기대하는 식의 가이드가 있습니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n4. **물걸레 포함 여부**: “진공+물걸레”는 편의성이 크지만, 실제 바닥 오염/카펫/물걸레 방식(패드 형태, 패드 세척·건조, 물 공급)이 결과를 좌우합니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n5. **먼지 비움(오토 비움) 유무**: 더 자주 청소를 돌릴수록 **자동 먼지 비움 도크**가 유지관리 부담을 크게 줄입니다. (예: 모델에 따라 클린베이스가 “백 방식” 등으로 구성) ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n6. **카펫/털/장애물 대응**: 반려동물 털, 카펫 비중, 문턱/러그 존재에 따라 **브러시 구조·카펫 부스트·장애물 회피**가 중요합니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n7. **스마트홈/앱 안정성**: 지역·모델에 따라 앱이 중요(지도 저장, 구역 지정, 스케줄링). 일부 평에서는 **앱이 간헐적으로 버그** 언급이 있습니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n8. **유지비용(소모품)**: 물걸레 패드/백/필터 등 **정기 교체 비용**과 “도크 사용 방식”을 함께 봐야 총비용이 예측 가능합니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n\n## 2. 추천 제품(3-5)\n1. **Roborock S8 MaxV Ultra(프리미엄 라인 예시)**  \n   1) 공식 스펙에서 **흡입력 10,000Pa**를 강조합니다. ([kr.roborock.com](https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai))  \n   2) 카펫/머리카락 대응 관련 시스템(예: 카펫 부스트, 머리카락 흡입 관련 수치)을 함께 안내합니다. ([kr.roborock.com](https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai))  \n2. **Roborock S8 계열 vs iRobot Roomba j7+ 비교 참고(중상급 선택용)**  \n   1) RTINGS 비교 페이지처럼, **모델 간 성능·장단점 비교**를 한 번에 확인하기 좋습니다. ([rtings.com](https://www.rtings.com/robot-vacuum/tools/compare/roborock-s7-irobot-roomba-j7-j7/22453/28187?utm_source=openai))  \n3. **iRobot Roomba Plus 505 Combo(로봇청소기+물걸레 하이브리드 예시)**  \n   1) Tom’s Guide에서 “전반적으로 좋은 선택” 성격으로 소개합니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n   2) 문서에 **지도 기능, 스마트홈 호환(예: Alexa/Google Assistant)**, **먼지통 용량(최대 75일 언급)** 같은 스펙이 표기됩니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n   3) 다만 같은 자료에서 **앱 글리치(간헐 버그)** 같은 “이유 to avoid”도 함께 언급합니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n4. **TechRadar 추천 라인업 내 제품들(가성비~프리미엄 폭넓게 탐색용)**  \n   1) TechRadar는 2026년 기준으로 **예산/중급/프리미엄 구간별 후보**들을 묶어 설명합니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n   2) 예시로 **Samsung Bespoke Jet Bot Combo AI**, **Eufy Omni S1 Pro**, **Roborock Saros 10**, **Q7 M5**, **Eureka J20**, **(기타)**가 본문에 등장합니다(각 제품의 상세 추천 이유는 해당 리뷰 참고). ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n\n## 3. 기능/스펙 비교 포인트(무엇을 어떻게 볼지)\n1. **흡입력(Pa)**: 예산이 올라갈수록 상위 제품은 **Pa 상향**이 일반적입니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n2. **내비게이션(지도 정확도/구역 설정)**: 지도 생성 + 카메라/레이저 보조 여부가 **“노고존/특정 방 지정”의 실제 편의성**으로 이어집니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n3. **장애물 회피/인식**: 음식그릇/반려동물 주변 환경처럼 “실수 비용”이 큰 집일수록 중요합니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n4. **먼지 자동 비움**: 먼지통이 자주 차는 환경(털/먼지 많은 집)에서는 **자동 비움 도크**가 체감 차이가 큽니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n5. **물걸레 방식**: 물걸레는 “단순 문지름”보다 **패드 형태, 물 공급/세척, 건조 유무**가 결과에 영향을 줍니다(모델별 차 큼). ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n6. **카펫 대응**: 카펫 침투/브러시, 카펫 관련 기능(부스트/흡입 최적화)이 핵심 체크포인트입니다. ([kr.roborock.com](https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai))  \n7. **앱 안정성/호환성**: “지도는 되는데 앱이 불안정”이면 사용성이 떨어질 수 있습니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n\n## 4. 가격대(티어) 가이드\n1. **예산(저가) 구간**: TechRadar 기준으로 **$500 미만 / (환산은 시점·환율 따라 변동)**의 가이드가 있습니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n2. **중급 구간**: TechRadar 기준으로 **$400–$800** 밴드가 언급됩니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n3. **프리미엄 구간**: **$800+**로 제시됩니다. ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n4. **가격이 오르는 이유(일반 경향)**:  \n   1) 물걸레 기능 + 자체 유지(물 채움/패드 세척 등)  \n   2) 오토 비움 도크  \n   3) 고급 내비게이션/인식 성능  \n   4) 모델/시리즈에 따른 프리미엄 설계 ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n5. **주의(국내 실구매가)**: 한국 판매가/프로모션/구성품(도크 포함 여부 등)은 변동이 커서, 아래는 **[unverified]**로만 참고하세요.  \n   1) 예산형: 대략 **30만~70만원대 [unverified]**  \n   2) 중급: 대략 **70만~150만원대 [unverified]**  \n   3) 프리미엄: 대략 **150만~300만원대 [unverified]**  \n\n## 5. 용도별 구매 추천(상황별로 고르는 법)\n1. **원룸/자주 돌릴 거면(유지 편의 최우선)**  \n   1) 자동 먼지 비움 + 지도/구역 설정이 되는 중급 이상을 우선 고려 ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n2. **반려동물 털이 많으면(청소 주기+흡입력 중요)**  \n   1) 흡입력 상향 + 카펫/털 대응(부스트 등) 확인 ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n3. **물걸레까지 “귀찮음 최소화”가 목표면(하이브리드/유지 기능 확인)**  \n   1) 물걸레 성능은 물론, **패드 유지(세척/건조/물 관리)**까지 있는 구성을 우선 ([techradar.com](https://www.techradar.com/home/robot-vacuums/best-robot-vacuum))  \n4. **장애물 많은 집(문턱/가구/그릇/전선 주변)**  \n   1) 내비게이션 + 장애물 인식/회피 성능 중심으로 비교 ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))  \n5. **스마트홈 연동이 중요하면(앱/호환성 우선 점검)**  \n   1) Alexa/Google 등 연동, 앱의 지도 기능/안정성 확인 ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas))"
+        },
+        "web_sources": null,
+        "citations": [
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra - 청소의 한계를 넘어서다 | Roborock South Korea",
+            "hostname": ""
+          },
+          {
+            "url": "https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra - 청소의 한계를 넘어서다 | Roborock South Korea",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.rtings.com/robot-vacuum/tools/compare/roborock-s7-irobot-roomba-j7-j7/22453/28187?utm_source=openai",
+            "title": "Roborock S7 vs iRobot Roomba j7+: Which Robot Vacuum Is Better? - RTINGS.com",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://kr.roborock.com/pages/roborock-s8-maxv-ultra?utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra - 청소의 한계를 넘어서다 | Roborock South Korea",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "Best robot vacuum 2026 | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "The best Roombas in 2026 | Tom's Guide",
+            "hostname": ""
+          }
+        ]
+      },
+      "product_anchors": {
+        "category": [
+          "가정용 로봇청소기",
+          "바닥 청소 기기",
+          "스마트 청소 가전"
+        ]
+      },
+      "thinking_process": [
+        {
+          "body": "**Planning web research for robotic vacuum triggers****Organizing multiple web searches for robotic vacuum insights**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"로봇청소기 필요해진 계기 클리앙\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Refining search queries**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:clien.net 로봇청소기 필요해진 계기\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Refining search strategy**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"로봇청소기 필요 계기 더쿠\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Searching with refined queries**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"입주\" \"사야\"\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Gathering community-driven purchase triggers****Searching specific health-related triggers**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"허리\" \"사기\"\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Reviewing entry trigger sources**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Identifying initial trigger moments****Searching for explicit purchase indicators**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"털\" \"샀\" \"이유\" \"바닥\"\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Gathering consumer review insights**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Identifying product entry triggers****Exploring community threads for entry moments**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Filtering additional user reviews****Clarifying vacuum buying timing**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"이사\" \"청소\" \"필요\" \"후기\"\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Gathering entry moments from diverse reviews****Reviewing initial motivations across sources**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Analyzing entry moment evidence****Organizing diverse entry moments**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "I’m grouping various situations that trigger interest in the product before purchase, making sure to base them on actual consumer statements and not just recommendations. I’ll cover factors like physical pain, busy schedules, child care, allergies, living spaces, and moving, keeping the context precise and grounded in source material.**Detailing supported entry moments with citations**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "I’m organizing each entry moment into clear sections, pairing them with relevant real search phrases and citations to back each point. This will ground the analysis in genuine consumer voices while including keyword hints per instructions to meet clarity and source-based accuracy requirements.",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Identifying situational noise concerns****Organizing usage scenarios and entry moments****Structuring detailed usage narratives**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "I’m sorting complex usage stories into clear sections with distinct paragraphs for pre-use worries, decisions, and post-use satisfaction, drawing from multiple sources while keeping stages separate and well-labeled.**Avoiding source repetition**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"밤이나 새벽\" 로봇청소기 돌려놓고\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Identifying community concerns about vacuum timing**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Organizing content sources across sections****Detailing citations and section content**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "I’m organizing detailed citations with exact lines and planning 1-3 paragraphs per section, making sure to separate entries and satisfaction clearly while covering user concerns like health, noise, and timing.**Preparing final write-up with citations**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        }
+      ],
+      "research": {
+        "phase": "product_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기가 “처음 필요해진” 순간들: 허리·육아·시간·층간소음·이사 앞에서 생기는 결정\n\n## 1. 허리 통증 때문에 청소를 미루게 될 때, 로봇청소기부터 떠오름\n1. 예전에는 오늘도 청소해야 하는데, 허리 아픈데 내일 할까 하는 식으로 계속 미루게 되면서 청소 스트레스가 쌓였다고 해요. (참고 검색어: 로봇청소기 허리 아픈데 내일 할까) ([enuri.com](https://www.enuri.com/detail.jsp?modelno=118440457))  \n2. 허리 통증이 시작되면서 청소기 밀고 물걸레질 하는 작업이 부담이 돼서, 몇주 전부터 로봇청소기 구입을 생각하고 기능/스펙 차이까지 찾아보며 고민했다고 해요. (참고 검색어: 로봇청소기 허리 통증 시작 청소기 밀고 물걸레) ([11st.co.kr](https://www.11st.co.kr/products/2672464505))  \n3. 실제로는 침대 밑/쇼파 밑처럼 허리 구부려서 해도 꼼꼼히 안 되는 부분을 로봇이 대신 처리해주고, 밤이나 새벽에 돌려놓고 자도 될 정도로 소음이 괜찮았다는 식으로 만족 후기가 이어져요. (참고 검색어: 로봇청소기 밤 새벽 소음 괜찮음 침대 밑 쇼파 밑) ([11st.co.kr](https://www.11st.co.kr/products/2672464505))  \n\n## 2. 퇴근 후 청소할 여력이 없을 때, “자동으로 돌리는 집”이 필요해짐\n1. 맞벌이 부부 같은 상황에서 퇴근하고 와서 청소까지 할 여력이 없는 분들에게 로봇청소기가 추천될 만큼, 청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기로 드러나요. (참고 검색어: 로봇청소기 맞벌이 퇴근 후 청소 여력) ([shakej.tistory.com](https://shakej.tistory.com/entry/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4-T50-PRO-OMNI-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EB%A5%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8B%A4-%ED%9B%84%ED%9A%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4))  \n2. 청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요. (참고 검색어: 로봇청소기 청소 10-15분 시간 쌓이면, 몸 상태 다치거나 안 좋을 때) ([brunch.co.kr](https://brunch.co.kr/%40%407Qji/16))  \n3. 그래서 “맞벌이거나 체력을 아끼고 싶다면 로봇청소기를 추천”하는 식의 결론이 등장합니다. (참고 검색어: 로봇청소기 맞벌이 체력 아끼고 싶다면 추천) ([brunch.co.kr](https://brunch.co.kr/%40%407Qji/16))  \n\n## 3. 기어다니는 아기 이후, 바닥 청결이 ‘건강 이슈’가 되면서 필요해짐\n1. 아이가 생기기 전에는 로봇청소기를 그냥 편의 가전처럼 보다가, 기어다니기 시작하면서 바닥 청결이 단순 취향이 아니라 건강 문제로 느껴졌다고 해요. 머리카락 한 올, 먼지 하나가 아기 손에서 입으로 이어지는 상황을 하루에도 몇 번 목격했다고 합니다. (참고 검색어: 로봇청소기 기어다니는 아기 건강 문제 머리카락 먼지) ([ai-parenting-lab.tistory.com](https://ai-parenting-lab.tistory.com/42))  \n2. 그런데 수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않아서, 자동 먼지비움 같은 관리 부담을 줄여주는 기능을 가진 로봇청소기가 급부상했다는 흐름으로 이어져요. (참고 검색어: 로봇청소기 수유 재우고 달래서 청소기 돌릴 시간 없음 자동 먼지비움) ([ai-parenting-lab.tistory.com](https://ai-parenting-lab.tistory.com/42))  \n\n## 4. 침구 위생(먼지·살균·진드기) 고민이 커질 때, “침구용”까지 생각하게 됨\n1. 평소 침구 위생 관리에 대한 고민이 많아서, 여러 제품을 비교하다가 에브리봇 침구 로봇청소기 X1을 발견하고 신중히 주문했고, 가격 때문에 망설였지만 먼지 흡입력과 살균 기능에 대한 기대감으로 구매를 결정했다고 해요. (참고 검색어: 에브리봇 침구 로봇청소기 먼지 흡입력 살균 기능 기대감 구매 결정) ([workdiary.tistory.com](https://workdiary.tistory.com/137))  \n2. 또 알레르기 비염이나 천식 등 호흡기 질환으로 힘드신 분, 깨끗하고 쾌적한 수면 환경을 중요하게 생각하는 분들이 특히 유용하다고 정리돼 있어요. (참고 검색어: 침구 로봇청소기 알레르기 비염 천식 수면 환경) ([workdiary.tistory.com](https://workdiary.tistory.com/137))  \n3. 별도로 자동 먼지 비움 기술을 소개하는 글에서는 알레르기가 있는 분들이나 먼지 날림에 민감한 분들에게 먼지와 직접 접촉할 필요가 없는 위생적인 청소 환경을 준다고도 설명합니다. (참고 검색어: 로봇청소기 자동 먼지 비움 알레르기 직접 접촉 방지) ([robot-vacuum-lab.blogspot.com](https://robot-vacuum-lab.blogspot.com/2026/02/blog-post_895.html))  \n\n## 5. 층간소음/이웃 눈치 때문에 “언제 돌릴지”가 고민되면서 로봇청소기가 필요해짐\n1. 원룸·오피스텔 상황에서 층간소음이 최대 고민이라 청소하고 싶어도 이웃 눈치 때문에 망설이게 되고, 그래서 오전 9시~12시, 오후 2시~5시 같은 시간대 전략을 세운다는 식으로 설명돼요. 점심시간과 저녁 6시 이후는 피하라고도 합니다. (참고 검색어: 로봇청소기 층간소음 이웃 눈치 오전 9시 12시 오후 2시 5시) ([idea5561.tistory.com](https://idea5561.tistory.com/1096))  \n2. 커뮤니티 글에서도 저녁 7시 30~40분쯤부터 로봇청소기를 돌리는데 아랫집에서 경비실 통해 항의가 들어왔다고 말하면서, 그럼에도 “이 시간에도 청소기를 못 돌리면 언제 돌려야 하나요?” 같은 고민이 드러나요. (참고 검색어: 블라인드 로봇청소기 저녁 7시 30~40분 항의 언제 돌려야) ([teamblind.com](https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ))  \n3. 같은 글에서 저녁 8시에 로봇청소기 돌리는 걸 층간소음상 매너가 없는 행동으로 보는 의견과, 대신 퇴근 후/대체 시간(예: 10시)으로 조정하려는 댓글 흐름이 같이 보입니다. (참고 검색어: 저녁 8시 로봇청소기 층간소음 매너, 10시에 돌리자) ([teamblind.com](https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ))  \n\n## 6. 이사/혼수 직후 “이게 정말 필요해?”에서 “아침·퇴근 후 버튼 한 번”으로 전환됨\n1. 결혼 전에는 로봇청소기 정말 필요해?라고 의심한 저였는데, 이사 첫날부터 집정리를 도와줬다는 경험으로 이어진다고 해요. (참고 검색어: 결혼 전 로봇청소기 필요해 의심 이사 첫날 집정리) ([style.check.save-money.co.kr](https://style.check.save-money.co.kr/style/8197/))  \n2. 사용 리듬도 아침에 외출 전 버튼 한 번, 퇴근 후 깨끗해진 집을 보는 식으로 연결되면서, 청소 시간이 줄고 맞벌이 부부에게 필수품처럼 느껴졌다는 흐름이 나옵니다. (참고 검색어: 로봇청소기 아침 외출 전 버튼 한번 퇴근 후 깨끗해진 집) ([style.check.save-money.co.kr](https://style.check.save-money.co.kr/style/8197/))",
+          "product_research_sections": [
+            {
+              "section_number": 1,
+              "title": "허리 통증 때문에 청소를 미루게 될 때, 로봇청소기부터 떠오름",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "예전에는 오늘도 청소해야 하는데, 허리 아픈데 내일 할까 하는 식으로 계속 미루게 되면서 청소 스트레스가 쌓였다고 해요. (참고 검색어: 로봇청소기 허리 아픈데 내일 할까)",
+                  "url": "https://www.enuri.com/detail.jsp?modelno=118440457",
+                  "url_title": "LG전자 코드제로 R5 R585WKA1 [일반구매] - 에누리 가격비교",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "허리 통증이 시작되면서 청소기 밀고 물걸레질 하는 작업이 부담이 돼서, 몇주 전부터 로봇청소기 구입을 생각하고 기능/스펙 차이까지 찾아보며 고민했다고 해요. (참고 검색어: 로봇청소기 허리 통증 시작 청소기 밀고 물걸레)",
+                  "url": "https://www.11st.co.kr/products/2672464505",
+                  "url_title": "에브리봇 물걸레 로봇청소기 3i\n    ",
+                  "url_content": null
+                },
+                {
+                  "index": 2,
+                  "content": "실제로는 침대 밑/쇼파 밑처럼 허리 구부려서 해도 꼼꼼히 안 되는 부분을 로봇이 대신 처리해주고, 밤이나 새벽에 돌려놓고 자도 될 정도로 소음이 괜찮았다는 식으로 만족 후기가 이어져요. (참고 검색어: 로봇청소기 밤 새벽 소음 괜찮음 침대 밑 쇼파 밑)",
+                  "url": "https://www.11st.co.kr/products/2672464505",
+                  "url_title": "에브리봇 물걸레 로봇청소기 3i\n    ",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 2,
+              "title": "퇴근 후 청소할 여력이 없을 때, “자동으로 돌리는 집”이 필요해짐",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "맞벌이 부부 같은 상황에서 퇴근하고 와서 청소까지 할 여력이 없는 분들에게 로봇청소기가 추천될 만큼, 청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기로 드러나요. (참고 검색어: 로봇청소기 맞벌이 퇴근 후 청소 여력)",
+                  "url": "https://shakej.tistory.com/entry/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4-T50-PRO-OMNI-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EB%A5%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8B%A4-%ED%9B%84%ED%9A%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4",
+                  "url_title": "에코백스 T50 PRO OMNI 써보고 다른 로봇청소기 다 후회했습니다",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요. (참고 검색어: 로봇청소기 청소 10-15분 시간 쌓이면, 몸 상태 다치거나 안 좋을 때)",
+                  "url": "https://brunch.co.kr/%40%407Qji/16",
+                  "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)",
+                  "url_content": null
+                },
+                {
+                  "index": 2,
+                  "content": "그래서 “맞벌이거나 체력을 아끼고 싶다면 로봇청소기를 추천”하는 식의 결론이 등장합니다. (참고 검색어: 로봇청소기 맞벌이 체력 아끼고 싶다면 추천)",
+                  "url": "https://brunch.co.kr/%40%407Qji/16",
+                  "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 3,
+              "title": "기어다니는 아기 이후, 바닥 청결이 ‘건강 이슈’가 되면서 필요해짐",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "아이가 생기기 전에는 로봇청소기를 그냥 편의 가전처럼 보다가, 기어다니기 시작하면서 바닥 청결이 단순 취향이 아니라 건강 문제로 느껴졌다고 해요. 머리카락 한 올, 먼지 하나가 아기 손에서 입으로 이어지는 상황을 하루에도 몇 번 목격했다고 합니다. (참고 검색어: 로봇청소기 기어다니는 아기 건강 문제 머리카락 먼지)",
+                  "url": "https://ai-parenting-lab.tistory.com/42",
+                  "url_title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "그런데 수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않아서, 자동 먼지비움 같은 관리 부담을 줄여주는 기능을 가진 로봇청소기가 급부상했다는 흐름으로 이어져요. (참고 검색어: 로봇청소기 수유 재우고 달래서 청소기 돌릴 시간 없음 자동 먼지비움)",
+                  "url": "https://ai-parenting-lab.tistory.com/42",
+                  "url_title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 4,
+              "title": "침구 위생(먼지·살균·진드기) 고민이 커질 때, “침구용”까지 생각하게 됨",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "평소 침구 위생 관리에 대한 고민이 많아서, 여러 제품을 비교하다가 에브리봇 침구 로봇청소기 X1을 발견하고 신중히 주문했고, 가격 때문에 망설였지만 먼지 흡입력과 살균 기능에 대한 기대감으로 구매를 결정했다고 해요. (참고 검색어: 에브리봇 침구 로봇청소기 먼지 흡입력 살균 기능 기대감 구매 결정)",
+                  "url": "https://workdiary.tistory.com/137",
+                  "url_title": "에브리봇 침구 로봇청소기 X1 사용해보니 먼지 한 톨 없네요",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "또 알레르기 비염이나 천식 등 호흡기 질환으로 힘드신 분, 깨끗하고 쾌적한 수면 환경을 중요하게 생각하는 분들이 특히 유용하다고 정리돼 있어요. (참고 검색어: 침구 로봇청소기 알레르기 비염 천식 수면 환경)",
+                  "url": "https://workdiary.tistory.com/137",
+                  "url_title": "에브리봇 침구 로봇청소기 X1 사용해보니 먼지 한 톨 없네요",
+                  "url_content": null
+                },
+                {
+                  "index": 2,
+                  "content": "별도로 자동 먼지 비움 기술을 소개하는 글에서는 알레르기가 있는 분들이나 먼지 날림에 민감한 분들에게 먼지와 직접 접촉할 필요가 없는 위생적인 청소 환경을 준다고도 설명합니다. (참고 검색어: 로봇청소기 자동 먼지 비움 알레르기 직접 접촉 방지)",
+                  "url": "https://robot-vacuum-lab.blogspot.com/2026/02/blog-post_895.html",
+                  "url_title": "로봇청소기 먼지통 자동 비움 기술",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 5,
+              "title": "층간소음/이웃 눈치 때문에 “언제 돌릴지”가 고민되면서 로봇청소기가 필요해짐",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "원룸·오피스텔 상황에서 층간소음이 최대 고민이라 청소하고 싶어도 이웃 눈치 때문에 망설이게 되고, 그래서 오전 9시~12시, 오후 2시~5시 같은 시간대 전략을 세운다는 식으로 설명돼요. 점심시간과 저녁 6시 이후는 피하라고도 합니다. (참고 검색어: 로봇청소기 층간소음 이웃 눈치 오전 9시 12시 오후 2시 5시)",
+                  "url": "https://idea5561.tistory.com/1096",
+                  "url_title": "원룸 로봇청소기 어떻게 고를까? 15평 이하 공간 최적화 청소기 조합",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "커뮤니티 글에서도 저녁 7시 30~40분쯤부터 로봇청소기를 돌리는데 아랫집에서 경비실 통해 항의가 들어왔다고 말하면서, 그럼에도 “이 시간에도 청소기를 못 돌리면 언제 돌려야 하나요?” 같은 고민이 드러나요. (참고 검색어: 블라인드 로봇청소기 저녁 7시 30~40분 항의 언제 돌려야)",
+                  "url": "https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ",
+                  "url_title": "블라인드 | 블라블라: 저녁 8시에 청소기 돌리면 노매너 인가요? (층간소음)",
+                  "url_content": null
+                },
+                {
+                  "index": 2,
+                  "content": "같은 글에서 저녁 8시에 로봇청소기 돌리는 걸 층간소음상 매너가 없는 행동으로 보는 의견과, 대신 퇴근 후/대체 시간(예: 10시)으로 조정하려는 댓글 흐름이 같이 보입니다. (참고 검색어: 저녁 8시 로봇청소기 층간소음 매너, 10시에 돌리자)",
+                  "url": "https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ",
+                  "url_title": "블라인드 | 블라블라: 저녁 8시에 청소기 돌리면 노매너 인가요? (층간소음)",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 6,
+              "title": "이사/혼수 직후 “이게 정말 필요해?”에서 “아침·퇴근 후 버튼 한 번”으로 전환됨",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "결혼 전에는 로봇청소기 정말 필요해?라고 의심한 저였는데, 이사 첫날부터 집정리를 도와줬다는 경험으로 이어진다고 해요. (참고 검색어: 결혼 전 로봇청소기 필요해 의심 이사 첫날 집정리)",
+                  "url": "https://style.check.save-money.co.kr/style/8197/",
+                  "url_title": "신혼가전 3대 이모님, 로보락 식세기 건조기 현실 사용 후기와 똑똑한 구매 팁!",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "사용 리듬도 아침에 외출 전 버튼 한 번, 퇴근 후 깨끗해진 집을 보는 식으로 연결되면서, 청소 시간이 줄고 맞벌이 부부에게 필수품처럼 느껴졌다는 흐름이 나옵니다. (참고 검색어: 로봇청소기 아침 외출 전 버튼 한번 퇴근 후 깨끗해진 집)",
+                  "url": "https://style.check.save-money.co.kr/style/8197/",
+                  "url_title": "신혼가전 3대 이모님, 로보락 식세기 건조기 현실 사용 후기와 똑똑한 구매 팁!",
+                  "url_content": null
+                }
+              ]
+            }
+          ]
+        },
+        "web_sources": null,
+        "citations": [
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=118440457",
+            "title": "LG전자 코드제로 R5 R585WKA1 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.11st.co.kr/products/2672464505",
+            "title": "에브리봇 물걸레 로봇청소기 3i\n    ",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.11st.co.kr/products/2672464505",
+            "title": "에브리봇 물걸레 로봇청소기 3i\n    ",
+            "hostname": ""
+          },
+          {
+            "url": "https://shakej.tistory.com/entry/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4-T50-PRO-OMNI-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EB%A5%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8B%A4-%ED%9B%84%ED%9A%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4",
+            "title": "에코백스 T50 PRO OMNI 써보고 다른 로봇청소기 다 후회했습니다",
+            "hostname": ""
+          },
+          {
+            "url": "https://brunch.co.kr/%40%407Qji/16",
+            "title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)",
+            "hostname": ""
+          },
+          {
+            "url": "https://brunch.co.kr/%40%407Qji/16",
+            "title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)",
+            "hostname": ""
+          },
+          {
+            "url": "https://ai-parenting-lab.tistory.com/42",
+            "title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만",
+            "hostname": ""
+          },
+          {
+            "url": "https://ai-parenting-lab.tistory.com/42",
+            "title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만",
+            "hostname": ""
+          },
+          {
+            "url": "https://workdiary.tistory.com/137",
+            "title": "에브리봇 침구 로봇청소기 X1 사용해보니 먼지 한 톨 없네요",
+            "hostname": ""
+          },
+          {
+            "url": "https://workdiary.tistory.com/137",
+            "title": "에브리봇 침구 로봇청소기 X1 사용해보니 먼지 한 톨 없네요",
+            "hostname": ""
+          },
+          {
+            "url": "https://robot-vacuum-lab.blogspot.com/2026/02/blog-post_895.html",
+            "title": "로봇청소기 먼지통 자동 비움 기술",
+            "hostname": ""
+          },
+          {
+            "url": "https://idea5561.tistory.com/1096",
+            "title": "원룸 로봇청소기 어떻게 고를까? 15평 이하 공간 최적화 청소기 조합",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ",
+            "title": "블라인드 | 블라블라: 저녁 8시에 청소기 돌리면 노매너 인가요? (층간소음)",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.teamblind.com/kr/post/%EC%A0%80%EB%85%81-8%EC%8B%9C%EC%97%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8F%8C%EB%A6%AC%EB%A9%B4-%EB%85%B8%EB%A7%A4%EB%84%88-%EC%9D%B8%EA%B0%80%EC%9A%94-%EC%B8%B5%EA%B0%84%EC%86%8C%EC%9D%8C-60qQzMUJ",
+            "title": "블라인드 | 블라블라: 저녁 8시에 청소기 돌리면 노매너 인가요? (층간소음)",
+            "hostname": ""
+          },
+          {
+            "url": "https://style.check.save-money.co.kr/style/8197/",
+            "title": "신혼가전 3대 이모님, 로보락 식세기 건조기 현실 사용 후기와 똑똑한 구매 팁!",
+            "hostname": ""
+          },
+          {
+            "url": "https://style.check.save-money.co.kr/style/8197/",
+            "title": "신혼가전 3대 이모님, 로보락 식세기 건조기 현실 사용 후기와 똑똑한 구매 팁!",
+            "hostname": ""
+          }
+        ]
+      },
+      "cep_cards": [
+        {
+          "id": 16706,
+          "sequence": 1,
+          "cep": "퇴근 후 청소할 여력이 전혀 없을 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 자동 청소 예약/스케줄링",
+            "자동 먼지 비움 도크",
+            "내비게이션(레이저 LiDAR+카메라 보조) 기반 경로 최적화"
+          ],
+          "keywords_volume_total": {
+            "kr": 14876,
+            "kr_raw": 14880
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "맞벌이 부부 같은 상황에서 퇴근하고 와서 청소까지 할 여력이 없는 분들에게 로봇청소기가 추천될 만큼, 청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기로 드러나요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://shakej.tistory.com/entry/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4-T50-PRO-OMNI-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EB%A5%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8B%A4-%ED%9B%84%ED%9A%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4",
+                "url_title": "에코백스 T50 PRO OMNI 써보고 다른 로봇청소기 다 후회했습니다"
+              },
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%407Qji/16",
+                "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        },
+        {
+          "id": 16707,
+          "sequence": 2,
+          "cep": "몸이 다치거나 안 좋을 때 청소가 더 버거울 때",
+          "nano_intent": "",
+          "kbf": [
+            "원터치(앱) 조작을 통한 비대면 청소 시작",
+            "자동 먼지 비움 도크",
+            "구역 지정(지도 기반)으로 불필요한 재청소 최소화"
+          ],
+          "keywords_volume_total": {
+            "kr": 14876,
+            "kr_raw": 16992
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%407Qji/16",
+                "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16710,
+          "sequence": 3,
+          "cep": "호흡기 질환 있어 깨끗한 수면 환경이 더 필요해질 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 자동 비움(클린베이스/도크 방식)",
+            "필터 등 소모품 교체 비용·주기 확인 가능한 구조",
+            "자동 청소 후 소모품 관리(패드/필터 등) 용이한 구성"
+          ],
+          "keywords_volume_total": {
+            "kr": 4740,
+            "kr_raw": 8592
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          }
+        },
+        {
+          "id": 16709,
+          "sequence": 4,
+          "cep": "아기 기어다닌 뒤 바닥 먼지·머리카락이 걱정될 때",
+          "nano_intent": "",
+          "kbf": [
+            "높은 흡입력(Pa 수치 상향 스펙)",
+            "카펫/털 대응용 브러시 또는 카펫 부스트 기능",
+            "장애물 인식 기반 주변(반려물/소품) 회피"
+          ],
+          "keywords_volume_total": {
+            "kr": 690,
+            "kr_raw": 799
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          }
+        },
+        {
+          "id": 16712,
+          "sequence": 5,
+          "cep": "층간소음 걱정돼 청소 시간대를 따로 정해야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 청소 예약/스케줄링",
+            "구역 지정(지도 기반)으로 특정 시간대 최소 동작",
+            "자동 복귀 및 청소 구간 연속 실행 지원(모델의 기본 충전/재개 방식)"
+          ],
+          "keywords_volume_total": {
+            "kr": 449,
+            "kr_raw": 449
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          }
+        },
+        {
+          "id": 16705,
+          "sequence": 6,
+          "cep": "허리 구부려도 침대·쇼파 밑이 덜 깨끗할 때",
+          "nano_intent": "",
+          "kbf": [
+            "낮은 본체 높이(침대·쇼파 하부 통과 가능한 구조)",
+            "장애물 회피/인식 기반 회피 경로 탐색",
+            "지도 생성 기반 구역 청소"
+          ],
+          "keywords_volume_total": {
+            "kr": 295,
+            "kr_raw": 2459
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 2,
+                "quote": "실제로는 침대 밑/쇼파 밑처럼 허리 구부려서 해도 꼼꼼히 안 되는 부분을 로봇이 대신 처리해주고, 밤이나 새벽에 돌려놓고 자도 될 정도로 소음이 괜찮았다는 식으로 만족 후기가 이어져요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://www.11st.co.kr/products/2672464505",
+                "url_title": "에브리봇 물걸레 로봇청소기 3i\n    "
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16711,
+          "sequence": 7,
+          "cep": "침구 위생이 계속 신경 쓰여 더 꼼꼼히 관리가 필요할 때",
+          "nano_intent": "",
+          "kbf": [
+            "침구 주변 동선까지 커버 가능한 구역 지정(지도 기반)",
+            "물걸레 하이브리드(물 공급/패드 방식) 구성",
+            "지도 저장 기반 반복 청소(구역 재선택/재청소)"
+          ],
+          "keywords_volume_total": {
+            "kr": 215,
+            "kr_raw": 567
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          }
+        },
+        {
+          "id": 16704,
+          "sequence": 8,
+          "cep": "허리 아픈데 청소를 계속 미루는 때",
+          "nano_intent": "",
+          "kbf": [
+            "자동 먼지 비움 도크",
+            "앱 기반 청소 예약/스케줄링",
+            "구역 지정(지도 기반) 기능"
+          ],
+          "keywords_volume_total": {
+            "kr": 4,
+            "kr_raw": 46
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "예전에는 오늘도 청소해야 하는데, 허리 아픈데 내일 할까 하는 식으로 계속 미루게 되면서 청소 스트레스가 쌓였다고 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://www.enuri.com/detail.jsp?modelno=118440457",
+                "url_title": "LG전자 코드제로 R5 R585WKA1 [일반구매] - 에누리 가격비교"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16708,
+          "sequence": 9,
+          "cep": "수유·재우고 달래느라 청소 돌릴 틈이 없을 때",
+          "nano_intent": "",
+          "kbf": [
+            "작동/청소 예약 기능",
+            "자동 먼지 비움 도크",
+            "장애물 인식/회피 기반 안전 주행"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 1,
+                "quote": "그런데 수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않아서, 자동 먼지비움 같은 관리 부담을 줄여주는 기능을 가진 로봇청소기가 급부상했다는 흐름으로 이어져요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://ai-parenting-lab.tistory.com/42",
+                "url_title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16713,
+          "sequence": 10,
+          "cep": "항의 들은 뒤에도 다시 돌릴 타이밍을 고민할 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱에서 지도/구역을 기반으로 재청소 설정",
+            "자동 먼지 비움 도크",
+            "구역 지정 및 경로 최적화(레이저 LiDAR+카메라 보조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 10
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          }
+        }
+      ],
+      "cep_card_details": [
+        {
+          "id": 16706,
+          "sequence": 1,
+          "cep": "퇴근 후 청소할 여력이 전혀 없을 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 자동 청소 예약/스케줄링",
+            "자동 먼지 비움 도크",
+            "내비게이션(레이저 LiDAR+카메라 보조) 기반 경로 최적화"
+          ],
+          "keywords_volume_total": {
+            "kr": 14876,
+            "kr_raw": 14880
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "맞벌이 부부 같은 상황에서 퇴근하고 와서 청소까지 할 여력이 없는 분들에게 로봇청소기가 추천될 만큼, 청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기로 드러나요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://shakej.tistory.com/entry/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4-T50-PRO-OMNI-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EB%8B%A4%EB%A5%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EB%8B%A4-%ED%9B%84%ED%9A%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4",
+                "url_title": "에코백스 T50 PRO OMNI 써보고 다른 로봇청소기 다 후회했습니다"
+              },
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%407Qji/16",
+                "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 자취",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 기계",
+                "volume_yearly": 59510,
+                "volume_monthly": 14876
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 대신",
+                "volume_yearly": 14,
+                "volume_monthly": 4
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "데일리아이템 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 자취",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 기계",
+                "volume_yearly": 59510,
+                "volume_monthly": 14876
+              }
+            ]
+          }
+        },
+        {
+          "id": 16707,
+          "sequence": 2,
+          "cep": "몸이 다치거나 안 좋을 때 청소가 더 버거울 때",
+          "nano_intent": "",
+          "kbf": [
+            "원터치(앱) 조작을 통한 비대면 청소 시작",
+            "자동 먼지 비움 도크",
+            "구역 지정(지도 기반)으로 불필요한 재청소 최소화"
+          ],
+          "keywords_volume_total": {
+            "kr": 14876,
+            "kr_raw": 16992
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%407Qji/16",
+                "url_title": "청소는 누워서 하는 것이다. (feat. 로봇청소기)"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 불편",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 기계",
+                "volume_yearly": 59510,
+                "volume_monthly": 14876
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "청소장비",
+                "volume_yearly": 6810,
+                "volume_monthly": 2090
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "살만한 전자기기",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 불편",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 마사지",
+                "volume_yearly": 20,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 로봇 불편한 점",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 기계",
+                "volume_yearly": 59510,
+                "volume_monthly": 14876
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "일상공감 청소기",
+                "volume_yearly": 21,
+                "volume_monthly": 3
+              }
+            ]
+          }
+        },
+        {
+          "id": 16710,
+          "sequence": 3,
+          "cep": "호흡기 질환 있어 깨끗한 수면 환경이 더 필요해질 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 자동 비움(클린베이스/도크 방식)",
+            "필터 등 소모품 교체 비용·주기 확인 가능한 구조",
+            "자동 청소 후 소모품 관리(패드/필터 등) 용이한 구성"
+          ],
+          "keywords_volume_total": {
+            "kr": 4740,
+            "kr_raw": 8592
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "살만한 전자기기",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구청소기 후기 디시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취방 로봇청소기",
+                "volume_yearly": 339,
+                "volume_monthly": 86
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 청소기 후기",
+                "volume_yearly": 223,
+                "volume_monthly": 47
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 전용 청소기",
+                "volume_yearly": 317,
+                "volume_monthly": 72
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "더쿠 자취 필수템",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 청소기 추천",
+                "volume_yearly": 16290,
+                "volume_monthly": 3983
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침실 공기청정기",
+                "volume_yearly": 520,
+                "volume_monthly": 130
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "귀곰 침구 청소기",
+                "volume_yearly": 743,
+                "volume_monthly": 196
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "있으면 좋은 가전제품",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소중",
+                "volume_yearly": 920,
+                "volume_monthly": 216
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "침구용 청소기",
+                "volume_yearly": 1550,
+                "volume_monthly": 253
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 침대",
+                "volume_yearly": 10,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "살만한 전자기기",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구청소기 후기 디시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취방 로봇청소기",
+                "volume_yearly": 339,
+                "volume_monthly": 86
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 청소기 후기",
+                "volume_yearly": 223,
+                "volume_monthly": 47
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취 용 청소기 디시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 전용 청소기",
+                "volume_yearly": 317,
+                "volume_monthly": 72
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취방 템",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "더쿠 자취 필수템",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "깨끗한나라 자취",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침구 청소기 추천",
+                "volume_yearly": 16290,
+                "volume_monthly": 3983
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침실 공기청정기",
+                "volume_yearly": 520,
+                "volume_monthly": 130
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소장비",
+                "volume_yearly": 6810,
+                "volume_monthly": 2090
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "귀곰 침구 청소기",
+                "volume_yearly": 743,
+                "volume_monthly": 196
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "있으면 좋은 가전제품",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소중",
+                "volume_yearly": 920,
+                "volume_monthly": 216
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취생 청소기",
+                "volume_yearly": 4980,
+                "volume_monthly": 1506
+              }
+            ]
+          }
+        },
+        {
+          "id": 16709,
+          "sequence": 4,
+          "cep": "아기 기어다닌 뒤 바닥 먼지·머리카락이 걱정될 때",
+          "nano_intent": "",
+          "kbf": [
+            "높은 흡입력(Pa 수치 상향 스펙)",
+            "카펫/털 대응용 브러시 또는 카펫 부스트 기능",
+            "장애물 인식 기반 주변(반려물/소품) 회피"
+          ],
+          "keywords_volume_total": {
+            "kr": 690,
+            "kr_raw": 799
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아기 있는 집 로봇청소기",
+                "volume_yearly": 394,
+                "volume_monthly": 98
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "유아 청소기",
+                "volume_yearly": 206,
+                "volume_monthly": 50
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아기 청소기",
+                "volume_yearly": 1990,
+                "volume_monthly": 473
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 아기 매트",
+                "volume_yearly": 309,
+                "volume_monthly": 69
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아기 있는 집 로봇청소기",
+                "volume_yearly": 394,
+                "volume_monthly": 98
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "유아 청소기",
+                "volume_yearly": 206,
+                "volume_monthly": 50
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 #장난감",
+                "volume_yearly": 160,
+                "volume_monthly": 43
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애견",
+                "volume_yearly": 50,
+                "volume_monthly": 9
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 강아지 디시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아기 청소기",
+                "volume_yearly": 1990,
+                "volume_monthly": 473
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "장난감 로봇 청소기",
+                "volume_yearly": 248,
+                "volume_monthly": 57
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 아기 매트",
+                "volume_yearly": 309,
+                "volume_monthly": 69
+              }
+            ]
+          }
+        },
+        {
+          "id": 16712,
+          "sequence": 5,
+          "cep": "층간소음 걱정돼 청소 시간대를 따로 정해야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 청소 예약/스케줄링",
+            "구역 지정(지도 기반)으로 특정 시간대 최소 동작",
+            "자동 복귀 및 청소 구간 연속 실행 지원(모델의 기본 충전/재개 방식)"
+          ],
+          "keywords_volume_total": {
+            "kr": 449,
+            "kr_raw": 449
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "아파트 로봇청소기 소음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "새벽 에 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "원룸 청소기 몇시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 몇시부터",
+                "volume_yearly": 210,
+                "volume_monthly": 49
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 8시 청소기",
+                "volume_yearly": 432,
+                "volume_monthly": 103
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "무선 청소기 층간소음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 7 시 30 분 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아랫집 청소기 소리",
+                "volume_yearly": 20,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 층간 소음",
+                "volume_yearly": 690,
+                "volume_monthly": 160
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 야간",
+                "volume_yearly": 33,
+                "volume_monthly": 6
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 6시 청소기",
+                "volume_yearly": 21,
+                "volume_monthly": 7
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아파트 청소기 소리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 9시 청소기",
+                "volume_yearly": 184,
+                "volume_monthly": 41
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 사용",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 새벽",
+                "volume_yearly": 20,
+                "volume_monthly": 6
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 고주파 음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 굉음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 시간",
+                "volume_yearly": 377,
+                "volume_monthly": 74
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "아파트 로봇청소기 소음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "새벽 1 시 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "새벽 에 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "원룸 청소기 몇시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 몇시부터",
+                "volume_yearly": 210,
+                "volume_monthly": 49
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 8시 청소기",
+                "volume_yearly": 432,
+                "volume_monthly": 103
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "무선 청소기 층간소음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 7 시 30 분 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아랫집 청소기 소리",
+                "volume_yearly": 20,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 층간 소음",
+                "volume_yearly": 690,
+                "volume_monthly": 160
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 야간",
+                "volume_yearly": 33,
+                "volume_monthly": 6
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 6시 청소기",
+                "volume_yearly": 21,
+                "volume_monthly": 7
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 밤",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아파트 청소기 소리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "아침 9시 청소기",
+                "volume_yearly": 184,
+                "volume_monthly": 41
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 사용",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 새벽",
+                "volume_yearly": 20,
+                "volume_monthly": 6
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 고주파 음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 굉음",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 시간",
+                "volume_yearly": 377,
+                "volume_monthly": 74
+              }
+            ]
+          }
+        },
+        {
+          "id": 16705,
+          "sequence": 6,
+          "cep": "허리 구부려도 침대·쇼파 밑이 덜 깨끗할 때",
+          "nano_intent": "",
+          "kbf": [
+            "낮은 본체 높이(침대·쇼파 하부 통과 가능한 구조)",
+            "장애물 회피/인식 기반 회피 경로 탐색",
+            "지도 생성 기반 구역 청소"
+          ],
+          "keywords_volume_total": {
+            "kr": 295,
+            "kr_raw": 2459
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 2,
+                "quote": "실제로는 침대 밑/쇼파 밑처럼 허리 구부려서 해도 꼼꼼히 안 되는 부분을 로봇이 대신 처리해주고, 밤이나 새벽에 돌려놓고 자도 될 정도로 소음이 괜찮았다는 식으로 만족 후기가 이어져요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://www.11st.co.kr/products/2672464505",
+                "url_title": "에브리봇 물걸레 로봇청소기 3i\n    "
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "침대 로봇청소기",
+                "volume_yearly": 1090,
+                "volume_monthly": 276
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "원룸 로봇청소기 후기",
+                "volume_yearly": 60,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가구 청소기",
+                "volume_yearly": 43,
+                "volume_monthly": 9
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소장비",
+                "volume_yearly": 6810,
+                "volume_monthly": 2090
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 자취",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 원룸",
+                "volume_yearly": 299,
+                "volume_monthly": 74
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "침대 로봇청소기",
+                "volume_yearly": 1090,
+                "volume_monthly": 276
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "원룸 로봇청소기 후기",
+                "volume_yearly": 60,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가구 청소기",
+                "volume_yearly": 43,
+                "volume_monthly": 9
+              }
+            ]
+          }
+        },
+        {
+          "id": 16711,
+          "sequence": 7,
+          "cep": "침구 위생이 계속 신경 쓰여 더 꼼꼼히 관리가 필요할 때",
+          "nano_intent": "",
+          "kbf": [
+            "침구 주변 동선까지 커버 가능한 구역 지정(지도 기반)",
+            "물걸레 하이브리드(물 공급/패드 방식) 구성",
+            "지도 저장 기반 반복 청소(구역 재선택/재청소)"
+          ],
+          "keywords_volume_total": {
+            "kr": 215,
+            "kr_raw": 567
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 사용",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 반려동물",
+                "volume_yearly": 239,
+                "volume_monthly": 56
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "펫케어 로봇청소기",
+                "volume_yearly": 12,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소방법",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가전제품 청소",
+                "volume_yearly": 340,
+                "volume_monthly": 83
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "샤오미 로봇청소기 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애견",
+                "volume_yearly": 50,
+                "volume_monthly": 9
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "홈디바이스 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기와 강아지",
+                "volume_yearly": 13,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가전 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소 방법",
+                "volume_yearly": 273,
+                "volume_monthly": 67
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 사용",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 반려동물",
+                "volume_yearly": 239,
+                "volume_monthly": 56
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 청소법",
+                "volume_yearly": 1056,
+                "volume_monthly": 274
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "펫케어 로봇청소기",
+                "volume_yearly": 12,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소방법",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 정리",
+                "volume_yearly": 280,
+                "volume_monthly": 68
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가전제품 청소",
+                "volume_yearly": 340,
+                "volume_monthly": 83
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "샤오미 로봇청소기 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "애완견 로봇청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "살만한 전자기기",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애견",
+                "volume_yearly": 50,
+                "volume_monthly": 9
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "홈디바이스 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기와 강아지",
+                "volume_yearly": 13,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가전 관리",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소 방법",
+                "volume_yearly": 273,
+                "volume_monthly": 67
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "irobot cleaning",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16704,
+          "sequence": 8,
+          "cep": "허리 아픈데 청소를 계속 미루는 때",
+          "nano_intent": "",
+          "kbf": [
+            "자동 먼지 비움 도크",
+            "앱 기반 청소 예약/스케줄링",
+            "구역 지정(지도 기반) 기능"
+          ],
+          "keywords_volume_total": {
+            "kr": 4,
+            "kr_raw": 46
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "예전에는 오늘도 청소해야 하는데, 허리 아픈데 내일 할까 하는 식으로 계속 미루게 되면서 청소 스트레스가 쌓였다고 해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://www.enuri.com/detail.jsp?modelno=118440457",
+                "url_title": "LG전자 코드제로 R5 R585WKA1 [일반구매] - 에누리 가격비교"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 걸림",
+                "volume_yearly": 13,
+                "volume_monthly": 4
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 불편",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 밀다",
+                "volume_yearly": 10,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "삼성 무선청소기 롤러",
+                "volume_yearly": 113,
+                "volume_monthly": 26
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "삼성 로봇청소기 제자리",
+                "volume_yearly": 51,
+                "volume_monthly": 13
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 걸림",
+                "volume_yearly": 13,
+                "volume_monthly": 4
+              }
+            ]
+          }
+        },
+        {
+          "id": 16708,
+          "sequence": 9,
+          "cep": "수유·재우고 달래느라 청소 돌릴 틈이 없을 때",
+          "nano_intent": "",
+          "kbf": [
+            "작동/청소 예약 기능",
+            "자동 먼지 비움 도크",
+            "장애물 인식/회피 기반 안전 주행"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 1,
+                "quote": "그런데 수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않아서, 자동 먼지비움 같은 관리 부담을 줄여주는 기능을 가진 로봇청소기가 급부상했다는 흐름으로 이어져요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://ai-parenting-lab.tistory.com/42",
+                "url_title": "2026년 육아 필수템 가성비 추천 TOP 10 — 실사용 후기로 뽑은 진짜 필요한 것만"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16713,
+          "sequence": 10,
+          "cep": "항의 들은 뒤에도 다시 돌릴 타이밍을 고민할 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱에서 지도/구역을 기반으로 재청소 설정",
+            "자동 먼지 비움 도크",
+            "구역 지정 및 경로 최적화(레이저 LiDAR+카메라 보조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 10
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 갑자기 켜짐",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 갑자기 켜짐",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로청 전선",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "살만한 전자기기",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              }
+            ]
+          }
+        }
+      ],
+      "expand_cep_cards": null,
+      "expand_cep_card_details": null,
+      "created_time": "2026-07-22T04:07:04.308206+00:00",
+      "inspection": {
+        "items": [
+          {
+            "cep_id": 0,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘가정용 로봇청소기/스마트 청소 가전’ 카테고리에서, 사용 동기가 허리 통증으로 인한 청소 지연(자동화 필요)이라는 점이 적절함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "허리 통증으로 청소를 미루고 스트레스가 쌓이는 상황이 Section 1의 bullet 0로 직접 뒷받침됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "예전에는 오늘도 청소해야 하는데, 허리 아픈데 내일 할까 하는 식으로 계속 미루게 되면서 청소 스트레스가 쌓였다고 해요.",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16704,
+            "verdict": "pass",
+            "cep_text": "허리 아픈데 청소를 계속 미루는 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 1,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "바닥 청소(사각지대)에서 로봇청소기의 필요성을 ‘덜 깨끗함/대신 처리’로 표현해 입력 카테고리에 잘 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "missing",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "허리 구부려서 해도 침대 밑/쇼파 밑처럼 꼼꼼히 안 되는 부분을 로봇이 대신 처리한다는 내용이 Section 1의 bullet 2로 뒷받침됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "실제로는 침대 밑/쇼파 밑처럼 허리 구부려서 해도 꼼꼼히 안 되는 부분을 로봇이 대신 처리해주고, 밤이나 새벽에 돌려놓고 자도 될 정도로 소음이 괜찮았다는 식으로 만족 후기가 이어져요.",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 2,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16705,
+            "verdict": "pass",
+            "cep_text": "허리 구부려도 침대·쇼파 밑이 덜 깨끗할 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 2,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "퇴근 후 시간/노동 부담 때문에 자동화된 바닥 청소가 필요해진다는 점에서 적합함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "implicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "partial",
+                "evidence": "‘퇴근하고 와서 청소까지 할 여력이 없는 분들’ 및 ‘청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기’로 근거되나, CEP의 ‘전혀 없을 때’(극단적 표현)는 bullet의 강도와 정확히 일치하지 않음.",
+                "cited_bullets": [
+                  {
+                    "quote": "맞벌이 부부 같은 상황에서 퇴근하고 와서 청소까지 할 여력이 없는 분들에게 로봇청소기가 추천될 만큼, 청소를 ‘시간 안에 끝내기 어려운 생활 리듬’이 진입 계기로 드러나요.",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "unfounded_superlative",
+                  "quote": "전혀 없을 때",
+                  "occurred": true,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16706,
+            "verdict": "warning",
+            "cep_text": "퇴근 후 청소할 여력이 전혀 없을 때",
+            "llm_verdict": "warning",
+            "override_reason": [
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 3,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "몸 상태가 나쁠수록 로봇청소기로 청소 부담을 줄인다는 동기가 ‘스마트 청소 가전’ 카테고리와 잘 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "몸 상태가 다치거나 안 좋을 때 청소 부담이 ‘몇 배로’ 커진다는 근거가 Section 2 bullet 1에 있음.",
+                "cited_bullets": [
+                  {
+                    "quote": "청소를 사전에 얼마나 하게 되는지(청소를 위해 앞뒤로 하던 일까지 포함되는 시간) 때문에 로봇청소기가 “시간과 노동에서 자유로워진다”는 쪽으로 연결되고, 특히 몸 상태가 다치거나 안 좋을 때 몇 배로 힘이 된다고도 해요.",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16707,
+            "verdict": "pass",
+            "cep_text": "몸이 다치거나 안 좋을 때 청소가 더 버거울 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 4,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "가정 내 바닥 청결이 육아로 인해 ‘돌릴 틈이 없는’ 상황에서 로봇청소기가 필요한 맥락이라 적합함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "explicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "explicit",
+                "with_what": "explicit",
+                "with_whom": "implicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않는 흐름과 자동 먼지비움 같은 관리 부담 감소가 Section 3 bullet 1에 직접 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "그런데 수유하고 재우고 달래다 보면 청소기 돌릴 시간이 나지 않아서, 자동 먼지비움 같은 관리 부담을 줄여주는 기능을 가진 로봇청소기가 급부상했다는 흐름으로 이어져요.",
+                    "verified": true,
+                    "section_id": 3,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "no_source_quote",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16708,
+            "verdict": "pass",
+            "cep_text": "수유·재우고 달래느라 청소 돌릴 틈이 없을 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 5,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "기어다니는 아기 이후 바닥 청결이 건강 이슈로 느껴져 로봇청소기 필요로 이어진다는 점이 ‘가정용 로봇청소기/바닥 청소’ 사용 맥락에 잘 맞습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "implicit",
+                "with_whom": "implicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "제공된 카드에는 source_section_ids가 비어 있고, 어떤 섹션/불릿을 근거로 삼아야 하는지 지정 정보가 없어, CEP의 문장을 지지하는 정확한 불릿 인용을 구성할 수 없습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                },
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16709,
+            "verdict": "fail",
+            "cep_text": "아기 기어다닌 뒤 바닥 먼지·머리카락이 걱정될 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 6,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "알레르기·호흡기 질환이 있는 경우 쾌적한 수면 환경을 위해 로봇청소기가 유용하다는 흐름은 ‘스마트 청소 가전’ 및 ‘가정용 로봇청소기’ 범주에 적합합니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "implicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "CEP 카드에 대한 근거로 사용할 <sections>의 특정 불릿을 지정하거나 인용할 수 있는 정보가 없어, 요구된 ‘정확한 verbatim quote’ 인용을 제공할 수 없습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16710,
+            "verdict": "fail",
+            "cep_text": "호흡기 질환 있어 깨끗한 수면 환경이 더 필요해질 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 7,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "침구 위생 관리(살균 기능, 알레르기·먼지 민감 등)에 대응해 침구 로봇청소기를 고려한다는 내용은 ‘침구용까지 생각’이라는 CEP 문장과 잘 들어맞습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "implicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "침구 위생(먼지·살균·진드기) 고민과의 연결을 지지하는 <sections> 불릿을 정확히 인용해야 하나, 현재 카드 정보로는 어떤 bullet을 근거로 삼아야 하는지 확인/지정이 불가능하여 인용을 구성할 수 없습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16711,
+            "verdict": "fail",
+            "cep_text": "침구 위생이 계속 신경 쓰여 더 꼼꼼히 관리가 필요할 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 8,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "층간소음·이웃 눈치로 로봇청소기 가동 시간대를 정한다는 사용 맥락은 바닥 청소 가전의 실제 운영 필요와 부합합니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "implicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "층간소음으로 ‘언제 돌릴지’ 고민하고 시간대를 피하는 전략을 세운다는 근거 불릿을 정확히 verbatim 인용해야 하나, 현재 카드에 근거 불릿 지정 정보가 없어 인용을 제공할 수 없습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16712,
+            "verdict": "fail",
+            "cep_text": "층간소음 걱정돼 청소 시간대를 따로 정해야 할 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 9,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "항의를 받은 뒤에도 다시 청소를 돌릴 적절한 타이밍을 고민한다는 내용은 층간소음 맥락의 연장선으로 카테고리(스마트 청소 가전)와 잘 맞습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "implicit",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "implicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "항의(아랫집/경비실) 이후에도 ‘언제 돌려야 하나요?’ 등 타이밍 고민이 드러난다는 근거를 정확히 인용해야 하나, 현재 카드 정보로는 해당 불릿을 지정해 verbatim quote를 제공할 수 없습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16713,
+            "verdict": "fail",
+            "cep_text": "항의 들은 뒤에도 다시 돌릴 타이밍을 고민할 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              }
+            ],
+            "verdict_overridden": false
+          }
+        ],
+        "summary": {
+          "fail": 5,
+          "pass": 4,
+          "total": 10,
+          "warning": 1,
+          "overall_comment": "제시된 CEP 0~4는 모두 <sections>의 해당 맥락(허리 통증, 침대/쇼파 밑 작업 부담, 퇴근 후 여력 없음, 몸 상태 악화 시 부담, 수유/달래로 청소 돌릴 시간 없음)에 부합합니다. 다만 CEP 2의 ‘전혀 없을 때’처럼 강도가 더 센 표현은 bullet에서 ‘여력이 없는 분들’ 및 ‘어려운 생활 리듬’ 수준으로만 근거되어 있어 약간의 의미 과장이 보입니다. / 제시된 CEP 5~9는 모두 <sections>의 해당 주제(아기/바닥 청결, 호흡기 질환·수면 환경, 침구 위생/살균·알레르기, 층간소음·시간대, 항의 후 돌릴 타이밍 고민)에 의미적으로 부합하지만, 각 CEP 카드에 대해 정확한 근거 bullet 인용(문자열 1:1)이 현재 카드 자체에는 제공되어 있지 않아 source_grounding을 확인할 수 있는 정보가 부족합니다. 따라서 모든 항목을 소스 근거 실패로 처리합니다."
+        },
+        "category": "가정용 로봇청소기, 바닥 청소 기기, 스마트 청소 가전",
+        "model_info": {
+          "model": "gpt-5.4-nano",
+          "provider": "openai"
+        },
+        "project_id": 1394,
+        "inspected_at": "2026-07-22T13:12:57.146758"
+      }
+    }
+  ]
+}

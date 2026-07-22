@@ -195,7 +195,7 @@
       <thead><tr>
         <th data-k="id" class="num">ID</th>
         <th data-k="name">제품명</th>
-        <th data-k="date">생성일</th>
+        <th data-k="date">생성일시(UTC)</th>
         <th data-k="locale">Locale</th>
         <th data-k="n" class="num">카드수</th>
         <th data-k="insp">검수여부</th>
@@ -224,6 +224,7 @@
     <div class="modal-head">
       <div><h2 id="mTitle"></h2><div class="meta" id="mMeta"></div></div>
       <div style="display:flex;align-items:center;gap:10px;">
+        <button class="btn" id="mCopyMd" title="모달 전체를 Markdown으로 복사 — NotebookLM 검증 요청용">📋 MD 전체 복사</button>
         <a class="btn" id="mOpen" target="_blank" rel="noopener">원본 CEP ↗</a>
         <button class="close" id="mClose">×</button>
       </div>
@@ -245,7 +246,7 @@
   </div>
 </div>
 
-<script src="dashboard-data.js?v=17f6a95b"></script>
+<script src="dashboard-data.js?v=74c38b47"></script>
 <script>
 const SNAP = window.CEP_SNAPSHOT || {snapshot:"⚠ dashboard-data.js 를 찾지 못했습니다 (같은 폴더에 있어야 함)", rows:[], detail:{}};
 let rows = (SNAP.rows||[]).slice();
@@ -332,7 +333,9 @@ function renderTable(){
 
 const VLABEL={pass:"검수통과",warning:"의심",fail:"검수통과실패",none:"미검사"};
 function stCls(s){ return s==="ok"?"ok":(s==="fail"?"fail":"warn"); }
+let CUR_PID=null;
 function openDetail(pid){
+  CUR_PID=pid;
   const r=rows.find(x=>x.id===pid); const cards=(DETAIL[pid]||[]);
   const ic=r.p+r.w+r.f, rate=ic?(r.p/ic*100).toFixed(0):0;
   document.getElementById("mTitle").textContent = `${r.id} · ${r.name}`;
@@ -371,6 +374,95 @@ function openDetail(pid){
 }
 function closeDetail(){ document.getElementById("overlay").classList.remove("show"); }
 
+// ── 모달 → Markdown 직렬화 (NotebookLM 검증 요청용) ──────────
+// 프롬프트/적합여부/출처근거/할루시네이션/인용원문+링크를 md로 만들고,
+// 상단에 7W 추출·대조용 출처 원문 링크(중복 제거)를 함께 첨부한다.
+function mdEsc(s){ return String(s==null?"":s).replace(/\r?\n+/g," ").trim(); }
+function buildDetailMd(pid){
+  const r=rows.find(x=>x.id===pid); if(!r) return "";
+  const cards=(DETAIL[pid]||[]);
+  const ic=r.p+r.w+r.f, rate=ic?(r.p/ic*100).toFixed(0):0;
+  const L=[];
+  L.push(`# CEP 검수 리포트 — ${r.id} · ${mdEsc(r.name)}`);
+  L.push("");
+  L.push(`- 로케일: ${r.locale||"-"}`);
+  if(r.date) L.push(`- 생성일: ${r.date}`);
+  L.push(`- 카드: ${r.n}장 · Pass ${r.p} / Warn ${r.w} / Fail ${r.f} (${rate}% pass)`);
+  L.push(`- 원본 CEP: ${cepUrl(r)}`);
+  L.push("");
+  // 7W 추출·대조용 출처 링크 (quotes + sources, 중복 제거)
+  const urls=[];
+  cards.forEach(c=>{
+    (c.quotes||[]).forEach(q=>{ if(q.url) urls.push(q.url); });
+    (c.sources||[]).forEach(s=>{ if(s.url) urls.push(s.url); });
+  });
+  const uniq=[...new Set(urls)];
+  L.push(`## 🔎 검증 요청`);
+  L.push("");
+  L.push(`아래 각 CEP 문장이 '출처 원문 링크'의 실제 내용에 근거하는지 검증해 주세요. 특히 7W(why·when·where·while·with_what·with_whom·how_feeling) 요소가 원문에서 확인되는지, 원문에 없는 내용(할루시네이션)이 섞이지 않았는지 판정해 주세요. 표현이 원문과 다르더라도 의미가 동일하면(의미 치환) 근거 있음으로 봅니다.`);
+  L.push("");
+  L.push(`### 출처 원문 링크 (7W 추출·대조용)`);
+  if(uniq.length) uniq.forEach(u=>L.push(`- ${u}`)); else L.push(`- (링크 없음)`);
+  L.push("");
+  L.push("---");
+  L.push("");
+  const gLabel={fail:"❌ Fail — 실패 사유",warning:"⚠️ Warning(의심) — 의심 사유",pass:"✅ Pass — 통과 근거",none:"⬜ 미검사"};
+  const order={fail:0,warning:1,pass:2,none:3};
+  const sorted=cards.slice().sort((a,b)=>order[a.v]-order[b.v]);
+  let n=0;
+  ["fail","warning","pass","none"].forEach(v=>{
+    const g=sorted.filter(c=>c.v===v); if(!g.length) return;
+    L.push(`## ${gLabel[v]} (${g.length}건)`);
+    L.push("");
+    g.forEach(c=>{
+      n++;
+      L.push(`### CEP ${n}. ${mdEsc(c.cep)}`);
+      L.push(`- 판정: **${VLABEL[c.v]||c.v}**`);
+      if(c.reason) L.push(`- 사유: ${mdEsc(c.reason)}`);
+      if((c.checks||[]).length){
+        L.push(`- 적합 여부:`);
+        c.checks.forEach(ch=>L.push(`  - ${mdEsc(ch.name)}: **${ch.status}** — ${mdEsc(ch.evidence)}`));
+      }
+      const flags=[];
+      if(c.halluc) flags.push("할루시네이션 플래그");
+      (c.overrides||[]).forEach(o=>flags.push(mdEsc(o)));
+      if(flags.length) L.push(`- 플래그/오버라이드: ${flags.join(" · ")}`);
+      if((c.quotes||[]).length){
+        L.push(`- 인용 원문 (검수기 대조 문장):`);
+        c.quotes.forEach(q=>{
+          const vf=q.verified?"✓ 원문확인":"✗ 미확인";
+          const link=q.url?` — [🔗 원문${q.sec!=null?" §"+q.sec:""}](${q.url})`:"";
+          L.push(`  - “${mdEsc(q.quote)}” (${vf})${link}`);
+        });
+      }
+      if((c.sources||[]).length){
+        L.push(`- 출처 링크:`);
+        c.sources.forEach(s=>L.push(`  - [${mdEsc(s.title||s.url)}](${s.url})${s.sec!=null?` §${s.sec}`:""}`));
+      }
+      L.push("");
+    });
+  });
+  return L.join("\n").replace(/\n{3,}/g,"\n\n").trim()+"\n";
+}
+function copyDetailMd(){
+  if(CUR_PID==null) return;
+  const md=buildDetailMd(CUR_PID);
+  const btn=document.getElementById("mCopyMd");
+  const label=btn?btn.textContent:"";
+  const flash=(t)=>{ if(!btn) return; btn.textContent=t; setTimeout(()=>{btn.textContent=label;},1600); };
+  const fallback=()=>{
+    const ta=document.createElement("textarea");
+    ta.value=md; ta.style.position="fixed"; ta.style.opacity="0";
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    let ok=false; try{ ok=document.execCommand("copy"); }catch(e){ ok=false; }
+    document.body.removeChild(ta);
+    flash(ok?"✓ 복사됨":"복사 실패 — 수동 선택");
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(md).then(()=>flash("✓ 복사됨")).catch(fallback);
+  } else fallback();
+}
+
 // ── 진단 리포트 렌더 ─────────────────────────────────────────
 const SEV={critical:{l:"🔴 Critical",c:"sev-c"},major:{l:"🟠 Major",c:"sev-m"},minor:{l:"🟡 Minor",c:"sev-n"}};
 const sevChip=(k,n)=>`<span class="sevchip ${SEV[k].c}">${SEV[k].l} ${n}</span>`;
@@ -391,6 +483,7 @@ function projectDiagBody(d){
     <div class="dbox"><div class="dlab">검수 판정</div><div class="dval"><span class="num p">P ${s.pass}</span> · <span class="num w">W ${s.warn}</span> · <span class="num f">F ${s.fail}</span> <small>/ ${s.total}</small></div></div>
     <div class="dbox"><div class="dlab">자동 진단 심각도</div><div class="dval">${sevChip("critical",d.sev.critical)}${sevChip("major",d.sev.major)}${sevChip("minor",d.sev.minor)}</div></div>
     <div class="dbox"><div class="dlab">판정 오버라이드</div><div class="dval">${d.overridden}건 <small>(llm pass→강등)</small></div></div>
+    ${d.semUp?`<div class="dbox"><div class="dlab">의미 치환 재판정</div><div class="dval"><span class="num p">${d.semUp}건</span> <small>(→pass · 본문 근거 확인)</small></div></div>`:""}
     <div class="dbox"><div class="dlab">검사 카테고리 / 모델</div><div class="dval" style="font-size:12.5px;font-weight:600;">${esc(d.category)||"—"}<br><small>${esc(d.model)||"—"}</small></div></div>
   </div>`;
   if(s.overall) h+=`<div class="overall${merged?" warn":""}">${merged?"⚠️ 요약 코멘트에 복수 실행 병합 흔적(&quot; / &quot;) — 번호 체계 혼용 주의(G1). ":""}${esc(s.overall)}</div>`;
@@ -409,7 +502,7 @@ function projectDiagBody(d){
   h+=`<div class="grp-title">4. 부록 — 카드별 상세</div>`;
   d.cards.forEach(c=>{
     h+=`<div class="ccard v-${vClass(c.verdict)}">
-      <div class="cep">#${c.idx} · ${esc(c.cep)} <span class="badge ${c.verdict==="pass"?"b-insp":"b-none"}">${esc(c.verdict)}</span>${c.overridden?` <span class="flag ov">override · llm=${esc(c.llm)}</span>`:""}</div>
+      <div class="cep">#${c.idx} · ${esc(c.cep)} <span class="badge ${c.verdict==="pass"?"b-insp":"b-none"}">${esc(c.verdict)}</span>${c.overridden?` <span class="flag ov">override · llm=${esc(c.llm)}</span>`:""}${c.semOverride?` <span class="flag ov">의미 치환 재판정 · ${esc(c.semOverride.from)}→pass</span>`:""}</div>
       <div class="checks">
         <div class="chk"><span class="st ${stClsOf(c.cf.status)}">카테고리 ${esc(c.cf.status)||"-"}</span><span class="ev">${esc(c.cf.ev)||"—"}</span></div>
         <div class="chk"><span class="st ${stClsOf(c.sg.status)}">출처근거 ${esc(c.sg.status)||"-"}</span><span class="ev">${esc(c.sg.ev)||"—"}</span></div>
@@ -583,7 +676,7 @@ function extractFromBundle(d){
     });
     DET[p.project_id]=cards;
     const n=c.pass+c.fail+c.warning+c.none;
-    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
+    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,19).replace('T',' '),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
   });
   return {rows:R,detail:DET,diag:DG};
 }
@@ -612,6 +705,7 @@ document.getElementById("themeBtn").addEventListener("click",()=>{
   const cur=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");
   r.setAttribute("data-theme",cur==="dark"?"light":"dark"); });
 document.getElementById("mClose").addEventListener("click",closeDetail);
+document.getElementById("mCopyMd").addEventListener("click",copyDetailMd);
 document.getElementById("overlay").addEventListener("click",e=>{ if(e.target.id==="overlay") closeDetail(); });
 document.getElementById("diagAllBtn").addEventListener("click",openDiagAll);
 document.getElementById("dClose").addEventListener("click",closeDiag);

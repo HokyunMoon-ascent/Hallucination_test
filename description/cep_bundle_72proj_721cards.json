@@ -1,0 +1,2553 @@
+{
+  "harvested_projects": 72,
+  "total_cards": 721,
+  "projects": [
+    {
+      "project_id": 1393,
+      "product_name": "로봇청소기",
+      "locale": "KR",
+      "status": "completed",
+      "basic_info": {
+        "phase": "basic_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기\n\n## 1. 카테고리 개요 및 핵심 선택 기준\n1. **지도/항법 방식**: 라이다(LiDAR)·비전(카메라)·VSLAM 등은 “집 전체를 계획 동선으로 청소”하는 정도에 영향을 줌(회피 기능과도 연동). ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n2. **장애물 회피 성능**: 전선/양말/장난감/반려동물 배설물 등에서 실제로 덜 걸리는지(카메라 기반이 강점으로 평가되는 경우가 많음). ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n3. **흡입 + 물걸레 품질**: “흡입(카펫/먼지)”과 “물걸레 진동/리프트/세척(바닥 오염)”이 분리되는 경우가 있어 우선순위를 정하는 것이 중요. ([support.roborock.com](https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai))  \n4. **도킹/유지관리(먼지통 비우기·물 보충·물걸레 세척)**: 자동 독 기능의 완성도는 장기 만족도를 좌우함. ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n5. **호환 생태계**: 스마트홈 연동(청소 스케줄/구역 지정/맵 공유)과 앱 UI가 매일 사용성을 좌우. ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n\n## 2. 추천 제품(상위 3~5)\n1. **Roborock S8 MaxV Ultra**: 카메라 기반 장애물 인식(3D structured light + RGB 카메라)을 전면에 두는 플래그십 라인. ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n2. **Roborock Qrevo S**: (상위 라인업 내) 가성비 포지션으로 자주 언급되는 모델군. [unverified] (정확 모델별 사양/가격은 구매 지역 확인 필요) ([outputreport.com](https://outputreport.com/robot-vacuums/12-best-roborock-robot-vacuum/?utm_source=openai))  \n3. **iRobot Roomba j7(j7+) 시리즈**: PrecisionVision 기반으로 다양한 “일상 장애물”을 인식/회피한다고 명시. ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n4. **Shark AI Ultra Robot (AV2501AE)**: HEPA 필터와 반려동물 환경을 강조한 라인업(공식 제품 페이지 기준). ([sharkninja.com](https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html?bvstate=pg%3A2%2Fct%3Ar&utm_source=openai))  \n5. **Roborock Saros 20**: 2026년 공개/리뷰 기준으로 “최첨단+초고가” 포지션의 상위급으로 다뤄짐. ([techradar.com](https://www.techradar.com/home/robot-vacuums/roborock-saros-20-review?utm_source=openai))  \n\n## 3. 기능/스펙 비교 포인트(한눈에)\n1. **장애물 회피 방식**\n   1) 카메라+3D 구조광 계열: 로보락 S8 MaxV Ultra 쪽 강점으로 평가 ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n   2) iRobot 비전(PrecisionVision) 계열: 일상 장애물 인식/회피을 전면에 둠 ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n2. **물걸레 구동 방식**\n   1) 로보락 S8 MaxV Ultra: VibraRise 3.0 Wischsystem 명시 ([support.roborock.com](https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai))  \n3. **앱 기반 청소 제어**\n   1) 구역/특정 방 청소, 맵 기반 지시(모델별로 지원 범위 상이) ([irobot.com](https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai))  \n4. **자동 독(도킹) 유지관리**\n   1) “올인원 독/세척”의 완성도에 따라 사용 편의가 크게 갈림(모델별 차이 큼). ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n5. **실사용 리스크(후기/리뷰에서 자주 보는 포인트)**\n   1) 최고급이라도 케이블 등 특정 장애물에서 엉킴이 완전하지 않을 수 있음(리뷰 기반). ([techradar.com](https://www.techradar.com/home/robot-vacuums/roborock-s8-maxv-ultra-robot-vacuum-review?utm_source=openai))  \n\n## 4. 가격대별(티어) 대략 범위\n1. **입문/중급(약 20~40만 원대 [unverified])**\n   1) 기본 맵핑·구역청소·물걸레 “가능” 수준 위주  \n2. **중상급(약 40~80만 원대 [unverified])**\n   1) 카펫/바닥 오염 대응 성능과 물걸레 품질이 체감되는 구간  \n   2) 장애물 회피는 “상황별 차이”가 커질 수 있음  \n3. **프리미엄(약 80만~150만 원대 [unverified])**\n   1) 카메라/3D 인식 등 고급 회피 기능, 독 자동화 강화  \n4. **얼트라/플래그십(150만 원 이상 [unverified])**\n   1) 최상위 물걸레 시스템·독(자동 관리)·고급 장애물 회피가 묶이는 경우가 많음 ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n\n## 5. 구매 추천(사용 시나리오별)\n1. **반려동물 털/알레르기 대응이 최우선**\n   1) HEPA 강조 모델(예: Shark AI Ultra, AV2501AE)부터 검토 ([sharkninja.com](https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html?bvstate=pg%3A2%2Fct%3Ar&utm_source=openai))  \n2. **전선·양말·잡동사니가 많은 “복잡한 집”**\n   1) 카메라 기반 장애물 회피를 강점으로 내세운 플래그십/준플래그십 우선 ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  \n3. **카펫 비중이 높고 흡입 성능이 중요**\n   1) 흡입+브러시 구조/운용(물걸레 겸용 여부 포함)을 비교 ([techradar.com](https://www.techradar.com/home/robot-vacuums/roborock-s8-maxv-ultra-robot-vacuum-review?utm_source=openai))  \n4. **물걸레 “퀄리티”가 핵심(바닥 오염/자국 최소화)**\n   1) 진동/리프트/세척 구조가 명확한 모델(예: VibraRise 3.0 언급 모델) 고려 ([support.roborock.com](https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai))  \n5. **유지관리 스트레스 최소화(독에서 자동 처리 되는지 중요)**\n   1) 자동 독(자체 세척/관리) 중심 라인으로 좁히기 ([us.roborock.com](https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai))  "
+        },
+        "web_sources": [
+          {
+            "url": "https://www.rtings.com/robot-vacuum/reviews/roborock/s8-maxv-ultra",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html?bvstate=pg%3A2%2Fct%3Ar",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/roborock-s8-maxv-ultra-robot-vacuum-review",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://choicemon.com/best-robot-vacuum-cleaner/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://help.roborock.com/es-ES/product/s8-maxv-ultra-message?category=faqs",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://robovations.com/wp-content/uploads/2026/03/robovations_q1_2026.pdf",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://outputreport.com/robot-vacuums/27-roborock-vs-irobot/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://danawashop.com/entry/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B6%94%EC%B2%9C",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://outputreport.com/robot-vacuums/12-best-roborock-robot-vacuum/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.reddit.com/r/Roborock/comments/1mco78o/is_my_roborock_s8_maxv_ultra_kind_of_dumb/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://arxiv.org/abs/2511.18649",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.reddit.com/r/Roborock/comments/1ubwe4o/does_the_roborock_s8_maxv_ultra_still_hold_up_in/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Roomba",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.ashb.com/wp-content/uploads/2025/06/IS-2025-029.pdf",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.reddit.com/r/Roborock/comments/1dsui1c",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.reddit.com/r/Roborock/comments/1k1wxa1",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.reddit.com/r/RobotVacuums/comments/1rs57at/is_the_roborock_s8_maxv_ultra_still_a_good_buy/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/best-robot-vacuum",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/home/irobot-just-launched-an-entire-wave-of-new-roombas-but-here-are-the-ones-im-really-excited-about",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-05-12/irobot-nuevos-roomba-gama-2026.html",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.t3.com/home-living/vacuum-cleaners/irobot-just-unveiled-7-new-roombas-at-once-heres-whats-new",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/roborock-saros-20-review",
+            "title": "",
+            "hostname": ""
+          }
+        ],
+        "citations": [
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai",
+            "title": "Welche Art von Wischsystem hat der S8 MaxV Ultra? – Roborock Unterstützung",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://outputreport.com/robot-vacuums/12-best-roborock-robot-vacuum/?utm_source=openai",
+            "title": "Best Roborock Robot Vacuum (2026) — Complete Lineup Ranked | Output Report",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html?bvstate=pg%3A2%2Fct%3Ar&utm_source=openai",
+            "title": "Shark® AI ULTRA Robot | SharkNinja",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/roborock-saros-20-review?utm_source=openai",
+            "title": "The Saros 20 is a predictably accomplished addition to Roborock's robot vacuum lineup, delivering all-round cleaning excellence",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai",
+            "title": "Welche Art von Wischsystem hat der S8 MaxV Ultra? – Roborock Unterstützung",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.irobot.com/en_US/irobot-roomba-j7-series/j7-Series-Robot-Vacuums.html?utm_source=openai",
+            "title": "Roomba® j7 Robot Vacuum | iRobot®",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/roborock-s8-maxv-ultra-robot-vacuum-review?utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra robot vacuum review | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.sharkninja.com/shark-ai-ultra-robot/AV2501AE.html?bvstate=pg%3A2%2Fct%3Ar&utm_source=openai",
+            "title": "Shark® AI ULTRA Robot | SharkNinja",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.techradar.com/home/robot-vacuums/roborock-s8-maxv-ultra-robot-vacuum-review?utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra robot vacuum review | TechRadar",
+            "hostname": ""
+          },
+          {
+            "url": "https://support.roborock.com/hc/de/articles/34342733444377-Welche-Art-von-Wischsystem-hat-der-S8-MaxV-Ultra?utm_source=openai",
+            "title": "Welche Art von Wischsystem hat der S8 MaxV Ultra? – Roborock Unterstützung",
+            "hostname": ""
+          },
+          {
+            "url": "https://us.roborock.com/products/roborock-s8-maxv-ultra?bvstate=pg%3A3%2Fct%3Ar&gad_campaignid=22023712987&gad_source=1&gbraid=0AAAAA-CrYEzn5-4-RhHD5sTq2dpNziDiw&variant=40697576095862&utm_source=openai",
+            "title": "Roborock S8 MaxV Ultra with 8-in-1 RockDock® Ultra | Roborock US Official Store",
+            "hostname": ""
+          }
+        ]
+      },
+      "product_anchors": {
+        "category": [
+          "로봇청소기",
+          "가정용 청소 로봇",
+          "자동 바닥 청소기"
+        ]
+      },
+      "thinking_process": [
+        {
+          "body": "**Researching robot vacuum purchase reasons**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "I’m gathering info from Korean online communities using targeted search queries to find real consumer reasons for buying robot vacuums. I plan to collect distinct contexts like moving in, pet hair, busy schedules, allergies, and more, grounded in multiple sources with close paraphrasing but no direct quotes.**Preparing search queries for communities**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"로봇청소기 사게 된 이유 클리앙\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Retrying search with targeted Korean keywords**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"클리앙 로봇청소기 사게 된 계기\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Adjusting search strategy**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:clien.net 로봇청소기 샀어요 이유\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Exploring community-specific searches**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:blinded.kr 로봇청소기 허리\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Searching for robot vacuum contexts**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ppomppu.co.kr 로봇청소기 반려동물 털 샀\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Searching community sources for posts**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ppomppu.co.kr 로봇청소기 반려동물\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Gathering more search terms**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ppomppu.co.kr 로봇청소기 이사\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Clarifying purchase motivation context****Searching pet-related keywords**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ppomppu.co.kr 로봇청소기 고양이\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Identifying relevant pet hair and allergy mentions**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ppomppu.co.kr 로봇청소기 먼지 알레르기\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Identifying cleaning-related entry moments****Distinguishing pre-purchase entry points**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Reviewing search snippets as evidence****Identifying pre-purchase and entry moments**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:ohou.se 로봇청소기 이사\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Identifying common cleaning challenges****Organizing cleaning scenarios and citations****Structuring cleaning scenario narratives**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        }
+      ],
+      "research": {
+        "phase": "product_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기를 처음 떠올리는 순간들: “청소를 줄여야 하는” 집안 신호들\n\n## 1. 혼자 살면서 청소를 안 하게 되고 먼지가 굴러다닐 때\n1. 혼자 살면서 청소를 “안해서 먼지가 굴러” 다닌다고 느낀 상황에서, 로봇청소기를 바로 떠올리게 된다는 식의 조언이 나와요. 집이 클수록 더 강추한다는 뉘앙스도 함께 붙습니다. ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))  \n2. 같은 글에서 “로봇청소기를 사라”라고 먼저 던지고, 로봇이 “열일하는 친구”가 돼서 고마울 거라고 정리합니다(먼지 걱정을 덜고 싶은 마음이 중심). ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))  \n\n## 2. 부모님 집을 준비할 때: 문턱/방문턱을 ‘잘 넘어야 한다’는 조건이 생길 때\n1. 부모님(두 분 다 70대) 사용을 전제로 로봇청소기를 알아보는데, 핵심 조건으로 구축이라 “이단 방문턱을 잘 넘어야 함”을 가장 중요하게 꼽습니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))  \n2. 즉, 성능 검증 이전에 “우리 집 구조에서 넘어가야 쓸 수 있다”는 현실 조건이 생기면서 카테고리가 필요해지는 흐름이에요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))  \n\n## 3. 고양이 털·화장실 모래 때문에 ‘깨끗할 날이 거의 없는 집’이 될 때\n1. 집에 고양이 “두마리”가 있고 “고양이 털과 화장실 모래 때문에 집안이 깨끗할 날이 거의 없었”다고 말해요. 이 불편이 로봇청소기를 놓고 살까 말까로 이어지는 진입 계기가 됩니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))  \n2. 이후 “후기를 접하고 살까 말까의 무한루프”를 몇 달 반복했다가, “성능 향상 및 물청소 기능에 혹하여” 구입으로 가는 흐름이 같이 나옵니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))  \n\n## 4. 먼지·머리카락이 너무 많아서 청소기를 ‘수시로’ 돌려야 할 때\n1. 로봇청소기를 쓰는 쪽/안 쓰는 쪽 토론에서, 본인 상황으로 “평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서 핸디 쓰는데 딱 좋네요”라는 말이 나옵니다. 즉, “자주 청소해야 하는 부담”이 진입 계기예요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai))  \n2. 같은 대화 흐름 안에서 “물걸레 로봇 돌리면 집이 깨끗해집니다”처럼, 로봇청소기로 집이 정돈되는 쪽의 기대(사후 만족/효과)가 같이 붙습니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai))  \n\n## 5. 걸레질이 너무 귀찮아져서, 물걸레 로봇을 계속 ‘탐내게’ 될 때\n1. 물걸레 청소를 떠올리는 계기 자체가 “닦는거만 제가 하면 되는건데 그게 너무 귀찮아서 물걸레 로봇 청소기가 항상 탐났”다는 형태로 나옵니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai))  \n2. 다만 “100만원이 넘는 가격에 망설였는데”라고 적어, 필요(귀찮음)와 구매 장벽(가격)이 동시에 보이는 지점이 진입 맥락이에요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai))  \n\n## 6. 출퇴근으로 바쁜 평일엔 자동 루틴(오전 흡입+오후 물걸레)을 원할 때\n1. 로봇청소기 물걸레질/운영 방식 얘기에서 “출퇴근하고 바쁘다 싶으면 그냥 로청(오전 흡입, 오후 물걸레질)”처럼 평일 운영 루틴이 제시됩니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai))  \n2. 이어서 “주말에나 청소기로 직접 청소”라고 덧붙여, 바쁜 시간을 버텨야 해서 자동화가 필요해지는 그림이 같이 드러나요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai))  \n\n## 7. 이사 후 집이 커지면서 청소 시간/관리 부담이 늘었다고 느낄 때\n1. 오늘의집 프로젝트 글에서 “이사 오고 집이 커지니 확실히 청소 시간도 오래 걸리고 관리가 힘든 건 사실이더라구요”라고 말합니다. ([contents.ohou.se](https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai))  \n2. 그래서 집 규모 변화(이사) 자체가 “청소를 더 자주/더 오래 해야 하는 상태”로 연결되며, 로봇청소기를 집안 구성(효자 가전)으로 받아들이는 흐름이 보여요. ([contents.ohou.se](https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai))  \n\n## 8. 이사선물로 로봇청소기를 받으며 “넓어진 집” 청소 걱정을 줄일 때\n1. 오늘의집 콘텐츠에서는 “어머님께서 이사선물로 해주신 롯청”이라고 시작하고, “넓어진 집 청소도 걱정 없”게 됐다는 식으로 말합니다. ([contents.ohou.se](https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C?utm_source=openai))  \n2. 구체적으로는 “공간학습을 통해 구석구석 원하는곳 청소가능”, “물걸레 기능으로 바닥청소가능”, “물걸레 건조기능있어서 숸내없이 관리되어 편함” 같은 기능 기대가 이사 직후 필요로 연결되는 방식이에요. ([contents.ohou.se](https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C?utm_source=openai))",
+          "product_research_sections": [
+            {
+              "section_number": 1,
+              "title": "혼자 살면서 청소를 안 하게 되고 먼지가 굴러다닐 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "혼자 살면서 청소를 “안해서 먼지가 굴러” 다닌다고 느낀 상황에서, 로봇청소기를 바로 떠올리게 된다는 식의 조언이 나와요. 집이 클수록 더 강추한다는 뉘앙스도 함께 붙습니다.",
+                  "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                  "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "같은 글에서 “로봇청소기를 사라”라고 먼저 던지고, 로봇이 “열일하는 친구”가 돼서 고마울 거라고 정리합니다(먼지 걱정을 덜고 싶은 마음이 중심).",
+                  "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                  "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 2,
+              "title": "부모님 집을 준비할 때: 문턱/방문턱을 ‘잘 넘어야 한다’는 조건이 생길 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "부모님(두 분 다 70대) 사용을 전제로 로봇청소기를 알아보는데, 핵심 조건으로 구축이라 “이단 방문턱을 잘 넘어야 함”을 가장 중요하게 꼽습니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                  "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "즉, 성능 검증 이전에 “우리 집 구조에서 넘어가야 쓸 수 있다”는 현실 조건이 생기면서 카테고리가 필요해지는 흐름이에요.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                  "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 3,
+              "title": "고양이 털·화장실 모래 때문에 ‘깨끗할 날이 거의 없는 집’이 될 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "집에 고양이 “두마리”가 있고 “고양이 털과 화장실 모래 때문에 집안이 깨끗할 날이 거의 없었”다고 말해요. 이 불편이 로봇청소기를 놓고 살까 말까로 이어지는 진입 계기가 됩니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                  "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "이후 “후기를 접하고 살까 말까의 무한루프”를 몇 달 반복했다가, “성능 향상 및 물청소 기능에 혹하여” 구입으로 가는 흐름이 같이 나옵니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                  "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 4,
+              "title": "먼지·머리카락이 너무 많아서 청소기를 ‘수시로’ 돌려야 할 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "로봇청소기를 쓰는 쪽/안 쓰는 쪽 토론에서, 본인 상황으로 “평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서 핸디 쓰는데 딱 좋네요”라는 말이 나옵니다. 즉, “자주 청소해야 하는 부담”이 진입 계기예요.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                  "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "같은 대화 흐름 안에서 “물걸레 로봇 돌리면 집이 깨끗해집니다”처럼, 로봇청소기로 집이 정돈되는 쪽의 기대(사후 만족/효과)가 같이 붙습니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                  "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 5,
+              "title": "걸레질이 너무 귀찮아져서, 물걸레 로봇을 계속 ‘탐내게’ 될 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "물걸레 청소를 떠올리는 계기 자체가 “닦는거만 제가 하면 되는건데 그게 너무 귀찮아서 물걸레 로봇 청소기가 항상 탐났”다는 형태로 나옵니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                  "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "다만 “100만원이 넘는 가격에 망설였는데”라고 적어, 필요(귀찮음)와 구매 장벽(가격)이 동시에 보이는 지점이 진입 맥락이에요.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                  "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 6,
+              "title": "출퇴근으로 바쁜 평일엔 자동 루틴(오전 흡입+오후 물걸레)을 원할 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "로봇청소기 물걸레질/운영 방식 얘기에서 “출퇴근하고 바쁘다 싶으면 그냥 로청(오전 흡입, 오후 물걸레질)”처럼 평일 운영 루틴이 제시됩니다.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai",
+                  "url_title": "로봇청소기 물걸레청소기 둘중 어떤게 나을까요?? - 뽐뿌:자유게시판",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "이어서 “주말에나 청소기로 직접 청소”라고 덧붙여, 바쁜 시간을 버텨야 해서 자동화가 필요해지는 그림이 같이 드러나요.",
+                  "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai",
+                  "url_title": "로봇청소기 물걸레청소기 둘중 어떤게 나을까요?? - 뽐뿌:자유게시판",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 7,
+              "title": "이사 후 집이 커지면서 청소 시간/관리 부담이 늘었다고 느낄 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "오늘의집 프로젝트 글에서 “이사 오고 집이 커지니 확실히 청소 시간도 오래 걸리고 관리가 힘든 건 사실이더라구요”라고 말합니다.",
+                  "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                  "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "그래서 집 규모 변화(이사) 자체가 “청소를 더 자주/더 오래 해야 하는 상태”로 연결되며, 로봇청소기를 집안 구성(효자 가전)으로 받아들이는 흐름이 보여요.",
+                  "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                  "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 8,
+              "title": "이사선물로 로봇청소기를 받으며 “넓어진 집” 청소 걱정을 줄일 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "오늘의집 콘텐츠에서는 “어머님께서 이사선물로 해주신 롯청”이라고 시작하고, “넓어진 집 청소도 걱정 없”게 됐다는 식으로 말합니다.",
+                  "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                  "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "구체적으로는 “공간학습을 통해 구석구석 원하는곳 청소가능”, “물걸레 기능으로 바닥청소가능”, “물걸레 건조기능있어서 숸내없이 관리되어 편함” 같은 기능 기대가 이사 직후 필요로 연결되는 방식이에요.",
+                  "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                  "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집",
+                  "url_content": null
+                }
+              ]
+            }
+          ]
+        },
+        "web_sources": [
+          {
+            "url": "https://contents.ohou.se/projects/195590",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ohou.se/search/index?query=%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0%EC%84%A0%EB%B0%98&search_affect_type=Related",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ohou.se/productions/2939534/used_card",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/projects/150690?affect_id=1649080&affect_type=ProductSaleDetailCards&card_id=29049970&content_breed=styling_shot&query=",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ohou.se/productions/1153140/used_card?selected_id=1002638487",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ohou.se/productions/3247863/used_card?deal_id=3247863",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/community/posts/20%ED%8F%89%EB%8C%80-%EC%9D%B4%EC%82%AC-%EA%B0%80%EB%A9%B4-%EC%9D%B4%EB%9F%B0-%EC%A3%BC%EB%B0%A9-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B3%A0-%EC%8B%B6%EC%96%B4%EC%84%9C-%EC%8A%A4%ED%81%AC%EB%9E%A9%ED%95%98%EB%8A%94%EC%A4%91-477570439344256?mainCategory=interior",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/projects/138586",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ohou.se/productions/feed?query=%EB%AC%B8%ED%84%B1%EA%B2%BD%EC%82%AC%EB%A1%9C&type=store",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=",
+            "title": "",
+            "hostname": ""
+          }
+        ],
+        "citations": [
+          {
+            "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+            "title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+            "title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+            "title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+            "title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+            "title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+            "title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+            "title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+            "title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+            "title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+            "title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai",
+            "title": "로봇청소기 물걸레청소기 둘중 어떤게 나을까요?? - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=8870677&utm_source=openai",
+            "title": "로봇청소기 물걸레청소기 둘중 어떤게 나을까요?? - 뽐뿌:자유게시판",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+            "title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+            "title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C?utm_source=openai",
+            "title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집",
+            "hostname": ""
+          },
+          {
+            "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C?utm_source=openai",
+            "title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집",
+            "hostname": ""
+          }
+        ]
+      },
+      "cep_cards": [
+        {
+          "id": 16701,
+          "sequence": 1,
+          "cep": "가격이 부담돼 물걸레 로봇을 망설일 때",
+          "nano_intent": "",
+          "kbf": [
+            "물걸레 기능 포함 여부(흡입 전용 vs 물걸레 겸용)",
+            "자동 독(올인원 독) 포함 여부",
+            "앱 기반 구역청소/맵 제어 지원 여부"
+          ],
+          "keywords_volume_total": {
+            "kr": 1937,
+            "kr_raw": 1937
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 1,
+                "quote": "다만 “100만원이 넘는 가격에 망설였는데”라고 적어, 필요(귀찮음)와 구매 장벽(가격)이 동시에 보이는 지점이 진입 맥락이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16699,
+          "sequence": 2,
+          "cep": "물걸레 로봇을 돌리면 더 깨끗해질 거라 기대할 때",
+          "nano_intent": "",
+          "kbf": [
+            "물걸레 구동 방식(진동/리프트/세척 등) 지원 여부",
+            "물걸레 품질을 좌우하는 진동형 물걸레 시스템",
+            "세척/관리 체계를 갖춘 자동 독(올인원 독) 연동"
+          ],
+          "keywords_volume_total": {
+            "kr": 588,
+            "kr_raw": 588
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 1,
+                "quote": "같은 대화 흐름 안에서 “물걸레 로봇 돌리면 집이 깨끗해집니다”처럼, 로봇청소기로 집이 정돈되는 쪽의 기대(사후 만족/효과)가 같이 붙습니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16698,
+          "sequence": 3,
+          "cep": "먼지와 머리카락이 많아 자주 청소해야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "고빈도 청소를 지원하는 구역 지정 청소 기능",
+            "흡입 성능 중심의 메인 브러시/흡입 구조",
+            "물걸레와 흡입 기능을 함께 운용 가능한 겸용 설계"
+          ],
+          "keywords_volume_total": {
+            "kr": 299,
+            "kr_raw": 17343
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "로봇청소기를 쓰는 쪽/안 쓰는 쪽 토론에서, 본인 상황으로 “평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서 핸디 쓰는데 딱 좋네요”라는 말이 나옵니다. 즉, “자주 청소해야 하는 부담”이 진입 계기예요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16695,
+          "sequence": 4,
+          "cep": "부모님 집을 준비하며 방문턱을 넘어야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "방문턱/문턱 통과에 유리한 구동부 구조(낮은 턱 진입 설계)",
+            "장애물 회피를 위한 카메라·비전 기반 인식",
+            "집안 전체를 계획 동선으로 이동하는 내비게이션(맵핑/VSLAM 등)"
+          ],
+          "keywords_volume_total": {
+            "kr": 38,
+            "kr_raw": 47
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "부모님(두 분 다 70대) 사용을 전제로 로봇청소기를 알아보는데, 핵심 조건으로 구축이라 “이단 방문턱을 잘 넘어야 함”을 가장 중요하게 꼽습니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼"
+              },
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "즉, 성능 검증 이전에 “우리 집 구조에서 넘어가야 쓸 수 있다”는 현실 조건이 생기면서 카테고리가 필요해지는 흐름이에요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16702,
+          "sequence": 5,
+          "cep": "이사 후 집이 커져 청소 시간·관리 부담이 늘 때",
+          "nano_intent": "",
+          "kbf": [
+            "집 전체 맵핑 기반 계획 동선 청소(내비게이션/맵핑)",
+            "구역 지정 청소를 지원하는 앱 제어",
+            "장애물 회피 성능을 위한 비전(카메라) 기반 인식"
+          ],
+          "keywords_volume_total": {
+            "kr": 17,
+            "kr_raw": 42
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 7,
+                "bullet_index": 0,
+                "quote": "오늘의집 프로젝트 글에서 “이사 오고 집이 커지니 확실히 청소 시간도 오래 걸리고 관리가 힘든 건 사실이더라구요”라고 말합니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집"
+              },
+              {
+                "section_id": 7,
+                "bullet_index": 1,
+                "quote": "그래서 집 규모 변화(이사) 자체가 “청소를 더 자주/더 오래 해야 하는 상태”로 연결되며, 로봇청소기를 집안 구성(효자 가전)으로 받아들이는 흐름이 보여요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16694,
+          "sequence": 6,
+          "cep": "혼자 살며 청소를 안 해 먼지가 굴러다닐 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 청소 스케줄 설정 가능",
+            "맵 기반 구역 청소(지정 청소) 기능",
+            "자동 독 도킹을 통한 자동 먼지통 관리"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 21
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "혼자 살면서 청소를 “안해서 먼지가 굴러” 다닌다고 느낀 상황에서, 로봇청소기를 바로 떠올리게 된다는 식의 조언이 나와요. 집이 클수록 더 강추한다는 뉘앙스도 함께 붙습니다. ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들"
+              },
+              {
+                "section_id": 1,
+                "bullet_index": 1,
+                "quote": "같은 글에서 “로봇청소기를 사라”라고 먼저 던지고, 로봇이 “열일하는 친구”가 돼서 고마울 거라고 정리합니다(먼지 걱정을 덜고 싶은 마음이 중심). ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16696,
+          "sequence": 7,
+          "cep": "고양이 털과 모래 때문에 집이 계속 더러울 때",
+          "nano_intent": "",
+          "kbf": [
+            "장애물 회피용 카메라 기반 인식",
+            "반려동물 환경에 대응하는 고성능 필터(HEPA 등급 명시형) 구성",
+            "카펫/바닥 오염 대응에 유리한 흡입 기반 청소 구조"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 104
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 0,
+                "quote": "집에 고양이 “두마리”가 있고 “고양이 털과 화장실 모래 때문에 집안이 깨끗할 날이 거의 없었”다고 말해요. 이 불편이 로봇청소기를 놓고 살까 말까로 이어지는 진입 계기가 됩니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16697,
+          "sequence": 8,
+          "cep": "후기를 보며 로봇청소기 살지 계속 망설일 때",
+          "nano_intent": "",
+          "kbf": [
+            "장애물 회피용 카메라·3D 인식 방식",
+            "구역/특정 방 청소를 지원하는 앱 제어",
+            "물걸레 구동 방식이 명확히 분리된 청소 시스템(흡입+물걸레)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 1,
+                "quote": "이후 “후기를 접하고 살까 말까의 무한루프”를 몇 달 반복했다가, “성능 향상 및 물청소 기능에 혹하여” 구입으로 가는 흐름이 같이 나옵니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "일부 항목에서 출처 근거가 약해 의심으로 분류됐습니다."
+          }
+        },
+        {
+          "id": 16700,
+          "sequence": 9,
+          "cep": "걸레질이 너무 귀찮아서 물걸레 로봇이 탐날 때",
+          "nano_intent": "",
+          "kbf": [
+            "자동 독을 통한 걸레 세척·관리 체계",
+            "독 도킹 후 자동 유지관리 가능한 구조",
+            "앱에서 청소 모드/구역을 설정해 직접 조작을 줄이는 인터페이스"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 0,
+                "quote": "물걸레 청소를 떠올리는 계기 자체가 “닦는거만 제가 하면 되는건데 그게 너무 귀찮아서 물걸레 로봇 청소기가 항상 탐났”다는 형태로 나옵니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16703,
+          "sequence": 10,
+          "cep": "이사선물로 로봇청소기를 받아 넓어진 집이 걱정될 때",
+          "nano_intent": "",
+          "kbf": [
+            "구역/방 단위 청소가 가능한 앱 제어",
+            "자동 독(유지관리 자동화) 연동 구조",
+            "장애물 회피용 카메라·비전 인식 방식"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 8,
+                "bullet_index": 0,
+                "quote": "오늘의집 콘텐츠에서는 “어머님께서 이사선물로 해주신 롯청”이라고 시작하고, “넓어진 집 청소도 걱정 없”게 됐다는 식으로 말합니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집"
+              },
+              {
+                "section_id": 8,
+                "bullet_index": 1,
+                "quote": "구체적으로는 “공간학습을 통해 구석구석 원하는곳 청소가능”, “물걸레 기능으로 바닥청소가능”, “물걸레 건조기능있어서 숸내없이 관리되어 편함” 같은 기능 기대가 이사 직후 필요로 연결되는 방식이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          }
+        }
+      ],
+      "cep_card_details": [
+        {
+          "id": 16701,
+          "sequence": 1,
+          "cep": "가격이 부담돼 물걸레 로봇을 망설일 때",
+          "nano_intent": "",
+          "kbf": [
+            "물걸레 기능 포함 여부(흡입 전용 vs 물걸레 겸용)",
+            "자동 독(올인원 독) 포함 여부",
+            "앱 기반 구역청소/맵 제어 지원 여부"
+          ],
+          "keywords_volume_total": {
+            "kr": 1937,
+            "kr_raw": 1937
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 1,
+                "quote": "다만 “100만원이 넘는 가격에 망설였는데”라고 적어, 필요(귀찮음)와 구매 장벽(가격)이 동시에 보이는 지점이 진입 맥락이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격대",
+                "volume_yearly": 238,
+                "volume_monthly": 58
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격",
+                "volume_yearly": 7370,
+                "volume_monthly": 1743
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격디시",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 내돈내산",
+                "volume_yearly": 580,
+                "volume_monthly": 126
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격대",
+                "volume_yearly": 238,
+                "volume_monthly": 58
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격",
+                "volume_yearly": 7370,
+                "volume_monthly": 1743
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "화장실 청소로봇 가격",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 가격디시",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 내돈내산",
+                "volume_yearly": 580,
+                "volume_monthly": 126
+              }
+            ]
+          }
+        },
+        {
+          "id": 16699,
+          "sequence": 2,
+          "cep": "물걸레 로봇을 돌리면 더 깨끗해질 거라 기대할 때",
+          "nano_intent": "",
+          "kbf": [
+            "물걸레 구동 방식(진동/리프트/세척 등) 지원 여부",
+            "물걸레 품질을 좌우하는 진동형 물걸레 시스템",
+            "세척/관리 체계를 갖춘 자동 독(올인원 독) 연동"
+          ],
+          "keywords_volume_total": {
+            "kr": 588,
+            "kr_raw": 588
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 1,
+                "quote": "같은 대화 흐름 안에서 “물걸레 로봇 돌리면 집이 깨끗해집니다”처럼, 로봇청소기로 집이 정돈되는 쪽의 기대(사후 만족/효과)가 같이 붙습니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 물걸레 자동 세척",
+                "volume_yearly": 266,
+                "volume_monthly": 50
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "데일리아이템 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 후기",
+                "volume_yearly": 1840,
+                "volume_monthly": 456
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "최신 로봇청소기",
+                "volume_yearly": 328,
+                "volume_monthly": 82
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "시스템 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 물걸레 자동 세척",
+                "volume_yearly": 266,
+                "volume_monthly": 50
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "데일리아이템 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 삶의질",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 후기",
+                "volume_yearly": 1840,
+                "volume_monthly": 456
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "최신 로봇청소기",
+                "volume_yearly": 328,
+                "volume_monthly": 82
+              }
+            ]
+          }
+        },
+        {
+          "id": 16698,
+          "sequence": 3,
+          "cep": "먼지와 머리카락이 많아 자주 청소해야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "고빈도 청소를 지원하는 구역 지정 청소 기능",
+            "흡입 성능 중심의 메인 브러시/흡입 구조",
+            "물걸레와 흡입 기능을 함께 운용 가능한 겸용 설계"
+          ],
+          "keywords_volume_total": {
+            "kr": 299,
+            "kr_raw": 17343
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "로봇청소기를 쓰는 쪽/안 쓰는 쪽 토론에서, 본인 상황으로 “평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서 핸디 쓰는데 딱 좋네요”라는 말이 나옵니다. 즉, “자주 청소해야 하는 부담”이 진입 계기예요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai",
+                "url_title": "로봇청소기 쓴다vs안쓴다 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "자취 로봇청소기",
+                "volume_yearly": 266,
+                "volume_monthly": 58
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 종류",
+                "volume_yearly": 770,
+                "volume_monthly": 183
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소방법",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "먼지 제거 청소기",
+                "volume_yearly": 254,
+                "volume_monthly": 58
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "가전 청소기",
+                "volume_yearly": 35,
+                "volume_monthly": 11
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소장비",
+                "volume_yearly": 6810,
+                "volume_monthly": 2090
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소 기계",
+                "volume_yearly": 59510,
+                "volume_monthly": 14876
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 며칠에 한번",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "자취 로봇청소기",
+                "volume_yearly": 266,
+                "volume_monthly": 58
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "시스템 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 종류",
+                "volume_yearly": 770,
+                "volume_monthly": 183
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 진공",
+                "volume_yearly": 12,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소방법",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 청소 방법",
+                "volume_yearly": 273,
+                "volume_monthly": 67
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "데일리아이템 로봇청소기",
+                "volume_yearly": 10,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "먼지 제거 청소기",
+                "volume_yearly": 254,
+                "volume_monthly": 58
+              }
+            ]
+          }
+        },
+        {
+          "id": 16695,
+          "sequence": 4,
+          "cep": "부모님 집을 준비하며 방문턱을 넘어야 할 때",
+          "nano_intent": "",
+          "kbf": [
+            "방문턱/문턱 통과에 유리한 구동부 구조(낮은 턱 진입 설계)",
+            "장애물 회피를 위한 카메라·비전 기반 인식",
+            "집안 전체를 계획 동선으로 이동하는 내비게이션(맵핑/VSLAM 등)"
+          ],
+          "keywords_volume_total": {
+            "kr": 38,
+            "kr_raw": 47
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "부모님(두 분 다 70대) 사용을 전제로 로봇청소기를 알아보는데, 핵심 조건으로 구축이라 “이단 방문턱을 잘 넘어야 함”을 가장 중요하게 꼽습니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼"
+              },
+              {
+                "section_id": 2,
+                "bullet_index": 1,
+                "quote": "즉, 성능 검증 이전에 “우리 집 구조에서 넘어가야 쓸 수 있다”는 현실 조건이 생기면서 카테고리가 필요해지는 흐름이에요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai",
+                "url_title": "연로하신 부모님 사용하실 로봇청소기 구매 도움 부탁드려요 - 뽐뿌:가전포럼"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "어버이날 로봇청소기",
+                "volume_yearly": 25,
+                "volume_monthly": 8
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "부모님 로봇청소기",
+                "volume_yearly": 121,
+                "volume_monthly": 30
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "부모님 로봇청소기 디시",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "어버이날 로봇청소기",
+                "volume_yearly": 25,
+                "volume_monthly": 8
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애견",
+                "volume_yearly": 50,
+                "volume_monthly": 9
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "부모님 로봇청소기",
+                "volume_yearly": 121,
+                "volume_monthly": 30
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16702,
+          "sequence": 5,
+          "cep": "이사 후 집이 커져 청소 시간·관리 부담이 늘 때",
+          "nano_intent": "",
+          "kbf": [
+            "집 전체 맵핑 기반 계획 동선 청소(내비게이션/맵핑)",
+            "구역 지정 청소를 지원하는 앱 제어",
+            "장애물 회피 성능을 위한 비전(카메라) 기반 인식"
+          ],
+          "keywords_volume_total": {
+            "kr": 17,
+            "kr_raw": 42
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 7,
+                "bullet_index": 0,
+                "quote": "오늘의집 프로젝트 글에서 “이사 오고 집이 커지니 확실히 청소 시간도 오래 걸리고 관리가 힘든 건 사실이더라구요”라고 말합니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집"
+              },
+              {
+                "section_id": 7,
+                "bullet_index": 1,
+                "quote": "그래서 집 규모 변화(이사) 자체가 “청소를 더 자주/더 오래 해야 하는 상태”로 연결되며, 로봇청소기를 집안 구성(효자 가전)으로 받아들이는 흐름이 보여요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/projects/140958?affect_id=2105579&affect_type=ProductNonSaleDetailCards&card_id=25158238&content_breed=styling_shot&query=&utm_source=openai",
+                "url_title": "은은한 베이지톤으로 따스하게, 25평 신혼집 홈스타일링 | 라이프스타일 슈퍼앱, 오늘의집"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가정용 청소로봇",
+                "volume_yearly": 72,
+                "volume_monthly": 17
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 이모님",
+                "volume_yearly": 97,
+                "volume_monthly": 25
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가정용 청소로봇",
+                "volume_yearly": 72,
+                "volume_monthly": 17
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "시스템 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16694,
+          "sequence": 6,
+          "cep": "혼자 살며 청소를 안 해 먼지가 굴러다닐 때",
+          "nano_intent": "",
+          "kbf": [
+            "앱 기반 청소 스케줄 설정 가능",
+            "맵 기반 구역 청소(지정 청소) 기능",
+            "자동 독 도킹을 통한 자동 먼지통 관리"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 21
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "혼자 살면서 청소를 “안해서 먼지가 굴러” 다닌다고 느낀 상황에서, 로봇청소기를 바로 떠올리게 된다는 식의 조언이 나와요. 집이 클수록 더 강추한다는 뉘앙스도 함께 붙습니다. ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들"
+              },
+              {
+                "section_id": 1,
+                "bullet_index": 1,
+                "quote": "같은 글에서 “로봇청소기를 사라”라고 먼저 던지고, 로봇이 “열일하는 친구”가 돼서 고마울 거라고 정리합니다(먼지 걱정을 덜고 싶은 마음이 중심). ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest",
+                "url_title": "오늘의유머 -  (정보) 혼자 사는 남자들을 위한 꿀팁 아닌 꿀팁들"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 일반 청소기",
+                "volume_yearly": 79,
+                "volume_monthly": 21
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16696,
+          "sequence": 7,
+          "cep": "고양이 털과 모래 때문에 집이 계속 더러울 때",
+          "nano_intent": "",
+          "kbf": [
+            "장애물 회피용 카메라 기반 인식",
+            "반려동물 환경에 대응하는 고성능 필터(HEPA 등급 명시형) 구성",
+            "카펫/바닥 오염 대응에 유리한 흡입 기반 청소 구조"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 104
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 0,
+                "quote": "집에 고양이 “두마리”가 있고 “고양이 털과 화장실 모래 때문에 집안이 깨끗할 날이 거의 없었”다고 말해요. 이 불편이 로봇청소기를 놓고 살까 말까로 이어지는 진입 계기가 됩니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "개똥 로봇청소기",
+                "volume_yearly": 437,
+                "volume_monthly": 104
+              }
+            ]
+          }
+        },
+        {
+          "id": 16697,
+          "sequence": 8,
+          "cep": "후기를 보며 로봇청소기 살지 계속 망설일 때",
+          "nano_intent": "",
+          "kbf": [
+            "장애물 회피용 카메라·3D 인식 방식",
+            "구역/특정 방 청소를 지원하는 앱 제어",
+            "물걸레 구동 방식이 명확히 분리된 청소 시스템(흡입+물걸레)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 1,
+                "quote": "이후 “후기를 접하고 살까 말까의 무한루프”를 몇 달 반복했다가, “성능 향상 및 물청소 기능에 혹하여” 구입으로 가는 흐름이 같이 나옵니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai",
+                "url_title": "샤오미 로봇청소기 2세대 후기(사진 + 동영상 주의) - 뽐뿌:사용기"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "일부 항목에서 출처 근거가 약해 의심으로 분류됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 살까말까",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 살까말까",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16700,
+          "sequence": 9,
+          "cep": "걸레질이 너무 귀찮아서 물걸레 로봇이 탐날 때",
+          "nano_intent": "",
+          "kbf": [
+            "자동 독을 통한 걸레 세척·관리 체계",
+            "독 도킹 후 자동 유지관리 가능한 구조",
+            "앱에서 청소 모드/구역을 설정해 직접 조작을 줄이는 인터페이스"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 0,
+                "quote": "물걸레 청소를 떠올리는 계기 자체가 “닦는거만 제가 하면 되는건데 그게 너무 귀찮아서 물걸레 로봇 청소기가 항상 탐났”다는 형태로 나옵니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=7975040&utm_source=openai",
+                "url_title": "물걸레 로봇청소기 사용후기 - 뽐뿌:자유게시판"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": []
+          }
+        },
+        {
+          "id": 16703,
+          "sequence": 10,
+          "cep": "이사선물로 로봇청소기를 받아 넓어진 집이 걱정될 때",
+          "nano_intent": "",
+          "kbf": [
+            "구역/방 단위 청소가 가능한 앱 제어",
+            "자동 독(유지관리 자동화) 연동 구조",
+            "장애물 회피용 카메라·비전 인식 방식"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 8,
+                "bullet_index": 0,
+                "quote": "오늘의집 콘텐츠에서는 “어머님께서 이사선물로 해주신 롯청”이라고 시작하고, “넓어진 집 청소도 걱정 없”게 됐다는 식으로 말합니다.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집"
+              },
+              {
+                "section_id": 8,
+                "bullet_index": 1,
+                "quote": "구체적으로는 “공간학습을 통해 구석구석 원하는곳 청소가능”, “물걸레 기능으로 바닥청소가능”, “물걸레 건조기능있어서 숸내없이 관리되어 편함” 같은 기능 기대가 이사 직후 필요로 연결되는 방식이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://contents.ohou.se/hashtags/%EC%95%84%ED%8C%8C%ED%8A%B8%EC%B2%AD%EC%86%8C",
+                "url_title": "아파트청소 | 라이프스타일 슈퍼앱, 오늘의집"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": []
+          }
+        }
+      ],
+      "expand_cep_cards": null,
+      "expand_cep_card_details": null,
+      "created_time": "2026-07-22T01:45:08.721901+00:00",
+      "inspection": {
+        "items": [
+          {
+            "cep_id": 0,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "카테고리(가정용 자동 바닥 청소/로봇청소기)와 ‘혼자 생활하며 청소를 덜 하게 되어 먼지가 생기는 문제’라는 진입 계기가 일치함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "‘혼자 살며 청소를 안 해서 먼지가 굴러다닌다’는 상황에서 로봇청소기를 떠올리게 된다는 흐름이 섹션 1에 직접적으로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "혼자 살면서 청소를 “안해서 먼지가 굴러” 다닌다고 느낀 상황에서, 로봇청소기를 바로 떠올리게 된다는 식의 조언이 나와요. 집이 클수록 더 강추한다는 뉘앙스도 함께 붙습니다. ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "같은 글에서 “로봇청소기를 사라”라고 먼저 던지고, 로봇이 “열일하는 친구”가 돼서 고마울 거라고 정리합니다(먼지 걱정을 덜고 싶은 마음이 중심). ([m.todayhumor.co.kr](https://m.todayhumor.co.kr/view.php?no=1487114&table=humorbest))",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16694,
+            "verdict": "pass",
+            "cep_text": "혼자 살며 청소를 안 해 먼지가 굴러다닐 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 1,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "가정용 로봇청소기 선택에서 바닥 로봇의 ‘이동/극복 가능 구조 조건(방문턱)’이 요구됨.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "explicit",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "explicit",
+                "how_feeling": "missing"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "부모님 집 사용 전제로 ‘방문턱/이단 방문턱을 잘 넘어야 함’이 핵심 조건으로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "부모님(두 분 다 70대) 사용을 전제로 로봇청소기를 알아보는데, 핵심 조건으로 구축이라 “이단 방문턱을 잘 넘어야 함”을 가장 중요하게 꼽습니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "즉, 성능 검증 이전에 “우리 집 구조에서 넘어가야 쓸 수 있다”는 현실 조건이 생기면서 카테고리가 필요해지는 흐름이에요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=av&no=148608&utm_source=openai))",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16695,
+            "verdict": "pass",
+            "cep_text": "부모님 집을 준비하며 방문턱을 넘어야 할 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 2,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "반려묘 털/모래로 인해 지저분함이 반복되는 ‘가정 내 바닥/청소 필요’ 맥락이 로봇청소기 문제 정의와 잘 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "explicit",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "implicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "고양이 털과 화장실 모래 때문에 ‘깨끗할 날이 거의 없다’는 불편이 로봇청소기를 고민하게 만드는 진입 계기로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "집에 고양이 “두마리”가 있고 “고양이 털과 화장실 모래 때문에 집안이 깨끗할 날이 거의 없었”다고 말해요. 이 불편이 로봇청소기를 놓고 살까 말까로 이어지는 진입 계기가 됩니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                    "verified": true,
+                    "section_id": 3,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16696,
+            "verdict": "pass",
+            "cep_text": "고양이 털과 모래 때문에 집이 계속 더러울 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 3,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "로봇청소기 구매 여부를 ‘후기 확인 후 결정 지연/망설임’으로 설명하는 것은 카테고리와 적합함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "partial",
+                "evidence": "‘후기를 접하고 살까 말까’ 및 ‘무한루프’의 망설임 자체는 근거가 있으나, 카드 문구는 ‘후기를 보며’로만 요약돼 있고 ‘몇 달 반복’ 같은 시간/반복 맥락이 섹션에는 존재함. 이 때문에 카드 표현과의 정합성은 부분적임.",
+                "cited_bullets": [
+                  {
+                    "quote": "이후 “후기를 접하고 살까 말까의 무한루프”를 몇 달 반복했다가, “성능 향상 및 물청소 기능에 혹하여” 구입으로 가는 흐름이 같이 나옵니다. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?extref=1&id=review2&no=52345&utm_source=openai))",
+                    "verified": true,
+                    "section_id": 3,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16697,
+            "verdict": "warning",
+            "cep_text": "후기를 보며 로봇청소기 살지 계속 망설일 때",
+            "llm_verdict": "warning",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 4,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "먼지/머리카락이 많아 ‘자주 청소’가 필요하다는 정의는 가정용 자동 바닥 청소기(로봇청소기) 구매 동기로 타당함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "‘평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서’라는 상황이 그대로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "로봇청소기를 쓰는 쪽/안 쓰는 쪽 토론에서, 본인 상황으로 “평소 먼지 머리카락이 너무 많아 수시로 청소기 써야 해서 핸디 쓰는데 딱 좋네요”라는 말이 나옵니다. 즉, “자주 청소해야 하는 부담”이 진입 계기예요. ([m.ppomppu.co.kr](https://m.ppomppu.co.kr/new/bbs_view.php?id=freeboard&no=9793475&utm_source=openai))",
+                    "verified": true,
+                    "section_id": 4,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16698,
+            "verdict": "pass",
+            "cep_text": "먼지와 머리카락이 많아 자주 청소해야 할 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 5,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘물걸레 로봇을 돌리면 더 깨끗해질 거라 기대’는 자동 바닥 청소/물걸레 기능을 사용하는 가정용 청소 로봇 맥락에 부합.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "missing",
+                "when": "missing",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "물걸레(물걸레 로봇)로 집이 깨끗해진다는 기대가 제시되어 있음.",
+                "cited_bullets": [
+                  {
+                    "quote": "같은 대화 흐름 안에서 “물걸레 로봇 돌리면 집이 깨끗해집니다”처럼, 로봇청소기로 집이 정돈되는 쪽의 기대(사후 만족/효과)가 같이 붙습니다.",
+                    "verified": true,
+                    "section_id": 4,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16699,
+            "verdict": "pass",
+            "cep_text": "물걸레 로봇을 돌리면 더 깨끗해질 거라 기대할 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 6,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘걸레질이 너무 귀찮음 → 물걸레 로봇에 대한 탐남’은 물청소 기능이 있는 로봇청소기(가정용 자동 바닥 청소기) 욕구와 잘 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "missing",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "물걸레 청소가 귀찮아서 물걸레 로봇이 탐난다는 동기가 명시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "물걸레 청소를 떠올리는 계기 자체가 “닦는거만 제가 하면 되는건데 그게 너무 귀찮아서 물걸레 로봇 청소기가 항상 탐났”다는 형태로 나옵니다.",
+                    "verified": true,
+                    "section_id": 5,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16700,
+            "verdict": "pass",
+            "cep_text": "걸레질이 너무 귀찮아서 물걸레 로봇이 탐날 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 7,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "가격 부담으로 구매를 망설이는 상황은 로봇청소기(물걸레 로봇 포함) 구매 결정 맥락에 해당.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "missing",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "가격이 부담되어 망설였다는 구매 장벽이 명시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "다만 “100만원이 넘는 가격에 망설였는데”라고 적어, 필요(귀찮음)와 구매 장벽(가격)이 동시에 보이는 지점이 진입 맥락이에요.",
+                    "verified": true,
+                    "section_id": 5,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16701,
+            "verdict": "pass",
+            "cep_text": "가격이 부담돼 물걸레 로봇을 망설일 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 8,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘이사 후 청소 시간/관리 부담 증가’는 자동 바닥 청소(로봇청소기) 도입 이유로 자연스럽게 부합.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "이사 후 집이 커져 청소 시간·관리 부담이 늘었다는 진술이 명시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "오늘의집 프로젝트 글에서 “이사 오고 집이 커지니 확실히 청소 시간도 오래 걸리고 관리가 힘든 건 사실이더라구요”라고 말합니다.",
+                    "verified": true,
+                    "section_id": 7,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "그래서 집 규모 변화(이사) 자체가 “청소를 더 자주/더 오래 해야 하는 상태”로 연결되며, 로봇청소기를 집안 구성(효자 가전)으로 받아들이는 흐름이 보여요.",
+                    "verified": true,
+                    "section_id": 7,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16702,
+            "verdict": "pass",
+            "cep_text": "이사 후 집이 커져 청소 시간·관리 부담이 늘 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 9,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "이사 후 넓어진 공간에 대한 청소 걱정을 로봇청소기가 해결해준다는 구도는 가정용 자동 바닥 청소 로봇 카테고리와 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "implicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "이사선물로 받은 로봇청소기로 넓어진 집 청소 걱정이 줄었다는 내용이 명시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "오늘의집 콘텐츠에서는 “어머님께서 이사선물로 해주신 롯청”이라고 시작하고, “넓어진 집 청소도 걱정 없”게 됐다는 식으로 말합니다.",
+                    "verified": true,
+                    "section_id": 8,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "구체적으로는 “공간학습을 통해 구석구석 원하는곳 청소가능”, “물걸레 기능으로 바닥청소가능”, “물걸레 건조기능있어서 숸내없이 관리되어 편함” 같은 기능 기대가 이사 직후 필요로 연결되는 방식이에요.",
+                    "verified": true,
+                    "section_id": 8,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16703,
+            "verdict": "pass",
+            "cep_text": "이사선물로 로봇청소기를 받아 넓어진 집이 걱정될 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          }
+        ],
+        "summary": {
+          "fail": 0,
+          "pass": 9,
+          "total": 10,
+          "warning": 1,
+          "overall_comment": "전반적으로 CEP 0~4는 제공된 섹션의 해당 상황 설명과 잘 연결됩니다. 다만 카드별 source_section_ids가 비어 있어 근거 매핑은 전적으로 아래 cited_bullets로만 수행했습니다. 또한 CEP 3은 ‘후기를 보며 살지/망설임’의 핵심은 맞지만, ‘몇 달 반복’ 같은 시간 정보는 카드 문구에 없으므로 이는 허위라고 단정할 수는 없으나(카드에 해당 표현이 없음) 표현 일치성 관점에서 source_grounding는 partial로 평가합니다. / 제공된 5~9번 CEP 카드 모두 제공 섹션의 해당 불릿과 내용이 일치하므로(기대/귀찮음/가격 부담/이사 후 부담/이사선물 후 넓어진 집 걱정 완화) 출처 기반성은 양호합니다. 다만 CEP 5는 ‘물걸레 로봇을 돌리면 더 깨끗해질’이라는 표현이 섹션 4(bullet1)의 ‘깨끗해집니다’ 기대와 정확히 맞아떨어지며, CEP 9는 ‘넓어진 집이 걱정될 때’의 형태가 섹션 8(bullet0~1)의 ‘넓어진 집 청소 걱정 없/편함’과 의미적으로 정렬됩니다."
+        },
+        "category": "로봇청소기, 가정용 청소 로봇, 자동 바닥 청소기",
+        "model_info": {
+          "model": "gpt-5.4-nano",
+          "provider": "openai"
+        },
+        "project_id": 1393,
+        "inspected_at": "2026-07-22T10:57:03.057815"
+      }
+    }
+  ]
+}

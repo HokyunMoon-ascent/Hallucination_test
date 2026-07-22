@@ -1,0 +1,844 @@
+[
+  {
+    "project_id": 1256,
+    "product_name": "태블릿",
+    "locale": "KR",
+    "date": "2026-06-11",
+    "cards": 10,
+    "mismatch": [
+      "2:warning",
+      "3:warning",
+      "5:warning",
+      "6:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7490,
+    "missing": []
+  },
+  {
+    "project_id": 1273,
+    "product_name": "공기청정기",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "3:warning",
+      "6:warning",
+      "7:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6603,
+    "missing": []
+  },
+  {
+    "project_id": 1274,
+    "product_name": "로봇청소기",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "4:warning",
+      "6:warning",
+      "7:warning",
+      "8:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6297,
+    "missing": []
+  },
+  {
+    "project_id": 1275,
+    "product_name": "매트리스",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "6:warning",
+      "7:warning",
+      "8:fail",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5757,
+    "missing": []
+  },
+  {
+    "project_id": 1276,
+    "product_name": "인체공학 의자",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5917,
+    "missing": []
+  },
+  {
+    "project_id": 1277,
+    "product_name": "노트북",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "5:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5632,
+    "missing": []
+  },
+  {
+    "project_id": 1278,
+    "product_name": "태블릿",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "3:fail",
+      "7:warning",
+      "8:fail",
+      "9:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4364,
+    "missing": []
+  },
+  {
+    "project_id": 1279,
+    "product_name": "선크림",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "5:warning",
+      "8:warning",
+      "9:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6695,
+    "missing": []
+  },
+  {
+    "project_id": 1280,
+    "product_name": "스킨",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "8:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5465,
+    "missing": []
+  },
+  {
+    "project_id": 1281,
+    "product_name": "단백질바",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "2:warning",
+      "3:warning",
+      "4:warning",
+      "6:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5658,
+    "missing": []
+  },
+  {
+    "project_id": 1282,
+    "product_name": "영양제",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "5:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7920,
+    "missing": []
+  },
+  {
+    "project_id": 1284,
+    "product_name": "치약",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning",
+      "5:warning",
+      "9:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6125,
+    "missing": []
+  },
+  {
+    "project_id": 1285,
+    "product_name": "밀키트",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "4:warning",
+      "5:warning",
+      "9:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5299,
+    "missing": []
+  },
+  {
+    "project_id": 1286,
+    "product_name": "비건 식품",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "5:warning",
+      "8:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6035,
+    "missing": []
+  },
+  {
+    "project_id": 1287,
+    "product_name": "협업툴",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning",
+      "4:warning",
+      "6:warning",
+      "7:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6786,
+    "missing": []
+  },
+  {
+    "project_id": 1288,
+    "product_name": "가족 여행",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning",
+      "4:warning",
+      "5:warning",
+      "6:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7237,
+    "missing": []
+  },
+  {
+    "project_id": 1289,
+    "product_name": "화상 영어",
+    "locale": "KR",
+    "date": "2026-06-16",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "4:warning",
+      "5:fail",
+      "6:fail",
+      "8:fail",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5499,
+    "missing": []
+  },
+  {
+    "project_id": 1324,
+    "product_name": "단백질바",
+    "locale": "KR",
+    "date": "2026-07-08",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "6:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 6214,
+    "missing": []
+  },
+  {
+    "project_id": 1325,
+    "product_name": "클라이밍화",
+    "locale": "KR",
+    "date": "2026-07-08",
+    "cards": 10,
+    "mismatch": [
+      "1:fail",
+      "4:fail",
+      "6:warning",
+      "7:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7028,
+    "missing": []
+  },
+  {
+    "project_id": 1326,
+    "product_name": "러닝화",
+    "locale": "KR",
+    "date": "2026-07-08",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5701,
+    "missing": []
+  },
+  {
+    "project_id": 1328,
+    "product_name": "버티컬 마우스",
+    "locale": "KR",
+    "date": "2026-07-10",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "4:warning",
+      "6:warning",
+      "7:fail",
+      "9:fail",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7001,
+    "missing": []
+  },
+  {
+    "project_id": 1329,
+    "product_name": "버티컬 마우스",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 7095,
+    "missing": []
+  },
+  {
+    "project_id": 1330,
+    "product_name": "클라이밍화",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "7:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3625,
+    "missing": []
+  },
+  {
+    "project_id": 1331,
+    "product_name": "화상 영어",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "5:fail",
+      "7:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2385,
+    "missing": []
+  },
+  {
+    "project_id": 1332,
+    "product_name": "협업툴",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "5:warning",
+      "7:warning",
+      "8:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4403,
+    "missing": []
+  },
+  {
+    "project_id": 1333,
+    "product_name": "밀키트",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "3:warning",
+      "5:warning",
+      "7:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2716,
+    "missing": []
+  },
+  {
+    "project_id": 1334,
+    "product_name": "선크림",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "3:fail",
+      "5:warning",
+      "6:warning",
+      "9:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4362,
+    "missing": []
+  },
+  {
+    "project_id": 1335,
+    "product_name": "로봇청소기",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "6:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4275,
+    "missing": []
+  },
+  {
+    "project_id": 1336,
+    "product_name": "공기청정기",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "1:fail",
+      "2:warning",
+      "5:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3574,
+    "missing": []
+  },
+  {
+    "project_id": 1337,
+    "product_name": "가족 여행",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3372,
+    "missing": []
+  },
+  {
+    "project_id": 1338,
+    "product_name": "비건 식품",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "4:warning",
+      "7:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2726,
+    "missing": []
+  },
+  {
+    "project_id": 1339,
+    "product_name": "치약",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "6:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2673,
+    "missing": []
+  },
+  {
+    "project_id": 1340,
+    "product_name": "태블릿",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "3:warning",
+      "5:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4148,
+    "missing": []
+  },
+  {
+    "project_id": 1341,
+    "product_name": "단백질바",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "4:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2645,
+    "missing": []
+  },
+  {
+    "project_id": 1342,
+    "product_name": "매트리스",
+    "locale": "KR",
+    "date": "2026-07-15",
+    "cards": 10,
+    "mismatch": [
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4747,
+    "missing": []
+  },
+  {
+    "project_id": 1357,
+    "product_name": "버티컬 마우스",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4114,
+    "missing": []
+  },
+  {
+    "project_id": 1358,
+    "product_name": "클라이밍화",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "10:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3792,
+    "missing": []
+  },
+  {
+    "project_id": 1359,
+    "product_name": "화상 영어",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "2:warning",
+      "10:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 5687,
+    "missing": []
+  },
+  {
+    "project_id": 1360,
+    "product_name": "협업툴",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3838,
+    "missing": []
+  },
+  {
+    "project_id": 1361,
+    "product_name": "밀키트",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3442,
+    "missing": []
+  },
+  {
+    "project_id": 1362,
+    "product_name": "선크림",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 2731,
+    "missing": []
+  },
+  {
+    "project_id": 1363,
+    "product_name": "로봇청소기",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "5:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3579,
+    "missing": []
+  },
+  {
+    "project_id": 1364,
+    "product_name": "공기청정기",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "3:warning",
+      "6:warning",
+      "8:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3837,
+    "missing": []
+  },
+  {
+    "project_id": 1365,
+    "product_name": "가족 여행",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "3:warning",
+      "5:warning",
+      "7:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3668,
+    "missing": []
+  },
+  {
+    "project_id": 1366,
+    "product_name": "비건 식품",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "6:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3832,
+    "missing": []
+  },
+  {
+    "project_id": 1367,
+    "product_name": "치약",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "3:fail",
+      "8:warning",
+      "9:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3655,
+    "missing": []
+  },
+  {
+    "project_id": 1368,
+    "product_name": "태블릿",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "2:warning",
+      "6:warning",
+      "8:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3656,
+    "missing": []
+  },
+  {
+    "project_id": 1369,
+    "product_name": "단백질바",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "5:fail",
+      "6:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3571,
+    "missing": []
+  },
+  {
+    "project_id": 1370,
+    "product_name": "매트릭스",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "1:warning",
+      "5:fail",
+      "9:fail"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 4062,
+    "missing": []
+  },
+  {
+    "project_id": 1371,
+    "product_name": "로봇청소기",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "3:warning",
+      "8:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3841,
+    "missing": []
+  },
+  {
+    "project_id": 1372,
+    "product_name": "공기청정기",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [
+      "3:warning"
+    ],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3810,
+    "missing": []
+  },
+  {
+    "project_id": 1373,
+    "product_name": "가족 여행",
+    "locale": "KR",
+    "date": "2026-07-20",
+    "cards": 10,
+    "mismatch": [],
+    "has_inspection": true,
+    "has_content": true,
+    "content_len": 3675,
+    "missing": []
+  }
+]

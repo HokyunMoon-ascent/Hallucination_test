@@ -1,0 +1,561 @@
+{
+  "project_id": 1287,
+  "product_name": "협업툴",
+  "locale": "KR",
+  "created_time": "2026-06-16T14:21:20.575434+00:00",
+  "content": "# 한국 직장인이 협업툴을 “처음” 떠올리는 진짜 순간들: 도입 계기부터 답답함 폭발 지점까지\n\n## 1. 코로나 이후 재택/원격이 일상이 되면서 “대화+미팅+관리”가 한 화면에서 필요할 때\n1. 재택근무가 일상화되면서 화상회의랑 문서관리 같은 업무 기능이 갑자기 더 중요해졌고, 그래서 팀에서 쓰던 방식(메일/전화/메신저)을 합치려다 협업툴 카테고리를 먼저 떠올리게 돼요. 특히 협업툴 수요가 재택근무 확산과 맞물려 커졌다는 관측 자체가 이런 흐름을 잘 보여줘요. ([hankyung.com](https://www.hankyung.com/article/202012010015g))  \n2. “같은 공간에 없으니 계속 붙어있어야” 하는 상황에서는, 원격 근무자와 연결을 유지하려고 채팅/비디오 모임/실시간 대화를 한곳에서 하려는 니즈가 생겨요. Microsoft Teams 같은 경우도 원격 근무지 팀과의 실시간 커뮤니케이션을 장점으로 전면에 두죠. ([microsoft.com](https://www.microsoft.com/ko-kr/microsoft-teams/instant-messaging))  \n3. 외부 인원까지 같이 들어오는 회의/업무가 생기면(예: 협력사, 컨설턴트, 신규 프로젝트 인수인계), “링크만 전달하면 게스트로 초대” 같은 즉시 참여 기능을 찾게 되면서 카카오워크 같은 협업툴을 떠올리는 일이 자주 생겨요. ([kakaocorp.com](https://www.kakaocorp.com/page/service/service/KakaoWork))  \n\n## 2. 낡은 그룹웨어/이메일이 느려서 “딜레이가 누적”될 때 협업툴을 찾게 됨\n1. 팀에서 이미 쓰고 있던 그룹웨어가 느리거나, 이메일처럼 “편지 형식”으로 왕복하다가 업무 딜레이가 반복되면 협업툴을 물색하는 쪽으로 마음이 빨리 기울어요. JANDI 도입기에서도 업데이트되지 않는 그룹웨어/느린 이메일이 먼저 문제로 등장해요. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n2. 이메일이 쌓여서 “필요한 걸 다시 찾는 데 시간”이 들어가면, 결국 메신저/프로젝트 도구로 흩어져 버리는데(사람마다 쓰는 툴이 달라짐) 그 혼란을 정리하려고 협업툴 카테고리로 다시 돌아오게 돼요. 같은 도입기에서 팀별로 각자 원하는 메신저/프로젝트 관리 툴을 찾아쓰게 된 흐름이 설명돼요. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n3. 특히 슬랙처럼 읽고/답변하는 타이밍이 업무 분위기에 강하게 엮이는 팀에서는, “점심 먹으러 나가기 직전에 보낸 메시지”를 제때 확인 못 했는데 공개 채널에서 문제 삼기는 상황처럼 감정 소모가 커져요. 이럴 때 사람들은 “협업툴 자체를 쓰는 이유”를 더 절박하게 느끼고(=답변을 지연하지 않기 위해), 결국 협업툴을 더 적극적으로 보게 됩니다. ([teamblind.com](https://www.teamblind.com/kr/post/%EC%A0%9C%EB%95%8C-%EC%8A%AC%EB%9E%99-%ED%99%95%EC%9D%B8-%EC%95%88%ED%96%88%EB%8B%A4%EA%B3%A0-%EA%B3%B5%EA%B0%9C-%EB%AC%B4%EC%95%88%EC%A3%BC%EB%8A%94-%EB%8C%80%ED%91%9C-bgiko4x8))  \n\n## 3. 개인용 메신저(카톡/네이트온 등)로 업무가 번지면서 “기록이 증발”될 때\n1. 카톡/네이트온 같은 개인용 메신저를 업무용으로 쓰게 되면, 실수가 늘고 대화가 흩어지며(특히 히스토리 관리가 안 되면서) “누가 뭘 어디서 결정했는지”가 흐려져요. JANDI 도입기에서 공사 구분 안 되고 직원들이 업무용으로 쓰기 싫어하는 개인용 메신저가 문제로 지목됩니다. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n2. 회사가 커져가면서 경영진/임원의 관점에서 “업무 히스토리가 사라지는 리스크”가 보이면 더 민감해져요. 도입기에서는 주요 인력이 퇴사하면 업무 히스토리가 증발하는 경우가 잦았고, 그래서 “부서별 대화방을 정리하고 전체 현황 파악이 쉬운” 도구를 찾게 된다고 말해요. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n3. 또 실제 현업에서는 “답장/커뮤니케이션이 나를 힘들게 만드는 구조”를 겪고 나서 협업툴을 다시 보게 돼요. 예를 들어 슬랙 DM을 모니터링하려는 질문/불안이 올라오는 식의 글이 보이면, 사람들은 이 카테고리를 단순한 생산성 도구가 아니라 “평가/책임 구조”로 연결해 인식하기도 해요. ([teamblind.com](https://www.teamblind.com/kr/post/%EC%8A%AC%EB%9E%99-slack-Dm%EA%B0%99%EC%9D%80%EA%B1%B0-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%95%98%EB%8A%94-%ED%9A%8C%EC%82%AC-%EC%9E%88%EC%9D%8C-ckepvwwm?utm_source=openai))  \n\n## 4. 부서·인원이 늘어서 “누구와 무엇을 어디서” 해야 하는지 헷갈릴 때(토픽/채널 정리 욕구)\n1. 협업툴을 도입할 때 가장 먼저 부딪히는 건 “대화방을 어떻게 나눌지”예요. JANDI 도입기에서는 업무 주제나 부서별로 대화방(토픽)을 먼저 세팅해두면 직원들이 어느 방에 들어갈지 고민할 필요가 줄어든다고 말해요. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n2. 동시에 예전 방식(메일/기존 공지 게시판)을 계속 같이 쓰면 혼란이 커져요. 그래서 도입기에서는 기존 메신저/공지 게시판/메일을 강제 폐쇄하고, 전사 공지 공유 채널을 새 협업툴로 “바꿔 인식”시키는 게 핵심이라고 강조합니다. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n3. 팀 단위로 따로 일하던 조직이 한 프로젝트에 같이 들어오면, “다른 팀과 공유 채널로 연결”하는 구조가 필요해져요. 예를 들어 슬랙은 워크스페이스(팀 공간)를 무한히 만들고 공유 채널로 팀 간 협업을 하게 하는 방향을 설명해요. ([zdnet.co.kr](https://zdnet.co.kr/view/?no=20170201113318&utm_source=openai))  \n\n## 5. 결재/공지/피드백을 “모바일로 즉시 처리”해야 할 때 바로 떠오르는 편\n1. 도입 이유로 자주 나오는 게 “모바일 알림”이에요. JANDI 도입기에서는 기존 그룹웨어는 모바일을 지원하지 않아 결재 목록을 PC에서 직접 확인해야 했고, 반대로 협업툴은 결재 정보가 모바일 알림으로 오기 때문에 도입 결정적인 계기가 됐다고 설명합니다. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n2. “메일을 줄여야 일도 빨라진다”는 식의 결론이 나오면 카테고리가 더 또렷해져요. 같은 도입기에서 사내 메일 용량을 줄여 사내 커뮤니케이션을 메일보다 협업툴 메신저로 쓰게 유도했고, 즉각 소통이 가능해서 업무 속도 상승을 기대했다고 해요. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n3. 카카오워크는 결재/승인 알림을 실시간으로 확인하고 클릭 한 번으로 쉽게 처리할 수 있다는 식으로 “처리 흐름 단축”을 강조해요. 이런 포인트는 실제로 결재를 계속 밀리기 싫어하는 사람들의 머릿속 트리거랑 잘 맞습니다. ([kakaocorp.com](https://www.kakaocorp.com/page/service/service/KakaoWork))  \n\n## 6. 외부 파트너/게스트가 끼어들면서 “링크 초대/연결”이 필요한 순간\n1. 협업은 회사 내부에서 끝나지 않아서, 외부 인원을 회의에 바로 붙여야 할 때가 생겨요. 카카오워크는 카카오워크 사용자가 아니어도 링크만 전달하면 게스트로 초대할 수 있다고 안내해요. 이런 상황에서 카테고리가 자연스럽게 떠오릅니다. ([kakaocorp.com](https://www.kakaocorp.com/page/service/service/KakaoWork))  \n2. 팀이 동시에 여러 툴을 돌릴 때(캘린더/이슈/리포지토리/업로드 알림 등) “다 흩어져 있어서 내가 놓침”이 반복되면, 협업툴 쪽에서 외부 서비스 알림을 한곳으로 모아주는 기능을 찾게 돼요. JANDI 이용 가이드에서 JANDI Connect가 타 서비스 메시지/알림을 잔디로 모아 받는다고 설명합니다. ([support.jandi.com](https://support.jandi.com/ko?utm_source=openai))  \n3. 특히 캘린더 일정이나 Trello/JIRA 같은 작업 관리 툴과 연결이 필요해지면 “외부 도구를 쓰는 팀”일수록 협업툴의 연동 카테고리를 더 빨리 찾게 돼요. JANDI Connect는 Google 캘린더, Trello, JIRA 등과의 연동을 통해 팀이 밖에서 진행하는 작업까지 보게 한다는 식으로 소개됩니다. ([docs.channel.io](https://docs.channel.io/jandi/en/categories/fdf97953-Connect?utm_source=openai))  \n\n## 7. 파일/계약서/자료를 찾아야 하는 순간—“기억이 아니라 검색”이 필요할 때\n1. 도입기에서 제일 현실적인 트리거 중 하나가 “파일 관리”예요. JANDI 도입기에서는 파일 저장 기간이 길고(평생) 검색 필터로 쉽게 찾아서, 특히 매장별로 주고받은 계약서 파일을 찾기 편해서 선택했다고 말합니다. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n2. “자료가 누군가 개인 메신저/개인 PC에만 있는 구조”는 위험하게 느껴져요. JANDI 성장 사례에서는 담당 직원이 퇴직하면 개인 메신저 기반으로 주고받은 자료가 사라지는 문제가 반복됐고, 그걸 해결해야 한다는 문제의식이 나옵니다. ([startupjeju.org](https://startupjeju.org/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMTEyMjFiOTA4ZDcxZjQwYWNkIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzA3YTY0YjE3NGIyMzdiNyI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMwN2I2MDUyMDhkNWZhNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5OWMzY2EwNGNlMzUiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D&utm_source=openai))  \n3. 또 실제로 파일이 너무 쌓이면 “용량 관리/정리”가 급해지면서 협업툴을 더 적극적으로 쓰게 됩니다. JANDI 이용 가이드에서도 용량을 관리하기 위한 삭제 정책/방법 같은 실무 이슈가 정리돼 있어요. ([support.jandi.com](https://support.jandi.com/ko))  \n\n## 8. 누가 뭘 했는지 ‘증빙’이 필요해질 때(작업로그/신뢰/추적 니즈)\n1. Jira 같은 프로젝트 관리 툴에서는 “이슈에 작업로그를 남기냐” 자체가 신뢰/통계/투명성과 연결돼요. 실제로 블라인드에는 “Jira 회사에서 작업로그 쓰시나요?”처럼, 작업로그를 남기는 게 귀찮긴 한데 왜 남기냐(신뢰의 문제인지)까지 고민하는 질문이 올라와요. ([teamblind.com](https://www.teamblind.com/kr/post/Jira%EC%A7%80%EB%9D%BC-%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%93%B0%EC%8B%9C%EB%8A%94%EB%B6%84%EB%93%A4-%EC%9E%91%EC%97%85%EB%A1%9C%EA%B7%B8-%EC%93%B0%EC%8B%9C%EB%82%98%EC%9A%94-FEaKFFZG))  \n2. 협업툴을 도입하면 관리자가 전체 현황을 파악하기 쉬워지고, 결과적으로 실수/누락이 줄어드는 방향으로 기대가 생겨요. JANDI 도입기에서는 대화/공지/보고를 협업툴로 옮긴 뒤 직원들의 업무 실수와 누락이 없어졌고, 경영진 세대교체를 위한 계기가 됐다고 말합니다. ([blog.jandi.com](https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/))  \n3. 반대로 협업툴에서 기록/응답 타이밍이 관리·평가와 엮이면 스트레스가 커져요. 블라인드 글에서도 슬랙 확인을 제때 못 했다는 이유로 공개 채널에서 무안이 주어지고, “잠도 못잘 정도로” 스트레스가 커졌다는 흐름이 드러납니다. 이런 감정적 압박이 생길 때 사람들은 협업툴을 더 자주 확인해야 한다고 체감합니다. ([teamblind.com](https://www.teamblind.com/kr/post/%EC%A0%9C%EB%95%8C-%EC%8A%AC%EB%9E%99-%ED%99%95%EC%9D%B8-%EC%95%88%ED%96%88%EB%8B%A4%EA%B3%A0-%EA%B3%B5%EA%B0%9C-%EB%AC%B4%EC%95%88%EC%A3%BC%EB%8A%94-%EB%8C%80%ED%91%9C-bgiko4x8))",
+  "product_research_sections": [
+    {
+      "section_number": 1,
+      "title": "코로나 이후 재택/원격이 일상이 되면서 “대화+미팅+관리”가 한 화면에서 필요할 때",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "재택근무가 일상화되면서 화상회의랑 문서관리 같은 업무 기능이 갑자기 더 중요해졌고, 그래서 팀에서 쓰던 방식(메일/전화/메신저)을 합치려다 협업툴 카테고리를 먼저 떠올리게 돼요. 특히 협업툴 수요가 재택근무 확산과 맞물려 커졌다는 관측 자체가 이런 흐름을 잘 보여줘요.",
+          "url": "https://www.hankyung.com/article/202012010015g",
+          "url_title": "선택 아니라 필수…코로나에 블루오션된 15兆 협업툴 시장 | 한국경제",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "“같은 공간에 없으니 계속 붙어있어야” 하는 상황에서는, 원격 근무자와 연결을 유지하려고 채팅/비디오 모임/실시간 대화를 한곳에서 하려는 니즈가 생겨요. Microsoft Teams 같은 경우도 원격 근무지 팀과의 실시간 커뮤니케이션을 장점으로 전면에 두죠.",
+          "url": "https://www.microsoft.com/ko-kr/microsoft-teams/instant-messaging",
+          "url_title": "인스턴트 메시징 | Microsoft Teams",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "외부 인원까지 같이 들어오는 회의/업무가 생기면(예: 협력사, 컨설턴트, 신규 프로젝트 인수인계), “링크만 전달하면 게스트로 초대” 같은 즉시 참여 기능을 찾게 되면서 카카오워크 같은 협업툴을 떠올리는 일이 자주 생겨요.",
+          "url": "https://www.kakaocorp.com/page/service/service/KakaoWork",
+          "url_title": "요즘 일하는 방식, \n카카오워크 | 카카오",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 2,
+      "title": "낡은 그룹웨어/이메일이 느려서 “딜레이가 누적”될 때 협업툴을 찾게 됨",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "팀에서 이미 쓰고 있던 그룹웨어가 느리거나, 이메일처럼 “편지 형식”으로 왕복하다가 업무 딜레이가 반복되면 협업툴을 물색하는 쪽으로 마음이 빨리 기울어요. JANDI 도입기에서도 업데이트되지 않는 그룹웨어/느린 이메일이 먼저 문제로 등장해요.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "이메일이 쌓여서 “필요한 걸 다시 찾는 데 시간”이 들어가면, 결국 메신저/프로젝트 도구로 흩어져 버리는데(사람마다 쓰는 툴이 달라짐) 그 혼란을 정리하려고 협업툴 카테고리로 다시 돌아오게 돼요. 같은 도입기에서 팀별로 각자 원하는 메신저/프로젝트 관리 툴을 찾아쓰게 된 흐름이 설명돼요.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "특히 슬랙처럼 읽고/답변하는 타이밍이 업무 분위기에 강하게 엮이는 팀에서는, “점심 먹으러 나가기 직전에 보낸 메시지”를 제때 확인 못 했는데 공개 채널에서 문제 삼기는 상황처럼 감정 소모가 커져요. 이럴 때 사람들은 “협업툴 자체를 쓰는 이유”를 더 절박하게 느끼고(=답변을 지연하지 않기 위해), 결국 협업툴을 더 적극적으로 보게 됩니다.",
+          "url": "https://www.teamblind.com/kr/post/%EC%A0%9C%EB%95%8C-%EC%8A%AC%EB%9E%99-%ED%99%95%EC%9D%B8-%EC%95%88%ED%96%88%EB%8B%A4%EA%B3%A0-%EA%B3%B5%EA%B0%9C-%EB%AC%B4%EC%95%88%EC%A3%BC%EB%8A%94-%EB%8C%80%ED%91%9C-bgiko4x8",
+          "url_title": "블라인드 | 회사생활: 제때 슬랙 확인 안했다고 공개 무안주는 대표",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 3,
+      "title": "개인용 메신저(카톡/네이트온 등)로 업무가 번지면서 “기록이 증발”될 때",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "카톡/네이트온 같은 개인용 메신저를 업무용으로 쓰게 되면, 실수가 늘고 대화가 흩어지며(특히 히스토리 관리가 안 되면서) “누가 뭘 어디서 결정했는지”가 흐려져요. JANDI 도입기에서 공사 구분 안 되고 직원들이 업무용으로 쓰기 싫어하는 개인용 메신저가 문제로 지목됩니다.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "회사가 커져가면서 경영진/임원의 관점에서 “업무 히스토리가 사라지는 리스크”가 보이면 더 민감해져요. 도입기에서는 주요 인력이 퇴사하면 업무 히스토리가 증발하는 경우가 잦았고, 그래서 “부서별 대화방을 정리하고 전체 현황 파악이 쉬운” 도구를 찾게 된다고 말해요.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "또 실제 현업에서는 “답장/커뮤니케이션이 나를 힘들게 만드는 구조”를 겪고 나서 협업툴을 다시 보게 돼요. 예를 들어 슬랙 DM을 모니터링하려는 질문/불안이 올라오는 식의 글이 보이면, 사람들은 이 카테고리를 단순한 생산성 도구가 아니라 “평가/책임 구조”로 연결해 인식하기도 해요.",
+          "url": "https://www.teamblind.com/kr/post/%EC%8A%AC%EB%9E%99-slack-Dm%EA%B0%99%EC%9D%80%EA%B1%B0-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%95%98%EB%8A%94-%ED%9A%8C%EC%82%AC-%EC%9E%88%EC%9D%8C-ckepvwwm",
+          "url_title": "블라인드 | 회사생활: 슬랙 (slack) Dm같은거 모니터링 하는 회사 있음??",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 4,
+      "title": "부서·인원이 늘어서 “누구와 무엇을 어디서” 해야 하는지 헷갈릴 때(토픽/채널 정리 욕구)",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "협업툴을 도입할 때 가장 먼저 부딪히는 건 “대화방을 어떻게 나눌지”예요. JANDI 도입기에서는 업무 주제나 부서별로 대화방(토픽)을 먼저 세팅해두면 직원들이 어느 방에 들어갈지 고민할 필요가 줄어든다고 말해요.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "동시에 예전 방식(메일/기존 공지 게시판)을 계속 같이 쓰면 혼란이 커져요. 그래서 도입기에서는 기존 메신저/공지 게시판/메일을 강제 폐쇄하고, 전사 공지 공유 채널을 새 협업툴로 “바꿔 인식”시키는 게 핵심이라고 강조합니다.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "팀 단위로 따로 일하던 조직이 한 프로젝트에 같이 들어오면, “다른 팀과 공유 채널로 연결”하는 구조가 필요해져요. 예를 들어 슬랙은 워크스페이스(팀 공간)를 무한히 만들고 공유 채널로 팀 간 협업을 하게 하는 방향을 설명해요.",
+          "url": "https://zdnet.co.kr/view/?no=20170201113318&utm_source=openai",
+          "url_title": "협업툴 슬랙, MS-시스코와 한판 붙는다 - ZDNet korea",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 5,
+      "title": "결재/공지/피드백을 “모바일로 즉시 처리”해야 할 때 바로 떠오르는 편",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "도입 이유로 자주 나오는 게 “모바일 알림”이에요. JANDI 도입기에서는 기존 그룹웨어는 모바일을 지원하지 않아 결재 목록을 PC에서 직접 확인해야 했고, 반대로 협업툴은 결재 정보가 모바일 알림으로 오기 때문에 도입 결정적인 계기가 됐다고 설명합니다.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "“메일을 줄여야 일도 빨라진다”는 식의 결론이 나오면 카테고리가 더 또렷해져요. 같은 도입기에서 사내 메일 용량을 줄여 사내 커뮤니케이션을 메일보다 협업툴 메신저로 쓰게 유도했고, 즉각 소통이 가능해서 업무 속도 상승을 기대했다고 해요.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "카카오워크는 결재/승인 알림을 실시간으로 확인하고 클릭 한 번으로 쉽게 처리할 수 있다는 식으로 “처리 흐름 단축”을 강조해요. 이런 포인트는 실제로 결재를 계속 밀리기 싫어하는 사람들의 머릿속 트리거랑 잘 맞습니다.",
+          "url": "https://www.kakaocorp.com/page/service/service/KakaoWork",
+          "url_title": "요즘 일하는 방식, \n카카오워크 | 카카오",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 6,
+      "title": "외부 파트너/게스트가 끼어들면서 “링크 초대/연결”이 필요한 순간",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "협업은 회사 내부에서 끝나지 않아서, 외부 인원을 회의에 바로 붙여야 할 때가 생겨요. 카카오워크는 카카오워크 사용자가 아니어도 링크만 전달하면 게스트로 초대할 수 있다고 안내해요. 이런 상황에서 카테고리가 자연스럽게 떠오릅니다.",
+          "url": "https://www.kakaocorp.com/page/service/service/KakaoWork",
+          "url_title": "요즘 일하는 방식, \n카카오워크 | 카카오",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "팀이 동시에 여러 툴을 돌릴 때(캘린더/이슈/리포지토리/업로드 알림 등) “다 흩어져 있어서 내가 놓침”이 반복되면, 협업툴 쪽에서 외부 서비스 알림을 한곳으로 모아주는 기능을 찾게 돼요. JANDI 이용 가이드에서 JANDI Connect가 타 서비스 메시지/알림을 잔디로 모아 받는다고 설명합니다.",
+          "url": "https://support.jandi.com/ko",
+          "url_title": "잔디 이용 가이드",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "특히 캘린더 일정이나 Trello/JIRA 같은 작업 관리 툴과 연결이 필요해지면 “외부 도구를 쓰는 팀”일수록 협업툴의 연동 카테고리를 더 빨리 찾게 돼요. JANDI Connect는 Google 캘린더, Trello, JIRA 등과의 연동을 통해 팀이 밖에서 진행하는 작업까지 보게 한다는 식으로 소개됩니다.",
+          "url": "https://docs.channel.io/jandi/en/categories/fdf97953-Connect",
+          "url_title": "Connect",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 7,
+      "title": "파일/계약서/자료를 찾아야 하는 순간—“기억이 아니라 검색”이 필요할 때",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "도입기에서 제일 현실적인 트리거 중 하나가 “파일 관리”예요. JANDI 도입기에서는 파일 저장 기간이 길고(평생) 검색 필터로 쉽게 찾아서, 특히 매장별로 주고받은 계약서 파일을 찾기 편해서 선택했다고 말합니다.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "“자료가 누군가 개인 메신저/개인 PC에만 있는 구조”는 위험하게 느껴져요. JANDI 성장 사례에서는 담당 직원이 퇴직하면 개인 메신저 기반으로 주고받은 자료가 사라지는 문제가 반복됐고, 그걸 해결해야 한다는 문제의식이 나옵니다.",
+          "url": "https://startupjeju.org/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMTEyMjFiOTA4ZDcxZjQwYWNkIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzA3YTY0YjE3NGIyMzdiNyI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMwN2I2MDUyMDhkNWZhNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5OWMzY2EwNGNlMzUiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D&utm_source=openai",
+          "url_title": "협업툴 ‘잔디’의 고객 중심 전략과 성장 - 토스랩",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "또 실제로 파일이 너무 쌓이면 “용량 관리/정리”가 급해지면서 협업툴을 더 적극적으로 쓰게 됩니다. JANDI 이용 가이드에서도 용량을 관리하기 위한 삭제 정책/방법 같은 실무 이슈가 정리돼 있어요.",
+          "url": "https://support.jandi.com/ko",
+          "url_title": "잔디 이용 가이드",
+          "url_content": null
+        }
+      ]
+    },
+    {
+      "section_number": 8,
+      "title": "누가 뭘 했는지 ‘증빙’이 필요해질 때(작업로그/신뢰/추적 니즈)",
+      "bullets": [
+        {
+          "index": 0,
+          "content": "Jira 같은 프로젝트 관리 툴에서는 “이슈에 작업로그를 남기냐” 자체가 신뢰/통계/투명성과 연결돼요. 실제로 블라인드에는 “Jira 회사에서 작업로그 쓰시나요?”처럼, 작업로그를 남기는 게 귀찮긴 한데 왜 남기냐(신뢰의 문제인지)까지 고민하는 질문이 올라와요.",
+          "url": "https://www.teamblind.com/kr/post/Jira%EC%A7%80%EB%9D%BC-%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%93%B0%EC%8B%9C%EB%8A%94%EB%B6%84%EB%93%A4-%EC%9E%91%EC%97%85%EB%A1%9C%EA%B7%B8-%EC%93%B0%EC%8B%9C%EB%82%98%EC%9A%94-FEaKFFZG",
+          "url_title": "블라인드 | 회사생활: Jira(지라) 회사에서 쓰시는분들 작업로그 쓰시나요?",
+          "url_content": null
+        },
+        {
+          "index": 1,
+          "content": "협업툴을 도입하면 관리자가 전체 현황을 파악하기 쉬워지고, 결과적으로 실수/누락이 줄어드는 방향으로 기대가 생겨요. JANDI 도입기에서는 대화/공지/보고를 협업툴로 옮긴 뒤 직원들의 업무 실수와 누락이 없어졌고, 경영진 세대교체를 위한 계기가 됐다고 말합니다.",
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/",
+          "url_title": "중견 기업 담당자의 협업툴 도입기 - 업무용 협업툴 JANDI 블로그",
+          "url_content": null
+        },
+        {
+          "index": 2,
+          "content": "반대로 협업툴에서 기록/응답 타이밍이 관리·평가와 엮이면 스트레스가 커져요. 블라인드 글에서도 슬랙 확인을 제때 못 했다는 이유로 공개 채널에서 무안이 주어지고, “잠도 못잘 정도로” 스트레스가 커졌다는 흐름이 드러납니다. 이런 감정적 압박이 생길 때 사람들은 협업툴을 더 자주 확인해야 한다고 체감합니다.",
+          "url": "https://www.teamblind.com/kr/post/%EC%A0%9C%EB%95%8C-%EC%8A%AC%EB%9E%99-%ED%99%95%EC%9D%B8-%EC%95%88%ED%96%88%EB%8B%A4%EA%B3%A0-%EA%B3%B5%EA%B0%9C-%EB%AC%B4%EC%95%88%EC%A3%BC%EB%8A%94-%EB%8C%80%ED%91%9C-bgiko4x8",
+          "url_title": "블라인드 | 회사생활: 제때 슬랙 확인 안했다고 공개 무안주는 대표",
+          "url_content": null
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "seq": 1,
+      "card_id": 15623,
+      "cep": "프로젝트 진행 중 ‘내가 한 작업이 맞는지/언제 결정됐는지’ 같은 설명이 필요해지고, 작업로그·증빙을 남겨야 할 때",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "작업로그/증빙/추적을 남겨 신뢰를 확보하는 요구는 프로젝트 관리(이슈/로그)와 문서·기록 관리 중심 협업툴 카테고리에 잘 들어맞습니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "프로젝트 진행 중 언제 결정됐는지/누가 무엇을 했는지 설명·추적이 필요하다는 취지는 작업로그/증빙(신뢰/투명성) 및 블라인드에서 작업로그·시간 관련 고민/스트레스 근거와 부합합니다. 또한 ‘업무 히스토리’가 사라지는 리스크를 민감하게 보는 근거도 직접 연결됩니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "vague_expression",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "Jira 같은 프로젝트 관리 툴에서는 “이슈에 작업로그를 남기냐” 자체가 신뢰/통계/투명성과 연결돼요.",
+          "verified": true,
+          "sec": 8,
+          "url": "https://www.teamblind.com/kr/post/Jira%EC%A7%80%EB%9D%BC-%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%93%B0%EC%8B%9C%EB%8A%94%EB%B6%84%EB%93%A4-%EC%9E%91%EC%97%85%EB%A1%9C%EA%B7%B8-%EC%93%B0%EC%8B%9C%EB%82%98%EC%9A%94-FEaKFFZG"
+        },
+        {
+          "quote": "협업툴을 도입하면 관리자가 전체 현황을 파악하기 쉬워지고, 결과적으로 실수/누락이 줄어드는 방향으로 기대가 생겨요.",
+          "verified": true,
+          "sec": 8,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "회사가 커져가면서 경영진/임원의 관점에서 “업무 히스토리가 사라지는 리스크”가 보이면 더 민감해져요.",
+          "verified": true,
+          "sec": 3,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    },
+    {
+      "seq": 2,
+      "card_id": 15614,
+      "cep": "재택근무 시작 후 팀원들과 화상회의를 하면서도 동시에 메모/문서 작업과 일정 공유까지 한 화면에서 처리해야 할 때",
+      "verdict": "pass",
+      "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "원격 협업 시 팀 커뮤니케이션(화상회의/실시간 대화), 문서 작업, 일정 공유에 해당하는 필요가 협업툴 카테고리와 잘 부합합니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "재택/원격 일상화로 화상회의와 문서관리 등 업무 기능이 한 화면에서 필요해진다는 흐름과, 원격 근무 상황에서 대화/미팅/연결 니즈가 생긴다는 소스가 직접적으로 대응됩니다."
+      },
+      "hallucination_flags": [],
+      "quotes": [
+        {
+          "quote": "“같은 공간에 없으니 계속 붙어있어야” 하는 상황에서는, 원격 근무자와 연결을 유지하려고 채팅/비디오 모임/실시간 대화를 한곳에서 하려는 니즈가 생겨요. Microsoft Teams 같은 경우도 원격 근무지 팀과의 실시간 커뮤니케이션을 장점으로 전면에 두죠.",
+          "verified": true,
+          "sec": 1,
+          "url": "https://www.microsoft.com/ko-kr/microsoft-teams/instant-messaging"
+        },
+        {
+          "quote": "재택근무가 일상화되면서 화상회의랑 문서관리 같은 업무 기능이 갑자기 더 중요해졌고, 그래서 팀에서 쓰던 방식(메일/전화/메신저)을 합치려다 협업툴 카테고리를 먼저 떠올리게 돼요.",
+          "verified": true,
+          "sec": 1,
+          "url": "https://www.hankyung.com/article/202012010015g"
+        }
+      ]
+    },
+    {
+      "seq": 3,
+      "card_id": 15619,
+      "cep": "모바일로 결재/승인 요청 알림이 계속 오는데, 제때 처리하려면 PC 앞에 오래 있을 수 없을 때",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "‘결재/승인 알림을 모바일로 즉시 처리’는 협업툴(문서/업무 흐름) 카테고리와 잘 맞습니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "모바일 알림(결재/승인) 때문에 PC 앞에 오래 있을 수 없는 상황이라는 트리거는 섹션 5의 모바일 알림 근거 및 결재 흐름 단축 강조와 맞습니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "vague_expression",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "도입 이유로 자주 나오는 게 “모바일 알림”이에요. JANDI 도입기에서는 기존 그룹웨어는 모바일을 지원하지 않아 결재 목록을 PC에서 직접 확인해야 했고, 반대로 협업툴은 결재 정보가 모바일 알림으로 오기 때문에 도입 결정적인 계기가 됐다고 설명합니다.",
+          "verified": true,
+          "sec": 5,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "카카오워크는 결재/승인 알림을 실시간으로 확인하고 클릭 한 번으로 쉽게 처리할 수 있다는 식으로 “처리 흐름 단축”을 강조해요.",
+          "verified": true,
+          "sec": 5,
+          "url": "https://www.kakaocorp.com/page/service/service/KakaoWork"
+        }
+      ]
+    },
+    {
+      "seq": 4,
+      "card_id": 15622,
+      "cep": "계약서/자료를 다시 찾아야 하는데 개인 PC나 개인 메신저에 흩어져 있어 검색이 안 될 때(기억이 아니라 파일 위치가 필요할 때)",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "계약서/자료를 찾기 위한 파일 관리·검색(그리고 개인 PC/메신저에 흩어진 리스크 해소)은 문서 공동작업/협업툴 카테고리와 잘 맞습니다."
+      },
+      "source_grounding": {
+        "status": "partial",
+        "evidence": "개인 PC/개인 메신저에 자료가 있는 구조의 위험과, 이를 해결하려는 문제의식은 근거됩니다. 다만 CEP의 ‘검색이 안 될 때(기억이 아니라 파일 위치가 필요)’ 중 ‘검색이 안 됨’ 자체는 섹션 7 bullet 1의 표현과 직접 일치하지 않아 부분 근거입니다. 파일을 ‘찾기 편함’(검색/필터) 관련 직접 근거는 섹션 7 bullet 0에 있으나, CEP처럼 ‘개인 PC/메신저에 흩어져 검색이 안 됨’의 결론을 동일 문장으로 연결하진 못합니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "no_source_quote",
+          "note": ""
+        },
+        {
+          "type": "vague_expression",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "“자료가 누군가 개인 메신저/개인 PC에만 있는 구조”는 위험하게 느껴져요. JANDI 성장 사례에서는 담당 직원이 퇴직하면 개인 메신저 기반으로 주고받은 자료가 사라지는 문제가 반복됐고, 그걸 해결해야 한다는 문제의식이 나옵니다.",
+          "verified": true,
+          "sec": 7,
+          "url": "https://startupjeju.org/post_file_download.cm?c=YTo1OntzOjEwOiJib2FyZF9jb2RlIjtzOjIyOiJiMjAyMTEyMjFiOTA4ZDcxZjQwYWNkIjtzOjk6InBvc3RfY29kZSI7czoyMjoicDIwMjUwMzA3YTY0YjE3NGIyMzdiNyI7czo5OiJmaWxlX2NvZGUiO3M6MjI6InAyMDI1MDMwN2I2MDUyMDhkNWZhNjUiO3M6MTk6InBvc3RfZG93bmxvYWRfdG9rZW4iO3M6MTM6IjY5OWMzY2EwNGNlMzUiO3M6MTE6Im1lbWJlcl9jb2RlIjtOO30%3D&utm_source=openai"
+        },
+        {
+          "quote": "도입기에서 제일 현실적인 트리거 중 하나가 “파일 관리”예요. JANDI 도입기에서는 파일 저장 기간이 길고(평생) 검색 필터로 쉽게 찾아서, 특히 매장별로 주고받은 계약서 파일을 찾기 편해서 선택했다고 말합니다.",
+          "verified": true,
+          "sec": 7,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    },
+    {
+      "seq": 5,
+      "card_id": 15615,
+      "cep": "구성원끼리 진행하던 업무가 협력사/컨설턴트까지 포함되면서, 회의 링크를 즉시 공유하고 외부도 바로 참여시키고 싶을 때",
+      "verdict": "pass",
+      "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "외부 파트너가 포함된 회의 링크 공유 및 즉시 참여(게스트 초대)는 팀 커뮤니케이션/협업툴의 핵심 사용 맥락과 일치합니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "외부 인원(협력사/컨설턴트 등)까지 포함되는 회의에서 링크 전달로 게스트 초대/즉시 참여시키려는 니즈가 소스에 명시되어 있습니다."
+      },
+      "hallucination_flags": [],
+      "quotes": [
+        {
+          "quote": "외부 인원까지 같이 들어오는 회의/업무가 생기면(예: 협력사, 컨설턴트, 신규 프로젝트 인수인계), “링크만 전달하면 게스트로 초대” 같은 즉시 참여 기능을 찾게 되면서 카카오워크 같은 협업툴을 떠올리는 일이 자주 생겨요.",
+          "verified": true,
+          "sec": 1,
+          "url": "https://www.kakaocorp.com/page/service/service/KakaoWork"
+        }
+      ]
+    },
+    {
+      "seq": 6,
+      "card_id": 15621,
+      "cep": "캘린더 일정, 이슈 관리, 업로드 알림 등 여러 서비스가 동시에 돌아가는데, 중요한 변경을 놓치기 시작했을 때",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "캘린더/이슈/업로드 알림 등 여러 도구 알림을 협업툴로 통합해 ‘놓침’을 줄이려는 니즈는 프로젝트 관리 및 팀 커뮤니케이션에 적합합니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "여러 서비스가 동시에 돌고 외부 알림이 흩어져 놓침이 반복되면, 협업툴 쪽에서 알림/연동을 한곳에 모으는 기능을 찾게 된다는 내용이 그대로 ‘중요한 변경을 놓치기 시작’과 맞습니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "vague_expression",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "팀이 동시에 여러 툴을 돌릴 때(캘린더/이슈/리포지토리/업로드 알림 등) “다 흩어져 있어서 내가 놓침”이 반복되면, 협업툴 쪽에서 외부 서비스 알림을 한곳으로 모아주는 기능을 찾게 돼요.",
+          "verified": true,
+          "sec": 6,
+          "url": "https://support.jandi.com/ko"
+        }
+      ]
+    },
+    {
+      "seq": 7,
+      "card_id": 15617,
+      "cep": "팀이 각자 카톡/개인 메신저로 소통하다가 중요한 결정과 파일이 흩어져 ‘누가 언제 뭘 정했는지’ 기억이 안 날 때",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "개인 메신저 기반 커뮤니케이션의 문제(히스토리/기록 소실)로 협업툴을 찾는 흐름은 팀 커뮤니케이션 및 문서/기록 관리 니즈와 부합합니다."
+      },
+      "source_grounding": {
+        "status": "partial",
+        "evidence": "개인용 메신저로 인해 결정/히스토리가 흐려져 ‘누가 뭘 어디서 결정했는지’가 흐려진다는 점은 소스가 지지합니다. 다만 CEP에는 ‘중요한 결정과 파일이 흩어져’가 함께 들어가 있는데, 파일 흩어짐은 제시된 Section 3의 근거와 직접 연결되기 어렵고(파일은 Section 7에서 주로 다룸), 또한 ‘누가 언제 뭘 정했는지’의 시간성(언제)은 Section 3의 원문 표현과 동일하지 않습니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "no_source_quote",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "카톡/네이트온 같은 개인용 메신저를 업무용으로 쓰게 되면, 실수가 늘고 대화가 흩어지며(특히 히스토리 관리가 안 되면서) “누가 뭘 어디서 결정했는지”가 흐려져요.",
+          "verified": true,
+          "sec": 3,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "회사가 커져가면서 경영진/임원의 관점에서 “업무 히스토리가 사라지는 리스크”가 보이면 더 민감해져요. 도입기에서는 주요 인력이 퇴사하면 업무 히스토리가 증발하는 경우가 잦았고, 그래서 “부서별 대화방을 정리하고 전체 현황 파악이 쉬운” 도구를 찾게 된다고 말해요.",
+          "verified": true,
+          "sec": 3,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    },
+    {
+      "seq": 8,
+      "card_id": 15616,
+      "cep": "기존 그룹웨어가 느리거나 이메일로 주고받는 과정이 답답해져서, 업데이트가 지연되며 업무가 계속 밀릴 때",
+      "verdict": "pass",
+      "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "프로젝트 관리/문서·커뮤니케이션을 지연시키는 비효율(딜레이 누적) 때문에 협업툴로 전환하는 맥락이 잘 맞습니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "그룹웨어가 느리거나 이메일 왕복으로 딜레이가 누적되며 협업툴을 찾게 되는 상황이 그대로 대응됩니다."
+      },
+      "hallucination_flags": [],
+      "quotes": [
+        {
+          "quote": "팀에서 이미 쓰고 있던 그룹웨어가 느리거나, 이메일처럼 “편지 형식”으로 왕복하다가 업무 딜레이가 반복되면 협업툴을 물색하는 쪽으로 마음이 빨리 기울어요. JANDI 도입기에서도 업데이트되지 않는 그룹웨어/느린 이메일이 먼저 문제로 등장해요.",
+          "verified": true,
+          "sec": 2,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "이메일이 쌓여서 “필요한 걸 다시 찾는 데 시간”이 들어가면, 결국 메신저/프로젝트 도구로 흩어져 버리는데(사람마다 쓰는 툴이 달라짐) 그 혼란을 정리하려고 협업툴 카테고리로 다시 돌아오게 돼요.",
+          "verified": true,
+          "sec": 2,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    },
+    {
+      "seq": 9,
+      "card_id": 15618,
+      "cep": "팀 규모가 커지면서 부서별로 대화방이 너무 많아지고, 어떤 방에서 어떤 업무가 오가는지 헷갈릴 때(토픽/채널 정리가 필요해질 때)",
+      "verdict": "pass",
+      "verdict_reason": "주장을 뒷받침하는 출처 인용 2건이 원문에서 확인됐습니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "부서별 채널/토픽 구조를 정리해 문서·커뮤니케이션 흐름을 관리하려는 요구는 프로젝트 관리 및 팀 커뮤니케이션 범주에 적합합니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "부서/주제로 대화방(토픽)을 어떻게 나눌지 먼저 세팅하면 고민이 줄어든다는 소스와, 기존 방식(메신저/공지/메일)과 병행 시 혼란이 커져 전사 공지 공유 채널로 바꿔 인식시키는 핵심이라는 소스가 CEP의 ‘헷갈림/토픽·채널 정리 필요’와 직접 대응합니다."
+      },
+      "hallucination_flags": [],
+      "quotes": [
+        {
+          "quote": "협업툴을 도입할 때 가장 먼저 부딪히는 건 “대화방을 어떻게 나눌지”예요. JANDI 도입기에서는 업무 주제나 부서별로 대화방(토픽)을 먼저 세팅해두면 직원들이 어느 방에 들어갈지 고민할 필요가 줄어든다고 말해요.",
+          "verified": true,
+          "sec": 4,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "동시에 예전 방식(메일/기존 공지 게시판)을 계속 같이 쓰면 혼란이 커져요. 그래서 도입기에서는 기존 메신저/공지 게시판/메일을 강제 폐쇄하고, 전사 공지 공유 채널을 새 협업툴로 “바꿔 인식”시키는 게 핵심이라고 강조합니다.",
+          "verified": true,
+          "sec": 4,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    },
+    {
+      "seq": 10,
+      "card_id": 15620,
+      "cep": "회사가 결재와 공지를 메일로 주고받았는데 메일이 너무 쌓여 확인이 늦어지면서, 커뮤니케이션을 다른 방식으로 바꿔야겠다고 느낄 때",
+      "verdict": "warning",
+      "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다.",
+      "category_fit": {
+        "status": "ok",
+        "evidence": "메일 딜레이/누적 문제로 ‘커뮤니케이션 방식을 다른 방식으로 전환’하는 흐름은 팀 커뮤니케이션/문서 공동작업 기반 협업툴 카테고리에 부합합니다."
+      },
+      "source_grounding": {
+        "status": "ok",
+        "evidence": "메일로 왕복/딜레이가 반복되어 확인 시간이 늘고, 협업툴로 커뮤니케이션 방식을 바꿀 필요가 생긴다는 내용이 섹션 2와 섹션 4(메일/공지 병행 시 혼란) 근거와 연결됩니다."
+      },
+      "hallucination_flags": [
+        {
+          "type": "redundant",
+          "note": ""
+        }
+      ],
+      "quotes": [
+        {
+          "quote": "팀에서 이미 쓰고 있던 그룹웨어가 느리거나, 이메일처럼 “편지 형식”으로 왕복하다가 업무 딜레이가 반복되면 협업툴을 물색하는 쪽으로 마음이 빨리 기울어요.",
+          "verified": true,
+          "sec": 2,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "이메일이 쌓여서 “필요한 걸 다시 찾는 데 시간”이 들어가면, 결국 메신저/프로젝트 도구로 흩어져 버리는데(사람마다 쓰는 툴이 달라짐) 그 혼란을 정리하려고 협업툴 카테고리로 다시 돌아오게 돼요.",
+          "verified": true,
+          "sec": 2,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        },
+        {
+          "quote": "동시에 예전 방식(메일/기존 공지 게시판)을 계속 같이 쓰면 혼란이 커져요. 그래서 도입기에서는 기존 메신저/공지 게시판/메일을 강제 폐쇄하고, 전사 공지 공유 채널을 새 협업툴로 “바꿔 인식”시키는 게 핵심이라고 강조합니다.",
+          "verified": true,
+          "sec": 4,
+          "url": "https://blog.jandi.com/ko/2019/03/19/jandi_real_review_30/"
+        }
+      ]
+    }
+  ]
+}

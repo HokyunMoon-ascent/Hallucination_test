@@ -16,9 +16,19 @@
   const authz = tok.startsWith('Bearer ') ? tok : 'Bearer ' + tok;
   const H = { 'Authorization': authz, 'Content-Type': 'application/json', 'Accept-Language': 'ko-KR' };
 
-  // (옵션) 이 날짜(YYYY-MM-DD) 이후 생성된 프로젝트만 수집. 빈 문자열이면 전체 수집.
-  // 예: 재생성분만 걷을 때 const SINCE = '2026-07-14';
-  const SINCE = '';
+  // (옵션) 이 시점(KST) 이후 생성된 프로젝트만 수집. 빈 문자열이면 전체 수집.
+  // ★ 화면 '최근 항목' 목록에 보이는 시각(KST)을 그대로 적으세요. 내부에서 UTC로 변환해 비교합니다.
+  // 날짜만: '2026-07-22'  /  초 단위까지: '2026-07-22 14:20:00' (KST 기준)
+  const SINCE_KST = '2026-07-22 14:20:00';   // = 14:20:08 로봇청소기부터 수집
+  // KST(UTC+9) → UTC 변환. API created_time(UTC)과 문자열(초 단위)로 비교.
+  const SINCE = SINCE_KST ? (() => {
+    const m = SINCE_KST.trim().match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?$/);
+    if (!m) { console.warn('⚠ SINCE_KST 형식 오류 → 필터 무시:', SINCE_KST); return ''; }
+    const [, Y, Mo, D, h = '00', mi = '00', s = '00'] = m;
+    const utc = new Date(Date.UTC(+Y, +Mo - 1, +D, +h - 9, +mi, +s));  // KST → UTC (-9h)
+    return utc.toISOString().slice(0, 19).replace('T', ' ');
+  })() : '';
+  if (SINCE_KST) console.log(`⏱️  필터: KST ${SINCE_KST} 이후  =  UTC ${SINCE} 이후`);
   const api = (p) => fetch(p, { headers: H, credentials: 'include' })
     .then(r => r.ok ? r.json() : Promise.reject(`${r.status} ${p}`));
 
@@ -41,13 +51,13 @@
       const d = await api(`/api/labs/cep_finder/project/${r.id}`);
       const detail = d.result;
       if (!detail?.cep_cards?.length) { skipped.push(`${r.id} ${r.product_name} (미완료/카드없음)`); continue; }
-      // (옵션) created_time 기준 날짜 필터 — SINCE 이후 생성분만 수집
+      // (옵션) created_time 기준 시점 필터 — SINCE(UTC) 이후 생성분만 수집 (초 단위 비교)
       if (SINCE) {
-        const ct = (detail.created_time || '').slice(0, 10);   // 'YYYY-MM-DD'
-        if (ct && ct < SINCE) { skipped.push(`${r.id} ${r.product_name} (${ct} < ${SINCE} 이전)`); continue; }
+        const ct = (detail.created_time || '').slice(0, 19).replace('T', ' ');
+        if (ct && ct < SINCE) { skipped.push(`${r.id} ${r.product_name} (${ct} UTC < ${SINCE} UTC 이전)`); continue; }
       }
       out.push(detail);
-      console.log(`✓ ${r.id} ${r.product_name} — ${detail.cep_cards.length} cards${detail.created_time?` (${detail.created_time.slice(0,10)})`:''}`);
+      console.log(`✓ ${r.id} ${r.product_name} — ${detail.cep_cards.length} cards${detail.created_time?` (${detail.created_time.slice(0,19).replace('T',' ')} UTC)`:''}`);
     } catch (e) {
       skipped.push(`${r.id} ${r.product_name} (에러: ${e})`);
       console.warn(`✗ ${r.id} ${r.product_name}: ${e}`);
@@ -63,7 +73,7 @@
   const blob = new Blob([JSON.stringify({ harvested_projects: out.length, total_cards: totalCards, projects: out }, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `cep_bundle_${out.length}proj_${totalCards}cards${SINCE?`_since${SINCE}`:''}.json`;
+  a.download = `cep_bundle_${out.length}proj_${totalCards}cards${SINCE_KST?`_sinceKST${SINCE_KST.replace(/[ :]/g,'')}`:''}.json`;
   document.body.appendChild(a); a.click(); a.remove();
   console.log('⬇️  번들 다운로드 시작. 이 파일을 QA 단계에 투입하세요.');
 })();

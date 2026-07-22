@@ -1,0 +1,361 @@
+=== 전체 집계 · 프로젝트 14 / 카드 140 ===
+판정: pass 102 / warning 34 / fail 4  →  의심+실패 38 (27.1%)
+의심/실패 카드의 출처근거: {"ok":7,"partial":30,"fail":1,"":0}
+의심/실패 카드의 카테고리: {"ok":37,"partial":1,"fail":0,"":0}
+플래그 빈도(반복 프로젝트 수):
+  vague_expression: 25 (proj 13)
+  no_source_quote: 8 (proj 7)
+  category_mismatch: 3 (proj 3)
+  fabricated_detail: 1 (proj 1)
+  redundant: 1 (proj 1)
+프로젝트별 (의심/실패순):
+  #1336 공기청정기      w=1 f=2 [1:fail,2:warning,5:fail]
+  #1334 선크림        w=6 f=1 [1:warning,2:warning,3:fail,5:warning,6:warning,9:warning,10:warning]
+  #1331 화상 영어      w=1 f=1 [5:fail,7:warning]
+  #1332 협업툴        w=5 f=0 [1:warning,5:warning,7:warning,8:warning,9:warning]
+  #1333 밀키트        w=4 f=0 [3:warning,5:warning,7:warning,10:warning]
+  #1335 로봇청소기      w=3 f=0 [4:warning,6:warning,10:warning]
+  #1339 치약         w=3 f=0 [1:warning,6:warning,9:warning]
+  #1329 버티컬 마우스    w=2 f=0 [1:warning,3:warning]
+  #1330 클라이밍화      w=2 f=0 [4:warning,7:warning]
+  #1338 비건 식품      w=2 f=0 [4:warning,7:warning]
+  #1340 태블릿        w=2 f=0 [3:warning,5:warning]
+  #1337 가족 여행      w=1 f=0 [9:warning]
+  #1341 단백질바       w=1 f=0 [4:warning]
+  #1342 매트리스       w=1 f=0 [9:warning]
+
+<<<AGG_JSON>>>
+{
+  "projects": 14,
+  "cards": 140,
+  "verdict": {
+    "pass": 102,
+    "warning": 34,
+    "fail": 4,
+    "none": 0
+  },
+  "mismatch_total": 38,
+  "mismatch_rate": 27.1,
+  "check_level": {
+    "source_grounding": {
+      "ok": 7,
+      "partial": 30,
+      "fail": 1,
+      "": 0
+    },
+    "category_fit": {
+      "ok": 37,
+      "partial": 1,
+      "fail": 0,
+      "": 0
+    }
+  },
+  "flags": [
+    {
+      "type": "vague_expression",
+      "count": 25,
+      "projects": 13
+    },
+    {
+      "type": "no_source_quote",
+      "count": 8,
+      "projects": 7
+    },
+    {
+      "type": "category_mismatch",
+      "count": 3,
+      "projects": 3
+    },
+    {
+      "type": "fabricated_detail",
+      "count": 1,
+      "projects": 1
+    },
+    {
+      "type": "redundant",
+      "count": 1,
+      "projects": 1
+    }
+  ],
+  "per_project": [
+    {
+      "project_id": 1336,
+      "product_name": "공기청정기",
+      "date": "2026-07-15",
+      "warning": 1,
+      "fail": 2,
+      "mismatch": [
+        {
+          "seq": 1,
+          "verdict": "fail"
+        },
+        {
+          "seq": 2,
+          "verdict": "warning"
+        },
+        {
+          "seq": 5,
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "project_id": 1334,
+      "product_name": "선크림",
+      "date": "2026-07-15",
+      "warning": 6,
+      "fail": 1,
+      "mismatch": [
+        {
+          "seq": 1,
+          "verdict": "warning"
+        },
+        {
+          "seq": 2,
+          "verdict": "warning"
+        },
+        {
+          "seq": 3,
+          "verdict": "fail"
+        },
+        {
+          "seq": 5,
+          "verdict": "warning"
+        },
+        {
+          "seq": 6,
+          "verdict": "warning"
+        },
+        {
+          "seq": 9,
+          "verdict": "warning"
+        },
+        {
+          "seq": 10,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1331,
+      "product_name": "화상 영어",
+      "date": "2026-07-15",
+      "warning": 1,
+      "fail": 1,
+      "mismatch": [
+        {
+          "seq": 5,
+          "verdict": "fail"
+        },
+        {
+          "seq": 7,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1332,
+      "product_name": "협업툴",
+      "date": "2026-07-15",
+      "warning": 5,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 1,
+          "verdict": "warning"
+        },
+        {
+          "seq": 5,
+          "verdict": "warning"
+        },
+        {
+          "seq": 7,
+          "verdict": "warning"
+        },
+        {
+          "seq": 8,
+          "verdict": "warning"
+        },
+        {
+          "seq": 9,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1333,
+      "product_name": "밀키트",
+      "date": "2026-07-15",
+      "warning": 4,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 3,
+          "verdict": "warning"
+        },
+        {
+          "seq": 5,
+          "verdict": "warning"
+        },
+        {
+          "seq": 7,
+          "verdict": "warning"
+        },
+        {
+          "seq": 10,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1335,
+      "product_name": "로봇청소기",
+      "date": "2026-07-15",
+      "warning": 3,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 4,
+          "verdict": "warning"
+        },
+        {
+          "seq": 6,
+          "verdict": "warning"
+        },
+        {
+          "seq": 10,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1339,
+      "product_name": "치약",
+      "date": "2026-07-15",
+      "warning": 3,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 1,
+          "verdict": "warning"
+        },
+        {
+          "seq": 6,
+          "verdict": "warning"
+        },
+        {
+          "seq": 9,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1329,
+      "product_name": "버티컬 마우스",
+      "date": "2026-07-15",
+      "warning": 2,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 1,
+          "verdict": "warning"
+        },
+        {
+          "seq": 3,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1330,
+      "product_name": "클라이밍화",
+      "date": "2026-07-15",
+      "warning": 2,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 4,
+          "verdict": "warning"
+        },
+        {
+          "seq": 7,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1338,
+      "product_name": "비건 식품",
+      "date": "2026-07-15",
+      "warning": 2,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 4,
+          "verdict": "warning"
+        },
+        {
+          "seq": 7,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1340,
+      "product_name": "태블릿",
+      "date": "2026-07-15",
+      "warning": 2,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 3,
+          "verdict": "warning"
+        },
+        {
+          "seq": 5,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1337,
+      "product_name": "가족 여행",
+      "date": "2026-07-15",
+      "warning": 1,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 9,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1341,
+      "product_name": "단백질바",
+      "date": "2026-07-15",
+      "warning": 1,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 4,
+          "verdict": "warning"
+        }
+      ]
+    },
+    {
+      "project_id": 1342,
+      "product_name": "매트리스",
+      "date": "2026-07-15",
+      "warning": 1,
+      "fail": 0,
+      "mismatch": [
+        {
+          "seq": 9,
+          "verdict": "warning"
+        }
+      ]
+    }
+  ]
+}
+<<<END>>>

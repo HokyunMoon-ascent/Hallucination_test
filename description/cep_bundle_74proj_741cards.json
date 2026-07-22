@@ -1,0 +1,2299 @@
+{
+  "harvested_projects": 1,
+  "total_cards": 10,
+  "projects": [
+    {
+      "project_id": 1396,
+      "product_name": "로봇청소기",
+      "locale": "KR",
+      "status": "completed",
+      "basic_info": {
+        "phase": "basic_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기\n\n## 1. 카테고리 개요 및 핵심 선택 기준\n1. **자동화 수준(“기지국 올인원” 여부)**: 자동 먼지비움/물걸레 세척/건조가 있으면 유지관리 시간이 크게 줄어듭니다. (예: 드리미 L10s Ultra 라인업은 올인원 스테이션을 전제로 판매/소개됩니다. ([kr.dreametech.com](https://kr.dreametech.com/products?category=1&no=70&utm_source=openai)))\n2. **맵핑 방식**: 일반적으로 **라이다(LiDAR/LDS)** 계열이 구역 설정/경로 최적화에 강점을 보입니다. (예: 드리미 L10s Ultra Gen3에 **LDS** 표기가 확인됩니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai)))\n3. **흡입력/청소 성능**: 카펫·반려동물 털·먼지 종류에 따라 체감이 갈리므로 흡입력(스펙 수치)과 브러시 설계를 함께 봅니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n4. **물걸레 방식**: “진동/회전/리프팅/오염 관리(세척·건조)”에 따라 바닥 상태가 달라집니다. (올인원 스테이션의 자동 세척/건조 여부가 중요)\n5. **국내 AS/한글 지원**: 해외직구 대비 국내 정발의 AS/언어 지원이 체감 품질을 좌우합니다. (예: 드리미 L10s Ultra가 국내 정식 발매되며 센터/한국어 지원을 언급합니다. ([kr.dreametech.com](https://kr.dreametech.com/news?no=36&page=4&utm_source=openai)))\n\n## 2. 상위 추천 제품(3-5)\n1. **드리미 Dreame L10s Ultra Gen3 (물걸레·올인원 스테이션 계열)**  \n   - LDS 표기, 물걸레 리프팅/스테이션 자동 급수·세척·건조 기능이 스펙/판매 페이지에서 확인됩니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n2. **LG 코드제로 오브제컬렉션 R9 (흡입+올인원타워 구성 가능 라인업)**  \n   - 제품 페이지에서 자동 먼지 비움(먼지통 자동 비움 등) 중심의 특징이 확인되며, 국내 판매처에서 라이다 매핑 언급이 보입니다. ([lge.co.kr](https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai))\n3. **iRobot Roomba J9+ Combo (하이브리드: 흡입+물걸레 일체형 계열)**  \n   - 2026년 베스트 픽 정리 글에서 J9+ Combo가 “프리미엄”으로 언급되며 매핑/오염 회피 관점이 다뤄집니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n4. **iRobot Roomba Plus 505 Combo (2025 라인 기반으로 2026 가이드에 포함된 모델)**  \n   - 2026 “Roombas” 추천 글에서 Plus 505 Combo가 테스트 성격과 함께 상위 모델로 포함됩니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n\n## 3. 기능/스펙 비교(무엇이 다른가)\n1. **맵핑 정확도/구역 운용**\n   - 드리미: **LDS** 기반으로 구역/맵 작성이 스펙/리스트에 반영됩니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n   - LG R9: 국내 판매처 설명에서 **라이다 센서로 정밀 매핑**이 언급됩니다. ([lgekn.com](https://lgekn.com/product/detail.html?cate_no=246&display_group=1&product_no=807&utm_source=openai))\n   - iRobot: 2026 추천 글에서 매핑이 “Yes”로 표시된 모델들이 포함됩니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n2. **물걸레 관리 자동화(세척/건조)**\n   - 드리미 L10s Ultra: 스테이션에 **걸레 세척(냉수)·온풍 건조·자동 급수·스테이션 청소** 등이 목록에 보입니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n   - iRobot: 2026 가이드에서는 J9+ Combo의 물걸레 방식이 “리트랙터블”이지만 **작업 후 패드 관리가 필요**하다는 뉘앙스가 있습니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n3. **카펫/장애물 대응**\n   - 드리미: 카펫 부스트·장애물 회피(표기 항목 다수)로 구성되어 있습니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n   - iRobot: 2026 가이드에서 카펫/하드바닥 혼합 및 장애물 회피 성격이 언급됩니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n4. **유지관리 포인트**\n   - 올인원 스테이션형(드리미 계열)은 “먼지비움/세척/건조” 자동화로 관리량이 줄어드는 방향입니다. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n   - 물걸레 패드 분리·관리 부담은 모델 설계에 따라 달라집니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n\n## 4. 가격대(대략) 및 구매 타이밍 팁\n1. **프리미엄 올인원(스테이션 포함) 구간**: 드리미 L10s Ultra 계열이 여기에 해당(할인/판매가 변동 큼). ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))  \n2. **국산/국내 정발 브랜드(AS 기대 포함) 구간**: LG R9는 공식 제품 정보와 대형 유통가의 판매 페이지가 확인됩니다. ([lge.co.kr](https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai))\n3. **해외 프리미엄/서브스크립션·모델 유통 구간(iRobot 등)**: 2026 추천 글 기준으로 특정 Roomba 콤보 모델이 “할인/유통” 맥락에서 언급됩니다. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n4. **정확한 “현재 최저가”는 판매처/쿠폰에 따라 달라** [unverified]이며, 구매 전 최저가 비교가 필요합니다. (스펙 대비 체감가가 크게 흔들릴 수 있음)\n\n## 5. 구매 추천(사용 상황별)\n1. **“기본 자동화”를 최우선**(먼지비움+물걸레 세척/건조까지 손 덜 가게):  \n   - 드리미 L10s Ultra Gen3 계열을 1순위로 검토 추천. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))\n2. **국내 서비스/한글 경험을 더 중시**:  \n   - LG 코드제로 R9 라인업(올인원타워 구성 가능 판매처 확인) 우선 검토 추천. ([lge.co.kr](https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai))\n3. **카펫+하드바닥 혼합에서 “콤보(흡입+물걸레)”를 고급스럽게**:  \n   - iRobot Roomba J9+ Combo 또는 Roomba Plus 505 Combo를 비교 추천. ([tomsguide.com](https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai))\n4. **반려동물/털·먼지 비중이 높음**:  \n   - 흡입력·브러시/카펫 모드(카펫 부스트 등) 스펙이 명확한 모델(예: 드리미 L10s Ultra 스펙 표기)을 우선 확인 추천. ([enuri.com](https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai))"
+        },
+        "web_sources": [
+          {
+            "url": "https://www.samsung.com/sec/bespoke/all-bespoke/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.samsung.com/sec/event/bespoke-refrigerator/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/vacuum-cleaners/ro963wb",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.houseprice.co.kr/goods/lg-cozero-objet-r9-robot-vacuum-r9300wb",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/story/newsroom/189700",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://sakamaka.kr/articles/robot-vacuum-best-picks-all-in-one-2026",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000542349900",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/kr/ebook/2026/january/b2b/catImage/628/20260102_b2b_catalogue.pdf",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://nosearch.com/product/living/robotic_vacuum_cleaner/detail/RO963WB",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://lgekn.com/product/detail.html?cate_no=246&display_group=1&product_no=807",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://prod.danawa.com/info/?pcode=91907402",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://kotopranking.com/best-robot-cleaner-2026/",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.coupang.com/vp/products/132084677?itemId=409123458&vendorItemId=4002083304",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.samsung.com/sec/sustainability/media/pdf/Samsung_Electronics_Sustainability_Report_2026_KOR.pdf",
+            "title": "",
+            "hostname": ""
+          },
+          {
+            "url": "https://bestshop.lge.co.kr/kr/ebook/2026/march/best/catImage/630/20260304_best_catalogue.pdf",
+            "title": "",
+            "hostname": ""
+          }
+        ],
+        "citations": [
+          {
+            "url": "https://kr.dreametech.com/products?category=1&no=70&utm_source=openai",
+            "title": "드리미 25년 최신상 L10S Ultra Gen2 올인원 로봇청소기 10000pa 흡입력 상위모델 - 로봇청소기 | 쿠팡",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://kr.dreametech.com/news?no=36&page=4&utm_source=openai",
+            "title": "코오롱글로벌, 드리미 로봇청소기 'L10s Ultra' 국내 정식 발매 - 소식 - 고객지원 - Dreame | 드리미",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai",
+            "title": "LG 코드제로 오브제컬렉션 R9 | RO963WB | 청소기 | 생활가전 | 제품/소모품 | LG전자",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://lgekn.com/product/detail.html?cate_no=246&display_group=1&product_no=807&utm_source=openai",
+            "title": "LG 공식판매점 경남 | LG 코드제로 R9 로봇청소기 R9300WB",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai",
+            "title": "LG 코드제로 오브제컬렉션 R9 | RO963WB | 청소기 | 생활가전 | 제품/소모품 | LG전자",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.lge.co.kr/vacuum-cleaners/ro963wb?utm_source=openai",
+            "title": "LG 코드제로 오브제컬렉션 R9 | RO963WB | 청소기 | 생활가전 | 제품/소모품 | LG전자",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-roombas?utm_source=openai",
+            "title": "The best Roombas in 2026",
+            "hostname": ""
+          },
+          {
+            "url": "https://www.enuri.com/detail.jsp?modelno=141352523&utm_source=openai",
+            "title": "드리미 L10s Ultra Gen3 [일반구매] - 에누리 가격비교",
+            "hostname": ""
+          }
+        ]
+      },
+      "product_anchors": {
+        "category": [
+          "로봇청소기",
+          "스마트 진공청소기",
+          "자동 청소 로봇",
+          "바닥 청소 로봇"
+        ]
+      },
+      "thinking_process": [
+        {
+          "body": "**Planning targeted web research strategy****Identifying key robot vacuum use cases**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"클리앙 로봇청소기 추천 사기 전 고민\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Improving search queries for relevance**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"로봇청소기 구매후기 왜 샀어요 더쿠\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Refining search strategy**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"site:clien.net 로봇청소기 샀습니다\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Exploring community sources**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"네이버 지식인 로봇청소기 추천 필요해서 샀는데\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Exploring accessible Korean forums**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"구매\" \"이유\" tistory\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Searching for pre-purchase triggers**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Evaluating alternative information sources****Refining search queries for personal stories**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"tistory 로봇청소기 구매 이사\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Evaluating source relevance for lived experiences****Searching for authentic review posts**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"신혼\" \"샀\" 블로그\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Exploring real user reviews**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Searching for personal review triggers**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"구매하게 된 이유\" tistory\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Gathering purchase reason posts**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Searching for relevant entry triggers**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Investigating search challenges and planning queries**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"구매하게\" \"아이\" tistory\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Collecting purchase reasons and triggers****Organizing diverse purchase contexts**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "\"\"로봇청소기\" \"구매\" \"아이\" \"때문에\" tistory\"",
+          "kind": "search",
+          "title": "Searched the web"
+        },
+        {
+          "body": "**Opening web pages for research**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Gathering context from multiple posts****Analyzing entry and purchase timing**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Organizing unique section topics****Evaluating robot vacuum purchase relevance**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Trying alternate blog sources**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        },
+        {
+          "body": "Searching for relevant materials.",
+          "kind": "status",
+          "title": "Searching the web"
+        },
+        {
+          "body": "**Identifying entry triggers****Organizing purchase motivation sections****Planning detailed content structure**",
+          "kind": "reasoning",
+          "title": "Reasoning"
+        }
+      ],
+      "research": {
+        "phase": "product_research",
+        "status": "completed",
+        "result_data": {
+          "content": "# 로봇청소기가 “처음 필요해지는” 순간들: 이사 전, 반려동물 털, 주말 청소 스트레스\n\n## 1. 이사 가기 전, 이전 집 청소를 ‘직접 해보니’ 바로 사야겠다고 결론이 나는 때\n1. 새 집에 들어가기 전, 이전 세입자가 청소해 둔 걸 본 게 아니라 직접 밀대로 거실을 밀어보면서 지저분함과 힘듦을 체감한 순간이 구매로 이어졌어요. 글쓴이는 미리 청소해보며 지저분하기도 하고 생각보다 힘드네… 안되겠다 로봇 청소기를 사자!라고 정리해 바로 주문/설치까지 연결했어요. ([blog.unripesoft.com](https://blog.unripesoft.com/122))  \n2. 설치 후에는 청소포를 확인하고 경악할 정도로 더러웠다, 이전에 생각보다 청소가 덜 됐던 걸 뒤늦게 확인하면서 “이사 전 결심이 맞았다” 쪽으로 기울었어요. 그리고 청소 루틴도 바꿔, 일요일만 먼지 청소를 제외시키는 식으로 생활에 맞춰 조정했어요. ([blog.unripesoft.com](https://blog.unripesoft.com/122))  \n\n## 2. 넓은 집으로 이사하며 ‘청소 노동’을 줄이기 위한 가전 선택으로 로봇청소기가 떠오르는 때\n1. 이사오면서 넓은 집이 되자 기존처럼 직접 청소하는 걸 계속하기 어렵다고 느꼈고, 가사노동을 줄여볼 차원으로 로봇청소기를 구매하게 됐다고 밝혀요. ([betterlifecamp.tistory.com](https://betterlifecamp.tistory.com/18))  \n2. 구매 후에는 바닥을 닦는 체감(발바닥이 빤딱빤딱하는 느낌)이 좋아서 “결심이 틀리지 않았다”는 쪽의 만족이 뒤따랐어요. ([betterlifecamp.tistory.com](https://betterlifecamp.tistory.com/18))  \n\n## 3. 고양이를 데려온 뒤, 바닥 청소를 하루에 여러 번 돌릴 만큼 ‘털/오염’이 늘어난 날\n1. 고양이를 데리고 온 뒤 청소기 사용이 급격히 늘어났고(하루에 청소기를 3번씩이나 돌리게 되어), 그때 로봇청소기로 넘어가게 됐다는 흐름이에요. ([insight3530.tistory.com](https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0))  \n2. 구매 후에는 청소 부담이 확 줄어들고, 항상 바닥이 깨끗해진다는 표현으로 만족감을 같이 말해요. ([insight3530.tistory.com](https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0))  \n\n## 4. 고양이 털/모래가 ‘계속 쌓이는 구조’라서, 사람 시간만으론 한계가 느껴질 때\n1. 고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고, 고양이들이 먼저 힘들어하는 모습까지 보이면서 로봇청소기를 구매하게 됐다고 적어요. 특히 사람의 시간이라는 한계, 사람보다 로봇청소기가 작아서 여기저거 꼼꼼히 청소해주는 점 때문에 또 하나의 청소기를 추가하게 됐다는 식으로 정리돼요. ([catskim.tistory.com](https://catskim.tistory.com/73))  \n\n## 5. 반려동물 털 때문에 바닥 청소 부담이 ‘점점 커지는’ 시점—고민이 구매로 바뀌는 계기\n1. 집안일, 특히 바닥 청소에 대한 부담이 점점 커져서 로봇청소기 구매를 정말 많이 고민했다는 흐름이에요. 그리고 자동 먼지 비움 기능이 편리해 보인다는 후기를 보고, 망설임 끝에 직접 구매했다고 적어요. ([chatgin.blogspot.com](https://chatgin.blogspot.com/2026/03/x11.html))  \n2. 사용해보니 반려동물 털 날림 상황에서 머리카락/털을 깨끗하게 빨아들인다는 식의 만족이 이어져요. ([chatgin.blogspot.com](https://chatgin.blogspot.com/2026/03/x11.html))  \n\n## 6. 주말에 “쓸고 닦는 게 귀찮아져” 로봇청소기가 자꾸 떠오르는 순간\n1. 글쓴이는 일주일에 한 번씩 주말에 청소를 날 잡고 하는데, 단순히 쓸고 닦는 일인데도 귀찮아서 주말이 미워질 지경이라고 말해요. 그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요. ([brunch.co.kr](https://brunch.co.kr/%40%40zIH/6550))  \n\n## 7. 아이가 있는 집에서 먼지/머리카락이 “끝없이 나오는” 상태가 계속되던 때\n1. 아이 둘을 키우는 집에서는 먼지와 머리카락이 계속 나와 청소가 영원한 숙제처럼 느껴졌고, 38평 집에서 무선 청소기와 물걸레 로봇으로 매일 청소하는 것도 힘들었다고 해요. 이런 맥락에서 로봇청소기(에코백스 T80 OMNI)를 통해 스트레스를 덜고 싶어지는 결이 나타나요. ([helloinsight20.tistory.com](https://helloinsight20.tistory.com/280))  \n2. 사용 후에는 청소 스트레스에서 벗어났다는 방향의 만족이 이어져요. ([helloinsight20.tistory.com](https://helloinsight20.tistory.com/280))",
+          "product_research_sections": [
+            {
+              "section_number": 1,
+              "title": "이사 가기 전, 이전 집 청소를 ‘직접 해보니’ 바로 사야겠다고 결론이 나는 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "새 집에 들어가기 전, 이전 세입자가 청소해 둔 걸 본 게 아니라 직접 밀대로 거실을 밀어보면서 지저분함과 힘듦을 체감한 순간이 구매로 이어졌어요. 글쓴이는 미리 청소해보며 지저분하기도 하고 생각보다 힘드네… 안되겠다 로봇 청소기를 사자!라고 정리해 바로 주문/설치까지 연결했어요.",
+                  "url": "https://blog.unripesoft.com/122",
+                  "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "설치 후에는 청소포를 확인하고 경악할 정도로 더러웠다, 이전에 생각보다 청소가 덜 됐던 걸 뒤늦게 확인하면서 “이사 전 결심이 맞았다” 쪽으로 기울었어요. 그리고 청소 루틴도 바꿔, 일요일만 먼지 청소를 제외시키는 식으로 생활에 맞춰 조정했어요.",
+                  "url": "https://blog.unripesoft.com/122",
+                  "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 2,
+              "title": "넓은 집으로 이사하며 ‘청소 노동’을 줄이기 위한 가전 선택으로 로봇청소기가 떠오르는 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "이사오면서 넓은 집이 되자 기존처럼 직접 청소하는 걸 계속하기 어렵다고 느꼈고, 가사노동을 줄여볼 차원으로 로봇청소기를 구매하게 됐다고 밝혀요.",
+                  "url": "https://betterlifecamp.tistory.com/18",
+                  "url_title": "로보락 S8 PLUS 사용 후기",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "구매 후에는 바닥을 닦는 체감(발바닥이 빤딱빤딱하는 느낌)이 좋아서 “결심이 틀리지 않았다”는 쪽의 만족이 뒤따랐어요.",
+                  "url": "https://betterlifecamp.tistory.com/18",
+                  "url_title": "로보락 S8 PLUS 사용 후기",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 3,
+              "title": "고양이를 데려온 뒤, 바닥 청소를 하루에 여러 번 돌릴 만큼 ‘털/오염’이 늘어난 날",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "고양이를 데리고 온 뒤 청소기 사용이 급격히 늘어났고(하루에 청소기를 3번씩이나 돌리게 되어), 그때 로봇청소기로 넘어가게 됐다는 흐름이에요.",
+                  "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+                  "url_title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "구매 후에는 청소 부담이 확 줄어들고, 항상 바닥이 깨끗해진다는 표현으로 만족감을 같이 말해요.",
+                  "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+                  "url_title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 4,
+              "title": "고양이 털/모래가 ‘계속 쌓이는 구조’라서, 사람 시간만으론 한계가 느껴질 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고, 고양이들이 먼저 힘들어하는 모습까지 보이면서 로봇청소기를 구매하게 됐다고 적어요. 특히 사람의 시간이라는 한계, 사람보다 로봇청소기가 작아서 여기저거 꼼꼼히 청소해주는 점 때문에 또 하나의 청소기를 추가하게 됐다는 식으로 정리돼요.",
+                  "url": "https://catskim.tistory.com/73",
+                  "url_title": "클리엔 R9 로봇청소기. / Clien R9",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 5,
+              "title": "반려동물 털 때문에 바닥 청소 부담이 ‘점점 커지는’ 시점—고민이 구매로 바뀌는 계기",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "집안일, 특히 바닥 청소에 대한 부담이 점점 커져서 로봇청소기 구매를 정말 많이 고민했다는 흐름이에요. 그리고 자동 먼지 비움 기능이 편리해 보인다는 후기를 보고, 망설임 끝에 직접 구매했다고 적어요.",
+                  "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+                  "url_title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "사용해보니 반려동물 털 날림 상황에서 머리카락/털을 깨끗하게 빨아들인다는 식의 만족이 이어져요.",
+                  "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+                  "url_title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 6,
+              "title": "주말에 “쓸고 닦는 게 귀찮아져” 로봇청소기가 자꾸 떠오르는 순간",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "글쓴이는 일주일에 한 번씩 주말에 청소를 날 잡고 하는데, 단순히 쓸고 닦는 일인데도 귀찮아서 주말이 미워질 지경이라고 말해요. 그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                  "url": "https://brunch.co.kr/%40%40zIH/6550",
+                  "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!",
+                  "url_content": null
+                }
+              ]
+            },
+            {
+              "section_number": 7,
+              "title": "아이가 있는 집에서 먼지/머리카락이 “끝없이 나오는” 상태가 계속되던 때",
+              "bullets": [
+                {
+                  "index": 0,
+                  "content": "아이 둘을 키우는 집에서는 먼지와 머리카락이 계속 나와 청소가 영원한 숙제처럼 느껴졌고, 38평 집에서 무선 청소기와 물걸레 로봇으로 매일 청소하는 것도 힘들었다고 해요. 이런 맥락에서 로봇청소기(에코백스 T80 OMNI)를 통해 스트레스를 덜고 싶어지는 결이 나타나요.",
+                  "url": "https://helloinsight20.tistory.com/280",
+                  "url_title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨",
+                  "url_content": null
+                },
+                {
+                  "index": 1,
+                  "content": "사용 후에는 청소 스트레스에서 벗어났다는 방향의 만족이 이어져요.",
+                  "url": "https://helloinsight20.tistory.com/280",
+                  "url_title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨",
+                  "url_content": null
+                }
+              ]
+            }
+          ]
+        },
+        "web_sources": null,
+        "citations": [
+          {
+            "url": "https://blog.unripesoft.com/122",
+            "title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro",
+            "hostname": ""
+          },
+          {
+            "url": "https://blog.unripesoft.com/122",
+            "title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro",
+            "hostname": ""
+          },
+          {
+            "url": "https://betterlifecamp.tistory.com/18",
+            "title": "로보락 S8 PLUS 사용 후기",
+            "hostname": ""
+          },
+          {
+            "url": "https://betterlifecamp.tistory.com/18",
+            "title": "로보락 S8 PLUS 사용 후기",
+            "hostname": ""
+          },
+          {
+            "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+            "title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!",
+            "hostname": ""
+          },
+          {
+            "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+            "title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!",
+            "hostname": ""
+          },
+          {
+            "url": "https://catskim.tistory.com/73",
+            "title": "클리엔 R9 로봇청소기. / Clien R9",
+            "hostname": ""
+          },
+          {
+            "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+            "title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요",
+            "hostname": ""
+          },
+          {
+            "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+            "title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요",
+            "hostname": ""
+          },
+          {
+            "url": "https://brunch.co.kr/%40%40zIH/6550",
+            "title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!",
+            "hostname": ""
+          },
+          {
+            "url": "https://helloinsight20.tistory.com/280",
+            "title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨",
+            "hostname": ""
+          },
+          {
+            "url": "https://helloinsight20.tistory.com/280",
+            "title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨",
+            "hostname": ""
+          }
+        ]
+      },
+      "cep_cards": [
+        {
+          "id": 16728,
+          "sequence": 1,
+          "cep": "청소를 게을리하면 바닥이 모래사장처럼 되는 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 농도가 높아진 상황에서도 처리 가능한 강한 흡입력",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 101,
+            "kr_raw": 101
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고,",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://catskim.tistory.com/73",
+                "url_title": "클리엔 R9 로봇청소기. / Clien R9"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16726,
+          "sequence": 2,
+          "cep": "넓은 집이 되자 기존처럼 직접 청소가 어렵게 될 때",
+          "nano_intent": "",
+          "kbf": [
+            "라이다(LDS) 기반 정밀 매핑",
+            "구역별 청소(맵 기반 청소 루틴)"
+          ],
+          "keywords_volume_total": {
+            "kr": 17,
+            "kr_raw": 38
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "이사오면서 넓은 집이 되자 기존처럼 직접 청소하는 걸 계속하기 어렵다고 느꼈고, 가사노동을 줄여볼 차원으로 로봇청소기를 구매하게 됐다고 밝혀요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://betterlifecamp.tistory.com/18",
+                "url_title": "로보락 S8 PLUS 사용 후기"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16730,
+          "sequence": 3,
+          "cep": "쓸고 닦는 게 귀찮아 주말이 미워질 때",
+          "nano_intent": "",
+          "kbf": [
+            "올인원 스테이션(자동 먼지비움)",
+            "올인원 스테이션(걸레 세척·건조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 13,
+            "kr_raw": 52
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              },
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              },
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "단순히 쓸고 닦는 일인데도 귀찮아서 주말이 미워질 지경이라고 말해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        },
+        {
+          "id": 16729,
+          "sequence": 4,
+          "cep": "바닥 청소 부담이 점점 커져 구매를 많이 고민할 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지통 자동 비움(올인원 스테이션 구조)",
+            "물걸레 자동 세척·건조(올인원 스테이션 구성)"
+          ],
+          "keywords_volume_total": {
+            "kr": 10,
+            "kr_raw": 10
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 0,
+                "quote": "집안일, 특히 바닥 청소에 대한 부담이 점점 커져서 로봇청소기 구매를 정말 많이 고민했다는 흐름이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+                "url_title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        },
+        {
+          "id": 16724,
+          "sequence": 5,
+          "cep": "새 집 들어가기 전 밀대로 밀며 지저분함이 보일 때",
+          "nano_intent": "",
+          "kbf": [
+            "구역 설정을 위한 라이다(LDS) 기반 경로/맵 작성",
+            "장애물 회피 기능",
+            "강한 흡입력(먼지 제거용)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "새 집에 들어가기 전, 이전 세입자가 청소해 둔 걸 본 게 아니라 직접 밀대로 거실을 밀어보면서 지저분함과 힘듦을 체감한 순간이 구매로 이어졌어요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://blog.unripesoft.com/122",
+                "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16725,
+          "sequence": 6,
+          "cep": "설치 후 청소포 확인하고 더러움에 경악할 때",
+          "nano_intent": "",
+          "kbf": [
+            "스테이션 기반 자동 걸레 세척",
+            "스테이션 기반 자동 걸레 건조(온풍 건조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 1,
+                "quote": "설치 후에는 청소포를 확인하고 경악할 정도로 더러웠다,",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://blog.unripesoft.com/122",
+                "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        },
+        {
+          "id": 16727,
+          "sequence": 7,
+          "cep": "고양이 데려온 뒤 바닥 청소를 하루에 여러 번 하게 될 때",
+          "nano_intent": "",
+          "kbf": [
+            "반려동물 털 대응용 브러시 설계",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 6
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 0,
+                "quote": "고양이를 데리고 온 뒤 청소기 사용이 급격히 늘어났고(하루에 청소기를 3번씩이나 돌리게 되어), 그때 로봇청소기로 넘어가게 됐다는 흐름이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+                "url_title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        },
+        {
+          "id": 16731,
+          "sequence": 8,
+          "cep": "아이 키우며 먼지와 머리카락이 끝없이 나올 때",
+          "nano_intent": "",
+          "kbf": [
+            "강한 흡입력(먼지·머리카락 처리용)",
+            "먼지통 자동 비움(올인원 스테이션 구조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 7,
+                "bullet_index": 0,
+                "quote": "아이 둘을 키우는 집에서는 먼지와 머리카락이 계속 나와 청소가 영원한 숙제처럼 느껴졌고",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://helloinsight20.tistory.com/280",
+                "url_title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16732,
+          "sequence": 9,
+          "cep": "고양이 털과 모래가 계속 쌓이는 구조가 느껴질 때",
+          "nano_intent": "",
+          "kbf": [
+            "반려동물 털 대응용 브러시 설계",
+            "장애물 회피 기능"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 40
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://catskim.tistory.com/73",
+                "url_title": "클리엔 R9 로봇청소기. / Clien R9"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          }
+        },
+        {
+          "id": 16733,
+          "sequence": 10,
+          "cep": "주말 청소를 미루다 더러움이 쌓이기 시작할 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 누적으로도 처리 가능한 강한 흡입력",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다 / 출처에 없는 내용이 포함된 것으로 의심됩니다."
+          }
+        }
+      ],
+      "cep_card_details": [
+        {
+          "id": 16728,
+          "sequence": 1,
+          "cep": "청소를 게을리하면 바닥이 모래사장처럼 되는 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 농도가 높아진 상황에서도 처리 가능한 강한 흡입력",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 101,
+            "kr_raw": 101
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고,",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://catskim.tistory.com/73",
+                "url_title": "클리엔 R9 로봇청소기. / Clien R9"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "모래 청소기",
+                "volume_yearly": 180,
+                "volume_monthly": 46
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "매트 로봇청소기",
+                "volume_yearly": 255,
+                "volume_monthly": 55
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "모래 청소기",
+                "volume_yearly": 180,
+                "volume_monthly": 46
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로청 개 드립",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "매트 로봇청소기",
+                "volume_yearly": 255,
+                "volume_monthly": 55
+              }
+            ]
+          }
+        },
+        {
+          "id": 16726,
+          "sequence": 2,
+          "cep": "넓은 집이 되자 기존처럼 직접 청소가 어렵게 될 때",
+          "nano_intent": "",
+          "kbf": [
+            "라이다(LDS) 기반 정밀 매핑",
+            "구역별 청소(맵 기반 청소 루틴)"
+          ],
+          "keywords_volume_total": {
+            "kr": 17,
+            "kr_raw": 38
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 2,
+                "bullet_index": 0,
+                "quote": "이사오면서 넓은 집이 되자 기존처럼 직접 청소하는 걸 계속하기 어렵다고 느꼈고, 가사노동을 줄여볼 차원으로 로봇청소기를 구매하게 됐다고 밝혀요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://betterlifecamp.tistory.com/18",
+                "url_title": "로보락 S8 PLUS 사용 후기"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가정용 청소로봇",
+                "volume_yearly": 72,
+                "volume_monthly": 17
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 개선 방안",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 모서리 청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "요즘 로봇청소기",
+                "volume_yearly": 11,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "가정용 청소로봇",
+                "volume_yearly": 72,
+                "volume_monthly": 17
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 일반 청소기",
+                "volume_yearly": 79,
+                "volume_monthly": 21
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 한계",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16730,
+          "sequence": 3,
+          "cep": "쓸고 닦는 게 귀찮아 주말이 미워질 때",
+          "nano_intent": "",
+          "kbf": [
+            "올인원 스테이션(자동 먼지비움)",
+            "올인원 스테이션(걸레 세척·건조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 13,
+            "kr_raw": 52
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              },
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              },
+              {
+                "section_id": 6,
+                "bullet_index": 0,
+                "quote": "단순히 쓸고 닦는 일인데도 귀찮아서 주말이 미워질 지경이라고 말해요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://brunch.co.kr/%40%40zIH/6550",
+                "url_title": "‘이모님’소리 듣는 로봇청소기,이제는 필수 가전템으로!"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "일상공감 로봇청소기",
+                "volume_yearly": 61,
+                "volume_monthly": 13
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "일상공감 청소기",
+                "volume_yearly": 21,
+                "volume_monthly": 3
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 불편",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 있으면 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 필요한가",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "일상공감 로봇청소기",
+                "volume_yearly": 61,
+                "volume_monthly": 13
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 여러",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 필요성",
+                "volume_yearly": 162,
+                "volume_monthly": 36
+              }
+            ]
+          }
+        },
+        {
+          "id": 16729,
+          "sequence": 4,
+          "cep": "바닥 청소 부담이 점점 커져 구매를 많이 고민할 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지통 자동 비움(올인원 스테이션 구조)",
+            "물걸레 자동 세척·건조(올인원 스테이션 구성)"
+          ],
+          "keywords_volume_total": {
+            "kr": 10,
+            "kr_raw": 10
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 5,
+                "bullet_index": 0,
+                "quote": "집안일, 특히 바닥 청소에 대한 부담이 점점 커져서 로봇청소기 구매를 정말 많이 고민했다는 흐름이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://chatgin.blogspot.com/2026/03/x11.html",
+                "url_title": "에코백스 디봇 X11 옴니 로봇청소기 써보니 후회 없어요"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "요즘 로봇청소기",
+                "volume_yearly": 11,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 트렌드",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 시장 동향",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 산업 동향",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 시장 동향",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "요즘 로봇청소기",
+                "volume_yearly": 11,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 트렌드",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 미래",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 시장 동향",
+                "volume_yearly": 40,
+                "volume_monthly": 10
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 산업 동향",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "청소기 시장 동향",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16724,
+          "sequence": 5,
+          "cep": "새 집 들어가기 전 밀대로 밀며 지저분함이 보일 때",
+          "nano_intent": "",
+          "kbf": [
+            "구역 설정을 위한 라이다(LDS) 기반 경로/맵 작성",
+            "장애물 회피 기능",
+            "강한 흡입력(먼지 제거용)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 0,
+                "quote": "새 집에 들어가기 전, 이전 세입자가 청소해 둔 걸 본 게 아니라 직접 밀대로 거실을 밀어보면서 지저분함과 힘듦을 체감한 순간이 구매로 이어졌어요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://blog.unripesoft.com/122",
+                "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 입주청소",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16725,
+          "sequence": 6,
+          "cep": "설치 후 청소포 확인하고 더러움에 경악할 때",
+          "nano_intent": "",
+          "kbf": [
+            "스테이션 기반 자동 걸레 세척",
+            "스테이션 기반 자동 걸레 건조(온풍 건조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 1,
+                "bullet_index": 1,
+                "quote": "설치 후에는 청소포를 확인하고 경악할 정도로 더러웠다,",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://blog.unripesoft.com/122",
+                "url_title": "노이시스 플로리오 로봇청소기 물걸레 AI일회용패드자동교체형 F10 Pro"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "시스템 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16727,
+          "sequence": 7,
+          "cep": "고양이 데려온 뒤 바닥 청소를 하루에 여러 번 하게 될 때",
+          "nano_intent": "",
+          "kbf": [
+            "반려동물 털 대응용 브러시 설계",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 6
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 3,
+                "bullet_index": 0,
+                "quote": "고양이를 데리고 온 뒤 청소기 사용이 급격히 늘어났고(하루에 청소기를 3번씩이나 돌리게 되어), 그때 로봇청소기로 넘어가게 됐다는 흐름이에요.",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://insight3530.tistory.com/entry/%EB%A1%9C%EB%B3%B4%EB%9D%BD-Q-Revo-Pro-%EC%99%9C-%EB%8B%A4%EB%93%A4-%EA%B7%B9%EC%B0%AC%ED%95%A0%EA%B9%8C-%F0%9F%A4%94-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B8-%EB%A6%AC%EC%96%BC-%ED%9B%84%EA%B8%B0",
+                "url_title": "로보락 Q Revo Pro, 왜 다들 극찬할까?  직접 써본 리얼 후기!"
+              }
+            ],
+            "inspection_verdict": "warning",
+            "verdict_label": "의심",
+            "verdict_reason": "출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇 청소기 활동 분야",
+                "volume_yearly": 30,
+                "volume_monthly": 6
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "시스템 청소기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16731,
+          "sequence": 8,
+          "cep": "아이 키우며 먼지와 머리카락이 끝없이 나올 때",
+          "nano_intent": "",
+          "kbf": [
+            "강한 흡입력(먼지·머리카락 처리용)",
+            "먼지통 자동 비움(올인원 스테이션 구조)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 7,
+                "bullet_index": 0,
+                "quote": "아이 둘을 키우는 집에서는 먼지와 머리카락이 계속 나와 청소가 영원한 숙제처럼 느껴졌고",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://helloinsight20.tistory.com/280",
+                "url_title": "에코백스 T80 OMNI 후기: 8년 차 사용자가 말하는 장점과 소소한 업그레이드! 로봇청소기 에코백스T80 청소는장비빨"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "펫케어 로봇청소기",
+                "volume_yearly": 12,
+                "volume_monthly": 0
+              }
+            ],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 애기",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "펫케어 로봇청소기",
+                "volume_yearly": 12,
+                "volume_monthly": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": 16732,
+          "sequence": 9,
+          "cep": "고양이 털과 모래가 계속 쌓이는 구조가 느껴질 때",
+          "nano_intent": "",
+          "kbf": [
+            "반려동물 털 대응용 브러시 설계",
+            "장애물 회피 기능"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 40
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [
+              {
+                "section_id": 4,
+                "bullet_index": 0,
+                "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고",
+                "verified": true,
+                "match_score": 1,
+                "url": "https://catskim.tistory.com/73",
+                "url_title": "클리엔 R9 로봇청소기. / Clien R9"
+              }
+            ],
+            "inspection_verdict": "pass",
+            "verdict_label": "검수 통과",
+            "verdict_reason": "주장을 뒷받침하는 출처 인용 1건이 원문에서 확인됐습니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": [
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기타는 고양이",
+                "volume_yearly": 0,
+                "volume_monthly": 0
+              },
+              {
+                "mode": "ai_overview",
+                "keyword": "로봇청소기 귀여움",
+                "volume_yearly": 140,
+                "volume_monthly": 40
+              }
+            ]
+          }
+        },
+        {
+          "id": 16733,
+          "sequence": 10,
+          "cep": "주말 청소를 미루다 더러움이 쌓이기 시작할 때",
+          "nano_intent": "",
+          "kbf": [
+            "먼지 누적으로도 처리 가능한 강한 흡입력",
+            "카펫 부스트(카펫 대응 모드)"
+          ],
+          "keywords_volume_total": {
+            "kr": 0,
+            "kr_raw": 0
+          },
+          "source_section_ids": [],
+          "evidence": {
+            "sections": [],
+            "sources": [],
+            "quotes": [],
+            "inspection_verdict": "fail",
+            "verdict_label": "검수 통과 실패",
+            "verdict_reason": "출처 근거가 부족합니다 / 출처에 없는 내용이 포함된 것으로 의심됩니다."
+          },
+          "keywords": {
+            "kr": [],
+            "kr_raw": []
+          }
+        }
+      ],
+      "expand_cep_cards": null,
+      "expand_cep_card_details": null,
+      "created_time": "2026-07-22T05:20:08.543788+00:00",
+      "inspection": {
+        "items": [
+          {
+            "cep_id": 0,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "로봇청소기 구매/도입의 계기(새 집 전 청소 필요 인식)에 해당해 카테고리(로봇청소기/스마트 진공청소기/자동 청소 로봇)와 잘 부합함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "새 집 들어가기 전, 밀대로 거실을 직접 밀며 지저분함과 힘듦을 체감하고 로봇청소기를 결심해 주문/설치까지 연결한 흐름이 근거로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "새 집에 들어가기 전, 이전 세입자가 청소해 둔 걸 본 게 아니라 직접 밀대로 거실을 밀어보면서 지저분함과 힘듦을 체감한 순간이 구매로 이어졌어요.",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16724,
+            "verdict": "pass",
+            "cep_text": "새 집 들어가기 전 밀대로 밀며 지저분함이 보일 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 1,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "설치 이후 사용 결과를 확인하며 더러움에 놀라는 상황은 로봇청소기의 전형적 사용자 경험/계기 카드로 적절함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "missing",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "implicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "설치 후 청소포를 확인하고 더러움에 경악하는 장면이 근거로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "설치 후에는 청소포를 확인하고 경악할 정도로 더러웠다,",
+                    "verified": true,
+                    "section_id": 1,
+                    "match_score": 1,
+                    "bullet_index": 1,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": "CEP: 설치 후 청소포 확인하고 더러움에 경악할 때",
+                  "occurred": true,
+                  "untrusted": true
+                }
+              ]
+            },
+            "card_id": 16725,
+            "verdict": "warning",
+            "cep_text": "설치 후 청소포 확인하고 더러움에 경악할 때",
+            "llm_verdict": "pass",
+            "override_reason": [
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": true
+          },
+          {
+            "cep_id": 2,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘넓은 집 → 직접 청소 지속 어려움 → 로봇청소기 도입’은 로봇청소기/자동 청소 로봇의 구매 동기와 직접적으로 맞음.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "implicit",
+                "while_": "missing",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "넓은 집으로 이사하며 기존처럼 직접 청소를 계속하기 어렵다고 느끼고 로봇청소기를 구매하게 된 흐름이 근거로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "이사오면서 넓은 집이 되자 기존처럼 직접 청소하는 걸 계속하기 어렵다고 느꼈고, 가사노동을 줄여볼 차원으로 로봇청소기를 구매하게 됐다고 밝혀요.",
+                    "verified": true,
+                    "section_id": 2,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16726,
+            "verdict": "pass",
+            "cep_text": "넓은 집이 되자 기존처럼 직접 청소가 어렵게 될 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 3,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "반려동물(고양이)로 인해 바닥 청소 빈도가 높아지는 상황은 로봇청소기 사용 필요성을 뒷받침하므로 카테고리와 적합함.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "explicit",
+                "with_what": "implicit",
+                "with_whom": "explicit",
+                "how_feeling": "missing"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "고양이를 데리고 온 뒤 하루에 청소기를 3번씩 돌릴 만큼 청소 사용이 급격히 늘었고 로봇청소기로 넘어가게 된 흐름이 근거로 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "고양이를 데리고 온 뒤 청소기 사용이 급격히 늘어났고(하루에 청소기를 3번씩이나 돌리게 되어), 그때 로봇청소기로 넘어가게 됐다는 흐름이에요.",
+                    "verified": true,
+                    "section_id": 3,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": "CEP: 고양이 데려온 뒤 바닥 청소를 하루에 여러 번 하게 될 때",
+                  "occurred": true,
+                  "untrusted": true
+                }
+              ]
+            },
+            "card_id": 16727,
+            "verdict": "warning",
+            "cep_text": "고양이 데려온 뒤 바닥 청소를 하루에 여러 번 하게 될 때",
+            "llm_verdict": "pass",
+            "override_reason": [
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": true
+          },
+          {
+            "cep_id": 4,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "청소를 게을리할 때 바닥이 심하게 지저분해지는 문제를 해결하려는 동기는 자동/로봇 청소 로봇의 필요성과 잘 연결됨.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "missing",
+                "with_whom": "implicit",
+                "how_feeling": "missing"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "고양이를 키우는 집에서 청소를 게을리하면 바닥이 모래사장처럼 되고 털이 날리는 상황이 제시됨.",
+                "cited_bullets": [
+                  {
+                    "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고,",
+                    "verified": true,
+                    "section_id": 4,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": []
+            },
+            "card_id": 16728,
+            "verdict": "pass",
+            "cep_text": "청소를 게을리하면 바닥이 모래사장처럼 되는 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 5,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "반려동물 털로 인한 바닥 청소 부담 증가→구매 고민으로 이어지는 카드 주제는 ‘로봇청소기/자동 청소 로봇’ 선택 맥락과 잘 맞습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "implicit",
+                "with_whom": "implicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "partial",
+                "evidence": "‘바닥 청소 부담이 점점 커짐’과 ‘로봇청소기 구매 고민’의 흐름은 맞지만, 카드의 ‘구매를 많이 고민할 때’에 해당하는 강도(정확한 표현)는 근거가 부분적으로만 지원됩니다.",
+                "cited_bullets": [
+                  {
+                    "quote": "집안일, 특히 바닥 청소에 대한 부담이 점점 커져서 로봇청소기 구매를 정말 많이 고민했다는 흐름이에요.",
+                    "verified": true,
+                    "section_id": 5,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "vague_expression",
+                  "quote": null,
+                  "occurred": true,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16729,
+            "verdict": "warning",
+            "cep_text": "바닥 청소 부담이 점점 커져 구매를 많이 고민할 때",
+            "llm_verdict": "warning",
+            "override_reason": [
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 6,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "‘쓸고 닦는 게 귀찮아 주말이 미워질 때’는 자동 청소 로봇 필요성이 부각되는 상황으로 카테고리와 일치합니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "missing",
+                "while_": "explicit",
+                "with_what": "explicit",
+                "with_whom": "missing",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "주말에 쓸고 닦는 일이 귀찮아지고 ‘요즘 로봇청소기가 눈에 아른거리게 됐다는’ 진입 시작을 직접적으로 뒷받침합니다.",
+                "cited_bullets": [
+                  {
+                    "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                    "verified": true,
+                    "section_id": 6,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "그래서 요즘 로봇청소기가 눈에 아른거리게 됐다는 식으로 ‘필요 생각’의 진입이 시작돼요.",
+                    "verified": true,
+                    "section_id": 6,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  },
+                  {
+                    "quote": "단순히 쓸고 닦는 일인데도 귀찮아서 주말이 미워질 지경이라고 말해요.",
+                    "verified": true,
+                    "section_id": 6,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "redundant",
+                  "quote": null,
+                  "occurred": true,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16730,
+            "verdict": "warning",
+            "cep_text": "쓸고 닦는 게 귀찮아 주말이 미워질 때",
+            "llm_verdict": "pass",
+            "override_reason": [
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": true
+          },
+          {
+            "cep_id": 7,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "아이로 인해 반복적으로 발생하는 먼지/머리카락 대응을 위한 로봇청소기 선택 맥락이 잘 들어맞습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "explicit",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "implicit",
+                "with_whom": "explicit",
+                "how_feeling": "explicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "아이 있는 집에서 먼지/머리카락이 계속 나와 청소가 숙제처럼 느껴지는 흐름이 카드와 일치합니다.",
+                "cited_bullets": [
+                  {
+                    "quote": "아이 둘을 키우는 집에서는 먼지와 머리카락이 계속 나와 청소가 영원한 숙제처럼 느껴졌고",
+                    "verified": true,
+                    "section_id": 7,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "no_source_quote",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16731,
+            "verdict": "pass",
+            "cep_text": "아이 키우며 먼지와 머리카락이 끝없이 나올 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 8,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "ok",
+                "evidence": "고양이 털/모래로 인해 바닥 청소 부담이 누적되는 상황은 로봇청소기의 사용 동기와 잘 부합합니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "implicit",
+                "when": "implicit",
+                "where": "explicit",
+                "while_": "implicit",
+                "with_what": "implicit",
+                "with_whom": "explicit",
+                "how_feeling": "implicit"
+              },
+              "source_grounding": {
+                "status": "ok",
+                "evidence": "고양이를 키우는 집에서 바닥이 모래사장처럼 되고 털이 여기저기 날리는 등 ‘계속 쌓이는 구조’가 직접적으로 언급됩니다.",
+                "cited_bullets": [
+                  {
+                    "quote": "고양이를 키우는 집에서 조금만 청소를 게을리하면 바닥은 모래사장처럼 되고 털이 여기저기 날렸고",
+                    "verified": true,
+                    "section_id": 4,
+                    "match_score": 1,
+                    "bullet_index": 0,
+                    "matched_scope": null,
+                    "low_confidence": false,
+                    "index_corrected": false,
+                    "corrected_bullet_index": null
+                  }
+                ]
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16732,
+            "verdict": "pass",
+            "cep_text": "고양이 털과 모래가 계속 쌓이는 구조가 느껴질 때",
+            "llm_verdict": "pass",
+            "override_reason": [],
+            "verdict_overridden": false
+          },
+          {
+            "cep_id": 9,
+            "checks": {
+              "structural": {
+                "issues": [],
+                "index_integrity": true,
+                "section_refs_exist": true,
+                "bullets_referenceable": true
+              },
+              "category_fit": {
+                "status": "partial",
+                "evidence": "카드는 ‘주말 청소’와 ‘더러움 누적’이 청소 로봇 필요로 이어지는 상황을 묘사하지만, 현재 허용된 근거 섹션에서 해당 요소들이 직접적으로 연결되지는 않습니다.",
+                "cited_bullets": null
+              },
+              "sevenW_structure": {
+                "why": "missing",
+                "when": "missing",
+                "where": "missing",
+                "while_": "missing",
+                "with_what": "missing",
+                "with_whom": "missing",
+                "how_feeling": "missing"
+              },
+              "source_grounding": {
+                "status": "fail",
+                "evidence": "‘주말 청소를 미루다’ 또는 ‘더러움이 쌓이기 시작’에 해당하는 내용이 제공된 섹션 불릿에서 확인되지 않습니다.",
+                "cited_bullets": []
+              },
+              "hallucination_flags": [
+                {
+                  "note": null,
+                  "type": "no_source_quote",
+                  "quote": null,
+                  "occurred": true,
+                  "untrusted": false
+                },
+                {
+                  "note": null,
+                  "type": "category_mismatch",
+                  "quote": null,
+                  "occurred": false,
+                  "untrusted": false
+                }
+              ]
+            },
+            "card_id": 16733,
+            "verdict": "fail",
+            "cep_text": "주말 청소를 미루다 더러움이 쌓이기 시작할 때",
+            "llm_verdict": "fail",
+            "override_reason": [
+              {
+                "rule": "STATUS_CONTRADICTION",
+                "evidence": "grounding_status=fail",
+                "severity_floor": "fail"
+              },
+              {
+                "rule": "HALLUCINATION_FLAG",
+                "evidence": "hallucination_flags.occurred=true",
+                "severity_floor": "warning"
+              }
+            ],
+            "verdict_overridden": false
+          }
+        ],
+        "summary": {
+          "fail": 1,
+          "pass": 5,
+          "total": 10,
+          "warning": 4,
+          "overall_comment": "전반적으로 CEP 문구는 제공된 섹션의 흐름과 잘 맞습니다. 다만 각 CEP가 어떤 섹션/불릿에 근거하는지에 대한 명시적 인용이 누락되지 않도록, 모든 CEP에 대해 정확한 출처 불릿을 반드시 포함해 검증했습니다. / 제공된 5개 CEP 중 6,7,8은 해당 섹션의 불릿 내용과 대체로 일치합니다. 다만 5는 ‘구매를 많이 고민’의 근거가 약해 ‘정말 많이 고민’이 직접 인용되지는 않으며, 9는 ‘주말을 미루다’ 및 ‘더러움이 쌓이기 시작’이 주어진 근거로는 확인되지 않아 출처 미스매치로 판단됩니다."
+        },
+        "category": "로봇청소기, 스마트 진공청소기, 자동 청소 로봇, 바닥 청소 로봇",
+        "model_info": {
+          "model": "gpt-5.4-nano",
+          "provider": "openai"
+        },
+        "project_id": 1396,
+        "inspected_at": "2026-07-22T14:24:53.846238"
+      }
+    }
+  ]
+}

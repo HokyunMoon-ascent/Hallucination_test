@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "purpose": "의미 치환(paraphrase) 동일 → pass 재판정 오버라이드 레이어. 원본 bundle 불변. gen-dashboard-data.js가 로드해 verdict를 승격 적용.",
+    "rule": "SEMANTIC_EQUIVALENCE",
+    "criteria": "CEP가 research.result_data.content(출처 본문)의 특정 불릿과 의미가 동일하고 입력 카테고리에 적합하면, 축자 인용/source_section_ids 부재만으로 강등하지 않고 pass로 승격한다. 카테고리 이탈(예: 차량 공기청정기) 또는 본문에 없는 주장 추가(예: 개인 후기에 '가족' 특정)는 승격하지 않는다.",
+    "reviewed_by": "본문 대조 재판정 (Claude)",
+    "reviewed_at": "2026-07-21",
+    "scope": [1374, 1375, 1376]
+  },
+  "1374": [
+    {
+      "cardId": 16523, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — '구토 잦은 동물/부재 시 로봇청소기 사용 중지'가 본문에 그대로 존재",
+      "quote": "동시에 구토를 자주 하는 동물이나, 부재 시엔 로봇청소기를 돌리지 말라고도 적혀 있어요(청소기가 온집을 구토코팅 해준다는 표현). 즉 '필요함'과 '언제는 멈춰야 하는지'가 함께 생기는 상황이에요.",
+      "url": "https://theqoo.net/review/1679941819", "sec": 4
+    },
+    {
+      "cardId": 16521, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 고양이/응고형 모래로 먼지·털 축적, 로봇청소기 먼저 구매 흐름이 본문에 존재 (sg는 이미 ok)",
+      "quote": "고양이 때문에 로봇청소기를 먼저 샀다고 해요. 응고형 모래를 쓰면 먼지통에 모래며 털이 무시무시하게 쌓인다고 느꼈고, 퇴근 10분 전쯤 어플로 돌려두면 집에 올 때 깨끗하다고 합니다.",
+      "url": "https://theqoo.net/review/1679941819", "sec": 4
+    },
+    {
+      "cardId": 16527, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 머리카락 줍는 스트레스·집 좁아 로청 못 쓴다는 편견 극복이 본문에 존재",
+      "quote": "부모님과 같이 사는 집에서 머리카락이 잘 빠지는데 매번 줍는 게 귀찮고 짜증났고, 집이 좁아서 로청을 못 쓴다는 편견을 깨야 한다고 느꼈다는 흐름으로 로봇청소기 구매로 연결됩니다.",
+      "url": "https://theqoo.net/review/3231534372?listStyle=viewer", "sec": 6
+    },
+    {
+      "cardId": 16525, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 디팡매트를 무선청소기로 못 밀어 로봇청소기 구매, 터보로 머리카락 완전 흡입이 본문에 존재",
+      "quote": "강아지 때문에 디팡매트를 깔았는데, 무선청소기로는 매트 위가 깨끗하게 밀리지 않아 로봇청소기를 샀다고 해요. 특히 머리카락(털) 때문에 터보로 돌리면 디팡매트 위 머리카락이 하나도 안 보일 정도로 흡입되었다.",
+      "url": "https://theqoo.net/theqdeal/3656497807", "sec": 5
+    }
+  ],
+  "1375": [
+    {
+      "cardId": 16514, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 거실 공기청정기 영향이 아기방까지 안 미쳐 아이방 전용 탐색 흐름이 본문에 존재(축자 인용 링크만 누락)",
+      "quote": "거실에 이미 LG 퓨리케어 공기청정기를 두고 \"항상 열일\" 중이지만, 그 영향이 아기 방까지 충분히 미치지 못할 것 같아 아이방 전용으로 살 생각으로 검색을 했다.",
+      "url": "https://imaudrey.tistory.com/116", "sec": 1
+    },
+    {
+      "cardId": 16513, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 새집 이사 후 미세먼지·건조로 환기 못 함, 아이방 공기 우선 챙김이 본문에 존재",
+      "quote": "지난 9월 새집으로 이사한 뒤 아이방을 따로 만들면서 공기청정기를 아이방 전용으로 찾기 시작했다는 흐름이 나와요. 특히 올해 2월 말 즈음 바깥 공기가 탁해서 쾌청한 날이 거의 없을 정도로 미세먼지가 심했고, 건조한 날씨에 새집에서 환기도 못 시키니 답답했다.",
+      "url": "https://imaudrey.tistory.com/116", "sec": 1
+    },
+    {
+      "cardId": 16516, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 가습기를 밤새 틀어도 미세먼지로 창문 못 여는 상황이 본문에 존재, 공기청정기 필요로 연결",
+      "quote": "가습기를 자는 내내 틀어놓는데도 창문을 열고 싶어도 미세먼지 때문에 못 열었다고 적혀 있어요.",
+      "url": "https://imaudrey.tistory.com/116", "sec": 1
+    },
+    {
+      "cardId": 16520, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 심한 비염으로 공기청정기 오래 고민, 아침 재채기·코막힘 감소가 본문에 존재",
+      "quote": "평소 비염이 심해서 공기청정기 구매를 오랫동안 고민해왔다고 시작해요. 사용 후에는 특히 아침마다 재채기를 하고 코막힘을 호소하던 증상이 공기청정기 사용 후 눈에 띄게 줄었다.",
+      "url": "https://yolotraveler.tistory.com/337?category=1251282", "sec": 3
+    },
+    {
+      "cardId": 16522, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 환기해도 안 사라지는 요리/반려동물 냄새가 공기청정기 가동 후 줄어든 흐름이 본문에 존재",
+      "quote": "요리 후 냄새나 반려동물 냄새 제거에 탁월하다고 느꼈고, 이전에는 환기를 해도 쉽게 사라지지 않던 냄새들이 공기청정기 가동 후 눈에 띄게 줄었다.",
+      "url": "https://yolotraveler.tistory.com/337?category=1251282", "sec": 3
+    },
+    {
+      "cardId": 16524, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 밤에 켜두면 다음 날 아침 컨디션이 좋아지는 근거가 본문에 존재. CEP의 '좋아질 것 같아서(기대)'는 출처 '좋아졌다(관찰)'의 트리거식 재서술로 의미 동일.",
+      "quote": "밤에 켜두고 자면 다음 날 아침 아이의 컨디션이 훨씬 좋아지는 걸 느꼈다고 합니다.",
+      "url": "https://yolotraveler.tistory.com/337?category=1251282", "sec": 3
+    }
+  ],
+  "1376": [
+    {
+      "cardId": 16505, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 부모님과 추석 연휴 2박3일, 여수/담양/강릉 지역 우선 정리가 본문에 존재(부모님 동행 = 가족 여행 근거)",
+      "quote": "한 2박 3일 정도 추석 연휴 껴서 갈까 하면서, 먼저 생각해둔 지역이 여수/담양/강릉 이정도로 정리되어 있다.",
+      "url": "https://theqoo.net/review/1160476642", "sec": 2
+    },
+    {
+      "cardId": 16506, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 부산/제주 반복 방문 후 이번엔 다른 곳, 숙소를 펜션으로 고민이 본문에 존재(동일 부모님 여행 글)",
+      "quote": "부산이랑 제주도는 여러 번 가서 이번엔 다른 곳 가려고 한다는 전제가 있고, 가면 숙소는 펜션 같은 걸로 잡을까 해..다들 괜찮았던 곳 있어?처럼 숙소 형태까지 바로 연결된다.",
+      "url": "https://theqoo.net/review/1160476642", "sec": 2
+    },
+    {
+      "cardId": 16507, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 12월 마지막주 모녀여행, 차 없음→서울 KTX·여행지 택시 이동 고정이 본문에 존재(모녀 = 가족 여행 근거)",
+      "quote": "이번 연말에도 12월 마지막주에 2박3일 혹은 3박4일 모녀여행 계획중이라고 말한다. 참고로 차는 없고 서울서 KTX 이동하고, 여행지에서는 기본 택시일듯(시티버스 있음 하루는 이용할듯?).",
+      "url": "https://theqoo.net/travel/3976355872", "sec": 3
+    },
+    {
+      "cardId": 16503, "from": "warning", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "의미 치환 동일 — 명절 귀가 버스 시간(15→18시 vs 8→10~11시)에 따라 강릉 1박/2박 재고민이 본문에 존재",
+      "quote": "강릉 2박으로 잡아놓고도 집가는 버스 시간을 기준으로 1박/2박을 다시 고민하게 된다. 집가는 버스가 15시->18시 집도착인지, 오전8시->10~11시 집도착인지에 따라 남은 휴일 2일이 달라져 뭘로할까.. 하게 된다.",
+      "url": "https://theqoo.net/travel/4067202018", "sec": 1
+    },
+    {
+      "cardId": 16504, "from": "fail", "to": "pass", "rule": "SEMANTIC_EQUIVALENCE",
+      "note": "재판정: 검수기가 '호텔 전화/1박→2박 근거 없음'으로 fail 했으나, 해당 행동이 본문 불릿에 그대로 존재함(source_section_ids 누락으로 인한 오탐).",
+      "quote": "1박에서 2박으로 늘린 뒤 다시 호텔에 전화하기 민망한데도, 기왕 놀러가는거 여유있게 다녀오고 싶기도 해서 선택을 미루는 상태로 질문이 올라온다.",
+      "url": "https://theqoo.net/travel/4067202018", "sec": 1
+    }
+  ]
+}

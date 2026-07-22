@@ -1,0 +1,56 @@
+[
+  {
+    "project_id": "1371",
+    "status": "ready",
+    "query_file": "methodology/query-1371.txt",
+    "cep_seqs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "has_repropose": true
+  },
+  {
+    "project_id": "1372",
+    "status": "ready",
+    "query_file": "methodology/query-1372.txt",
+    "cep_seqs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "has_repropose": true
+  },
+  {
+    "project_id": "1373",
+    "status": "ready",
+    "query_file": "methodology/query-1373.txt",
+    "cep_seqs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "has_repropose": false
+  }
+]

@@ -31,27 +31,43 @@ function buildDiag(p){
   (insp.items||[]).forEach(it=>{ if(it&&it.card_id!=null) items[it.card_id]=it; });
   const summary=insp.summary||{};
   const model=insp.model_info?`${insp.model_info.provider||""}/${insp.model_info.model||""}`.replace(/^\/|\/$/g,""):"";
+  let semUp=0;
   const cards=(p.cep_cards||[]).map((card,i)=>{
     const it=items[card.id]||{}, ck=it.checks||{};
     const cf=ck.category_fit||{}, sg=ck.source_grounding||{}, st=ck.structural||{}, w7=ck.sevenW_structure||{};
     const ev=card.evidence||{};
-    const verdict=it.verdict||ev.inspection_verdict||"none";
+    const baseVerdict=it.verdict||ev.inspection_verdict||"none";
+    const ov=semOv(p.project_id,card.id);           // 의미 치환 재판정 오버라이드
+    const verdict=ov?ov.to:baseVerdict;
     const flags=(ck.hallucination_flags||[]).filter(f=>f&&f.occurred).map(f=>({type:f.type,label:FLAG_LABEL[f.type]||f.type,sev:FLAG_SEV[f.type]||"minor",note:trim(f.note,140)}));
     const findings=[];
-    flags.forEach(f=>findings.push({code:"할루시네이션: "+f.label,sev:f.sev,detail:f.note||"inspection 플래그 occurred=true"}));
-    if(sg.status==="fail") findings.push({code:"출처 근거 실패",sev:"major",detail:trim(sg.evidence,180)});
-    else if(sg.status==="partial") findings.push({code:"출처 근거 부분적",sev:"minor",detail:trim(sg.evidence,180)});
-    if(cf.status==="fail") findings.push({code:"카테고리 부적합",sev:"major",detail:trim(cf.evidence,180)});
-    else if(cf.status==="partial") findings.push({code:"카테고리 부분적합",sev:"minor",detail:trim(cf.evidence,180)});
-    (st.issues||[]).forEach(iss=>findings.push({code:"구조 문제",sev:"major",detail:trim(iss,180)}));
-    return {idx:i+1,cardId:card.id,cep:trim(card.cep,110),verdict,llm:it.llm_verdict||"",overridden:!!it.verdict_overridden,
-      cf:{status:cf.status||"",ev:trim(cf.evidence,220)},sg:{status:sg.status||"",ev:trim(sg.evidence,220)},w7,flags,findings};
+    if(ov){
+      semUp++;
+      findings.push({code:"의미 치환 재판정 → pass",sev:"minor",detail:trim(ov.note,180)});
+      // 출처 근거·할루시(출처 인용 없음)는 본문 근거 확인으로 해소. 카테고리 잔여 이슈만 표기.
+      if(cf.status==="fail") findings.push({code:"카테고리 부적합",sev:"major",detail:trim(cf.evidence,180)});
+      else if(cf.status==="partial") findings.push({code:"카테고리 부분적합",sev:"minor",detail:trim(cf.evidence,180)});
+    } else {
+      flags.forEach(f=>findings.push({code:"할루시네이션: "+f.label,sev:f.sev,detail:f.note||"inspection 플래그 occurred=true"}));
+      if(sg.status==="fail") findings.push({code:"출처 근거 실패",sev:"major",detail:trim(sg.evidence,180)});
+      else if(sg.status==="partial") findings.push({code:"출처 근거 부분적",sev:"minor",detail:trim(sg.evidence,180)});
+      if(cf.status==="fail") findings.push({code:"카테고리 부적합",sev:"major",detail:trim(cf.evidence,180)});
+      else if(cf.status==="partial") findings.push({code:"카테고리 부분적합",sev:"minor",detail:trim(cf.evidence,180)});
+      (st.issues||[]).forEach(iss=>findings.push({code:"구조 문제",sev:"major",detail:trim(iss,180)}));
+    }
+    const sgDisp=ov?{status:"ok",ev:trim(ov.note,220)}:{status:sg.status||"",ev:trim(sg.evidence,220)};
+    return {idx:i+1,cardId:card.id,cep:trim(card.cep,110),verdict,llm:it.llm_verdict||baseVerdict||"",overridden:!!it.verdict_overridden,
+      semOverride:ov?{from:ov.from||baseVerdict,rule:ov.rule||"SEMANTIC_EQUIVALENCE",note:trim(ov.note,180)}:null,
+      cf:{status:cf.status||"",ev:trim(cf.evidence,220)},sg:sgDisp,w7,flags:ov?flags.filter(f=>f.type!=="no_source_quote"):flags,findings};
   });
   const sev={critical:0,major:0,minor:0};
   cards.forEach(c=>c.findings.forEach(f=>{ if(sev[f.sev]!=null) sev[f.sev]++; }));
-  return {id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),category:insp.category||"",model,
-    summary:{pass:summary.pass||0,warn:summary.warning||0,fail:summary.fail||0,total:summary.total||cards.length,overall:trim(summary.overall_comment,1400)},
-    overridden:cards.filter(c=>c.overridden).length,sev,cards};
+  // 오버라이드 반영 후 카드 verdict 기준으로 요약 재계산 (bundle insp.summary 대신)
+  const eff={pass:0,warning:0,fail:0,none:0};
+  cards.forEach(c=>{ const k=(c.verdict==="pass"||c.verdict==="fail"||c.verdict==="warning")?c.verdict:"none"; eff[k]++; });
+  return {id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,19).replace('T',' '),category:insp.category||"",model,
+    summary:{pass:eff.pass,warn:eff.warning,fail:eff.fail,total:summary.total||cards.length,overall:(semUp?`【의미 치환 재판정 ${semUp}장 반영(→pass) — 아래 원본 검수 코멘트는 재판정 이전 기준입니다】 `:"")+trim(summary.overall_comment,1400)},
+    overridden:cards.filter(c=>c.overridden).length,semUp,sev,cards};
 }
 
 function extractFromBundle(d){
@@ -65,24 +81,29 @@ function extractFromBundle(d){
     const insp=p.inspection, items={};
     if(insp&&Array.isArray(insp.items)) insp.items.forEach(it=>items[it.card_id]=it);
     const cards=(p.cep_cards||[]).map(card=>{
-      const ev=card.evidence||{}, v=ev.inspection_verdict;
+      const ev=card.evidence||{}, baseV=ev.inspection_verdict;
+      const so=semOv(p.project_id,card.id);          // 의미 치환 재판정 오버라이드
+      const v=so?so.to:baseV;
       const key=(v==="pass"||v==="fail"||v==="warning")?v:"none"; c[key]++;
       const it=items[card.id]||{}, ck=it.checks||{}, checks=[];
       ["category_fit","source_grounding","structural"].forEach(name=>{
         const chk=ck[name]; if(chk&&typeof chk==="object"){
           if(name==="structural"){ const iss=chk.issues||[]; if(iss.length) checks.push({name:"구조",status:"fail",evidence:trim(iss.join("; "))}); }
+          else if(name==="source_grounding"&&so){ checks.push({name:NM[name],status:"ok",evidence:trim(so.note,300)}); }
           else if(chk.status) checks.push({name:NM[name],status:chk.status,evidence:trim(chk.evidence)});
         }
       });
       const ov=it.override_reason, overrides=[];
       if(Array.isArray(ov)) ov.forEach(rr=>{ if(rr&&typeof rr==="object") overrides.push(`${rr.rule}: ${trim(rr.evidence,120)}`); });
+      if(so) overrides.push(`${so.rule||"SEMANTIC_EQUIVALENCE"}: ${so.from||baseV}→${so.to} (의미 치환 동일)`);
       const sources=(ev.sources||[]).filter(s=>s&&s.url).map(s=>({title:trim(s.url_title||s.title,120),url:s.url,sec:s.section_number}));
-      const quotes=(ev.quotes||[]).filter(q=>q&&typeof q==="object").map(q=>({quote:trim(q.quote,240),url:q.url,sec:q.section_id,verified:!!q.verified}));
-      return {id:card.id,cep:trim(card.cep,110),v:key,reason:trim(ev.verdict_reason,200),checks,halluc:hallucOf(ck.hallucination_flags),overrides,sources,quotes};
+      let quotes=(ev.quotes||[]).filter(q=>q&&typeof q==="object").map(q=>({quote:trim(q.quote,240),url:q.url,sec:q.section_id,verified:!!q.verified}));
+      if(so&&so.quote) quotes=quotes.concat([{quote:trim(so.quote,240),url:so.url,sec:so.sec,verified:true}]);
+      return {id:card.id,cep:trim(card.cep,110),v:key,reason:so?trim(so.note,200):trim(ev.verdict_reason,200),checks,halluc:so?false:hallucOf(ck.hallucination_flags),overrides,sources,quotes,semOverride:so?{from:so.from||baseV,rule:so.rule||"SEMANTIC_EQUIVALENCE"}:null};
     });
     DET[p.project_id]=cards;
     const n=c.pass+c.fail+c.warning+c.none;
-    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,10),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
+    R.push({id:p.project_id,name:p.product_name,locale:p.locale,date:(p.created_time||"").slice(0,19).replace('T',' '),n,p:c.pass,w:c.warning,f:c.fail,none:c.none,insp:(c.pass+c.fail+c.warning)>0});
   });
   return {rows:R,detail:DET,diag:DG};
 }
@@ -102,6 +123,26 @@ function loadRepropose(dir="repropose"){
   });
   return map;
 }
+
+// ── 의미 치환(paraphrase) 재판정 오버라이드 로드 ────────────
+// semantic-overrides.json 을 읽어 `${project_id}:${cardId}` → 오버라이드 맵으로 주입.
+// 프롬프트가 출처 원문을 의미 보존하며 치환(부적절 표현 회피)했고 본문에 의미가 근거되면
+// pass 로 승격한다. 원본 bundle 은 건드리지 않고 이 레이어에서만 판정을 덮어쓴다.
+function loadSemanticOverrides(file="semantic-overrides.json"){
+  const map={};
+  if(!fs.existsSync(file)) return map;
+  try{
+    const obj=JSON.parse(fs.readFileSync(file,"utf8"));
+    Object.keys(obj).forEach(pid=>{
+      if(pid==="_meta") return;
+      const arr=obj[pid]; if(!Array.isArray(arr)) return;
+      arr.forEach(o=>{ if(o&&o.cardId!=null&&o.to) map[`${pid}:${o.cardId}`]=o; });
+    });
+  }catch(e){ console.warn(`⚠ semantic-overrides 파싱 실패 — ${e.message}`); }
+  return map;
+}
+const SEM_OV = loadSemanticOverrides();
+function semOv(pid,cardId){ return SEM_OV[`${pid}:${cardId}`]||null; }
 
 // ── 여러 번들 병합 (project_id 유일 기준) ───────────────────
 // 여러 하베스트 번들을 하나의 통합 목록으로 합친다.
@@ -158,5 +199,7 @@ if (fs.existsSync(HTML)) {
 console.log(`✅ ${OUT} 생성`);
 console.log(`   ${snapshot}`);
 console.log(`   본문 기반 재제안: ${reproCnt}개 프로젝트${reproCnt?` (${Object.keys(repropose).join(", ")})`:""}`);
+const semTotal=Object.keys(SEM_OV).length;
+console.log(`   의미 치환 재판정(→pass): ${semTotal}장${semTotal?` — 프로젝트별 ${Object.values(diag).filter(d=>d.semUp).map(d=>`${d.id}:${d.semUp}`).join(", ")}`:""}`);
 console.log(`   파일 크기: ${(Buffer.byteLength(js)/1024).toFixed(0)} KB`);
 console.log(`   캐시 버전(v): ${ver}${htmlUpdated?` → ${HTML} 스크립트 태그 갱신됨`:` (⚠ ${HTML} 스크립트 태그를 찾지 못함 — 수동 확인 필요)`}`);
